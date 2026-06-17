@@ -719,7 +719,6 @@ header {
     border-radius: 4px;
     background-color: #EFF8E7;
     color: #61BD14;
-    font-family: Pretendard;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
@@ -731,7 +730,6 @@ header {
 
 .sub-main-txt a {
     color: #222222;
-    font-family: Pretendard;
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
@@ -783,8 +781,9 @@ header {
     color: #5FBC12;
 }
 
-/* ===== todaySale Section ===== */
-.todaySale {
+/* ===== todaySale & RecommendedProducts Shared Styles ===== */
+.todaySale,
+.RecommendedProducts {
     width: 80%;
     max-width: 1200px;
     margin: 60px auto;
@@ -793,22 +792,27 @@ header {
     gap: 34px;
 }
 
-.todaySale > .title {
+.todaySale > .title,
+.RecommendedProducts > .title {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.todaySale > .title h2 {
+.todaySale > .title h2,
+.RecommendedProducts > .title h2 {
     color: #404040;
     font-size: 30px;
     font-style: normal;
     font-weight: 600;
     line-height: 150%;
     letter-spacing: -0.3px;
+    min-width: 0;       /* 제목이 줄어들 수 있게 허용 */
+
 }
 
-.todaySale > .title h2 span {
+.todaySale > .title h2 span,
+.RecommendedProducts > .title h2 span {
     color: #61BD14;
     text-decoration-line: underline;
     text-decoration-style: solid;
@@ -819,212 +823,50 @@ header {
     text-underline-position: from-font;
 }
 
-.todaySale .View-more {
+.todaySale .View-more,
+.RecommendedProducts .View-more {
     display: flex;
     align-items: center;
     gap: 4px;
     cursor: pointer;
+    flex-shrink: 0;   /* 제목한테 공간 안 뺏기고 자기 크기 유지 → 짤릴 일 없음 */
 }
 
-.todaySale .View-more h4 {
-    color: #737373;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 150%;
-    letter-spacing: -0.2px;
-}
 
-.todaySale .View-more .icon {
-    width: 20px;
-    height: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.todaySale .product {
-    position: relative;
-}
-
-.todaySale .product .arrow-wrap {
-    display: flex;
-    gap: 8px;
-    position: absolute;
-    top: -60px;
-    right: 0;
-    z-index: 10;
-}
-
-.todaySale .product .arrow-wrap button {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    background: rgba(255, 255, 255, 0.72);
-    -webkit-backdrop-filter: blur(20px) saturate(180%);
-    backdrop-filter: blur(20px) saturate(180%);
-    border: 0.5px solid rgba(0, 0, 0, 0.07);
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08), 0 4px 16px rgba(0, 0, 0, 0.06);
-    transition: background 0.18s ease, box-shadow 0.18s ease;
-    border: none;
-    padding: 0;
-}
-
-.todaySale .product .arrow-wrap button:hover {
-    background: rgba(255, 255, 255, 0.92);
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.09);
-}
-
-.todaySale .product-list {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 20px;
-    list-style: none;
-}
-
-.todaySale .product-list li {
-    cursor: pointer;
-}
-
-.todaySale .product-list li a {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    text-decoration: none;
-    color: inherit;
-}
-
-.todaySale .product-list .list-img {
-    position: relative;
-    width: 100%;
-    aspect-ratio: 1 / 1;
-    border-radius: 16px;
-    overflow: hidden;
-    background: #F7F7F7;
-}
-
-.todaySale .product-list .list-img > div:first-child {
-    width: 100%;
-    height: 100%;
-}
-
-.todaySale .product-list .list-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-}
-
-.todaySale .product-list li:hover .list-img img {
-    transform: scale(1.05);
-}
-
-.todaySale .product-list .heart {
-    position: absolute;
-    bottom: 12px;
-    right: 12px;
-    width: 36px;
-    height: 36px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 2;
-}
-
-.todaySale .product-list .txt {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    padding: 0 4px;
-}
-
-.todaySale .product-list .txt p {
-    color: #404040;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 150%;
-    letter-spacing: -0.16px;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    word-break: keep-all;
-}
-
-.todaySale .product-list .txt > div:last-child {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.todaySale .product-list .txt h2:first-of-type {
-    color: #FF4747;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 150%;
-    letter-spacing: -0.2px;
-}
-
-.todaySale .product-list .txt h2:last-of-type {
-    color: #404040;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 150%;
-    letter-spacing: -0.2px;
-}
-
-/* ===== RecommendedProducts Section ===== */
-.RecommendedProducts {
-    width: 80%;
-    max-width: 1200px;
-    margin: 60px auto;
-    display: flex;
-    flex-direction: column;
-    gap: 34px;
-}
-
-.RecommendedProducts > .title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.RecommendedProducts > .title h2 {
-    color: #404040;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 150%;
-    letter-spacing: -0.3px;
-}
-
-.RecommendedProducts > .title h2 span {
-    color: #61BD14;
-}
-
-.RecommendedProducts .View-more {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    cursor: pointer;
-}
-
+.todaySale .View-more h4,
 .RecommendedProducts .View-more h4 {
     color: #737373;
     font-size: 18px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 150%;
     letter-spacing: -0.2px;
+    white-space: nowrap;   /* 이 한 줄 추가 — 글자가 절대 줄바꿈 안 됨 */
 }
 
+.RecommendedProducts .View-more .advertisement {
+    display: flex;
+    padding: 2px 6px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    border: 1px solid #737373;
+    color: #737373;
+    white-space: nowrap;
+    flex-shrink: 0;   /* 광고 배지 자체도 안 줄어들게 */
+}
+
+
+.RecommendedProducts .View-more .advertisement span {
+    color: #737373;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 27px */
+    letter-spacing: -0.18px;
+}
+
+.todaySale .View-more .icon,
 .RecommendedProducts .View-more .icon {
     width: 20px;
     height: 20px;
@@ -1033,20 +875,50 @@ header {
     justify-content: center;
 }
 
+.todaySale .product,
 .RecommendedProducts .product {
     position: relative;
 }
-
-.RecommendedProducts .product .arrow-wrap {
-    display: flex;
-    gap: 8px;
+.todaySale .product .back-arrow,
+.todaySale .product .next-arrow {
     position: absolute;
-    top: -60px;
-    right: 50px;
-    gap : 20px;
+    top: 50%;
+    transform: translateY(-50%);   /* 버튼 높이의 절반만큼 끌어올려 '진짜' 세로 중앙 */
     z-index: 10;
 }
 
+.todaySale .product .back-arrow {
+    left: 0;
+    transform: translate(-50%, -50%);   /* 왼쪽 바깥으로 절반 걸침 */
+}
+
+.todaySale .product .next-arrow {
+    right: 0;
+    transform: translate(50%, -50%);    /* 오른쪽 바깥으로 절반 걸침 */
+}
+
+.RecommendedProducts .product .arrow-wrap {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.RecommendedProducts .product .arrow-wrap button {
+    pointer-events: auto;
+}
+
+.RecommendedProducts .product .back-arrow { transform: translateX(-50%); }
+.RecommendedProducts .product .next-arrow { transform: translateX(50%); }
+
+
+
+.todaySale .product .arrow-wrap button,
 .RecommendedProducts .product .arrow-wrap button {
     width: 44px;
     height: 44px;
@@ -1065,23 +937,41 @@ header {
     padding: 0;
 }
 
+.todaySale .product .arrow-wrap button:hover,
 .RecommendedProducts .product .arrow-wrap button:hover {
     background: rgba(255, 255, 255, 0.92);
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.09);
 }
 
-.RecommendedProducts .product-list {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 20px;
-    list-style: none;
+/* Swiper container */
+.todaySale-swiper.swiper,
+.recommended-swiper.swiper {
+    overflow: hidden;
+    width: 100%;
 }
 
-.RecommendedProducts .product-list li {
+.todaySale-swiper .swiper-wrapper,
+.recommended-swiper .swiper-wrapper {
+    display: flex;
+}
+
+.todaySale-swiper .swiper-slide,
+.recommended-swiper .swiper-slide {
+    width: calc((100% - 16px) / 2);
+    box-sizing: border-box;
+    flex-shrink: 0;
+    height: auto;
     cursor: pointer;
 }
 
-.RecommendedProducts .product-list li a {
+/* Shared product-list */
+.todaySale .product-list,
+.RecommendedProducts .product-list {
+    list-style: none;
+}
+
+.todaySale .product-list .swiper-slide a,
+.RecommendedProducts .product-list .swiper-slide a {
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -1089,6 +979,7 @@ header {
     color: inherit;
 }
 
+.todaySale .product-list .list-img,
 .RecommendedProducts .product-list .list-img {
     position: relative;
     width: 100%;
@@ -1098,22 +989,27 @@ header {
     background: #F7F7F7;
 }
 
+.todaySale .product-list .list-img > div:first-child,
 .RecommendedProducts .product-list .list-img > div:first-child {
     width: 100%;
     height: 100%;
 }
 
+.todaySale .product-list .list-img img,
 .RecommendedProducts .product-list .list-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: transform 0.3s ease;
+    display: block;
 }
 
-.RecommendedProducts .product-list li:hover .list-img img {
+.todaySale .product-list .swiper-slide:hover .list-img img,
+.RecommendedProducts .product-list .swiper-slide:hover .list-img img {
     transform: scale(1.05);
 }
 
+.todaySale .product-list .heart,
 .RecommendedProducts .product-list .heart {
     position: absolute;
     bottom: 12px;
@@ -1124,8 +1020,11 @@ header {
     align-items: center;
     justify-content: center;
     z-index: 2;
+    background: rgba(0, 0, 0, 0.72);
+    border-radius: 50%;
 }
 
+.todaySale .product-list .txt,
 .RecommendedProducts .product-list .txt {
     display: flex;
     flex-direction: column;
@@ -1133,6 +1032,7 @@ header {
     padding: 0 4px;
 }
 
+.todaySale .product-list .txt p,
 .RecommendedProducts .product-list .txt p {
     color: #404040;
     font-size: 16px;
@@ -1147,12 +1047,14 @@ header {
     word-break: keep-all;
 }
 
+.todaySale .product-list .txt > div:last-child,
 .RecommendedProducts .product-list .txt > div:last-child {
     display: flex;
     align-items: center;
     gap: 8px;
 }
 
+.todaySale .product-list .txt h2:first-of-type,
 .RecommendedProducts .product-list .txt h2:first-of-type {
     color: #FF4747;
     font-size: 20px;
@@ -1162,6 +1064,7 @@ header {
     letter-spacing: -0.2px;
 }
 
+.todaySale .product-list .txt h2:last-of-type,
 .RecommendedProducts .product-list .txt h2:last-of-type {
     color: #404040;
     font-size: 20px;
@@ -1181,7 +1084,8 @@ header {
     gap: 34px;
 }
 
-.EventZone > .title {
+.EventZone > .title,
+.RecommendedProducts > .title {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1612,6 +1516,212 @@ header {
     display: block;
     object-fit: cover;
 }
+
+/* ===== communityandEvent Section ===== */
+.communityandEvent {
+    width: 80%;
+    max-width: 1200px;
+    margin: 60px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+}
+
+.community-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.community-wrap > .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.community-wrap > .title h2 {
+    color: #404040;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: -0.3px;
+}
+
+.community-wrap > .title .icon {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.community-wrap .tag ul {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.community-wrap .tag ul li {
+    display: flex;
+    padding: 4px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 99px;
+    border: 1px solid #E5E5E5;
+    cursor: pointer;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.community-wrap .tag ul li a {
+    color: #D4D4D4;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: -0.2px;
+    transition: color 0.2s ease;
+}
+
+.community-wrap .tag ul li:hover {
+    border-color: #5FBC12;
+}
+
+.community-wrap .tag ul li:hover a {
+    color: #5FBC12;
+}
+
+.community-wrap .tag ul li:first-child {
+    border-color: #61BD14;
+    background-color: #FBFFF5;
+}
+
+.community-wrap .tag ul li:first-child a {
+    color: #61BD14;
+    font-weight: 500;
+}
+
+.community-wrap .new-main {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.community-wrap .new-main > .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.community-wrap .new-main > .title h3 {
+    color: #404040;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: -0.24px;
+}
+
+.community-wrap .new-main > .title .icon {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.community-wrap .new-main ul {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 16px;
+    list-style: none;
+}
+
+.community-wrap .new-main ul li:first-child {
+    grid-row: 1 / 3;
+}
+
+.community-wrap .new-main ul li {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.community-wrap .new-main .Thumbnail {
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.community-wrap .new-main ul li:first-child .Thumbnail {
+    aspect-ratio: 16 / 10;
+}
+
+.community-wrap .new-main ul li:not(:first-child) .Thumbnail {
+    aspect-ratio: 16 / 9;
+}
+
+.community-wrap .new-main .Thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.community-wrap .new-main ul li:hover .Thumbnail img {
+    transform: scale(1.05);
+}
+
+.community-wrap .new-main .txt {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.community-wrap .new-main .txt span {
+    color: #61BD14;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: -0.14px;
+}
+
+.community-wrap .new-main .txt h3 {
+    color: #222;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: -0.16px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    word-break: keep-all;
+}
+
+/* ===== Marquee Effect ===== */
+.marquee {
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.marquee-track {
+    display: flex;
+    align-items: center;
+    gap: 41px;
+    width: max-content;
+    animation: marquee-scroll 30s linear infinite;
+}
+
 
 /* ===== communityandEvent Section ===== */
 .communityandEvent {
