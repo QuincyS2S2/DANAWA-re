@@ -6,6 +6,8 @@
     <title>DANAWA</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 </head>
 <body>
     <header>
@@ -226,14 +228,17 @@
                         </li>
                     </ul>
                 </div>
+                <!-- 이전 -->
                 <button type="button" class="sub-nav-prev" aria-label="이전">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="34" viewBox="0 0 19 34" fill="none">
-                        <path d="M16.5833 31.1667L2 16.5833L16.5833 2" stroke="#737373" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                    <svg width="11" height="20" viewBox="0 0 11 20" fill="none">
+                        <path d="M9 1L1.5 10L9 19" stroke="#86868b" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </button>
+
+                <!-- 다음 -->
                 <button type="button" class="sub-nav-next" aria-label="다음">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="34" viewBox="0 0 19 34" fill="none">
-                        <path d="M2.00004 31.1667L16.5834 16.5833L2.00004 2" stroke="#737373" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                    <svg width="11" height="20" viewBox="0 0 11 20" fill="none">
+                        <path d="M2 1L9.5 10L2 19" stroke="#86868b" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </button>
             </div>
@@ -312,26 +317,153 @@
                 <div class="View-more">
                     <h4>더보기</h4>
                     <div class="icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10" fill="none">
-                            <path d="M1 1L5 5L1 9" stroke="#737373" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M10 8L14 12L10 16" stroke="#737373" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
                     </div>
                 </div>
             </div>
             <div class="product">
-                <div class="arrow-wrap">
-                    <button class="back-arrow">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="34" viewBox="0 0 19 34" fill="none">
-                            <path d="M16.5833 31.1667L2 16.5833L16.5833 2" stroke="#737373" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </button>
-                    <button class="next-arrow">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="34" viewBox="0 0 19 34" fill="none">
-                            <path d="M2.00004 31.1667L16.5834 16.5833L2.00004 2" stroke="#737373" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </button>
-                </div>
-                <ul class="product-list">
+                <ul class="todaySale-carousel owl-carousel">
+                    <li>
+                        <a href="#">
+                            <div class="list-img">
+                                <div>
+                                    <img src="img/shop-img/headset.png" alt="상품 이미지">
+                                </div>
+                                <div class="heart">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18" fill="none">
+                                        <path d="M10 4.15421C8 -0.540222 1 -0.0402222 1 5.95981C1 11.9598 10 16.96 10 16.96C10 16.96 19 11.9598 19 5.95981C19 -0.0402222 12 -0.540222 10 4.15421Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="txt">
+                                <div>
+                                    <p>[일일특가]음악 감각을 UP<br> 샤오미 대박작 헤드셋</p>
+                                </div>
+                                <div>
+                                    <h2>62%</h2>
+                                    <h2>49,980원</h2>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="list-img">
+                                <div>
+                                    <img src="img/shop-img/dot.png" alt="상품 이미지">
+                                </div>
+                                <div class="heart">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18" fill="none">
+                                        <path d="M10 4.15421C8 -0.540222 1 -0.0402222 1 5.95981C1 11.9598 10 16.96 10 16.96C10 16.96 19 11.9598 19 5.95981C19 -0.0402222 12 -0.540222 10 4.15421Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="txt">
+                                <div>
+                                    <p>[일일특가]드디어 한국 상륙<br>디붐 타임 게이트</p>
+                                </div>
+                                <div>
+                                    <h2>36%</h2>
+                                    <h2>66,480원</h2>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="list-img">
+                                <div>
+                                    <img src="img/shop-img/Tv24.png" alt="상품 이미지">
+                                </div>
+                                <div class="heart">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18" fill="none">
+                                        <path d="M10 4.15421C8 -0.540222 1 -0.0402222 1 5.95981C1 11.9598 10 16.96 10 16.96C10 16.96 19 11.9598 19 5.95981C19 -0.0402222 12 -0.540222 10 4.15421Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="txt">
+                                <div>
+                                    <p>[일일특가] 갓성비 모니터<br>PHLISP 24인치 모니터</p>
+                                </div>
+                                <div>
+                                    <h2>62%</h2>
+                                    <h2>194,520원</h2>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="list-img">
+                                <div>
+                                    <img src="img/shop-img/Tv36.png" alt="상품 이미지">
+                                </div>
+                                <div class="heart">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18" fill="none">
+                                        <path d="M10 4.15421C8 -0.540222 1 -0.0402222 1 5.95981C1 11.9598 10 16.96 10 16.96C10 16.96 19 11.9598 19 5.95981C19 -0.0402222 12 -0.540222 10 4.15421Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="txt">
+                                <div>
+                                    <p>[일일특가]삼성전자 UHD<br>4K 고해상도 모니터</p>
+                                </div>
+                                <div>
+                                    <h2>12%</h2>
+                                    <h2>379,000원</h2>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="list-img">
+                                <div>
+                                    <img src="img/shop-img/cleaner.png" alt="상품 이미지">
+                                </div>
+                                <div class="heart">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18" fill="none">
+                                        <path d="M10 4.15421C8 -0.540222 1 -0.0402222 1 5.95981C1 11.9598 10 16.96 10 16.96C10 16.96 19 11.9598 19 5.95981C19 -0.0402222 12 -0.540222 10 4.15421Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="txt">
+                                <div>
+                                    <p>[일일특가]우수상 삼성전자<br>비스포크 제트</p>
+                                </div>
+                                <div>
+                                    <h2>14%</h2>
+                                    <h2>759,000원</h2>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="list-img">
+                                <div>
+                                    <img src="img/shop-img/electricfan.png" alt="상품 이미지">
+                                </div>
+                                <div class="heart">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18" fill="none">
+                                        <path d="M10 4.15421C8 -0.540222 1 -0.0402222 1 5.95981C1 11.9598 10 16.96 10 16.96C10 16.96 19 11.9598 19 5.95981C19 -0.0402222 12 -0.540222 10 4.15421Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="txt">
+                                <div>
+                                    <p>[일일특가]칼린전기 무선 캠핑용 선풍기</p>
+                                </div>
+                                <div>
+                                    <h2>42%</h2>
+                                    <h2>29,000원</h2>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <!-- 아이템 복제 (캐러셀 효과 확인용) -->
                     <li>
                         <a href="#">
                             <div class="list-img">
@@ -487,19 +619,144 @@
                 </div>
             </div>
             <div class="product">
-                <div class="arrow-wrap">
-                    <button class="back-arrow">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="34" viewBox="0 0 19 34" fill="none">
-                            <path d="M16.5833 31.1667L2 16.5833L16.5833 2" stroke="#737373" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </button>
-                    <button class="next-arrow">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="34" viewBox="0 0 19 34" fill="none">
-                            <path d="M2.00004 31.1667L16.5834 16.5833L2.00004 2" stroke="#737373" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </button>
-                </div>
-                <ul class="product-list">
+                <ul class="recProducts-carousel owl-carousel">
+                    <li>
+                        <a href="#">
+                            <div class="list-img">
+                                <div>
+                                    <img src="img/shop-img/okasi.png" alt="상품 이미지">
+                                </div>
+                                <div class="heart">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18" fill="none">
+                                        <path d="M10 4.15421C8 -0.540222 1 -0.0402222 1 5.95981C1 11.9598 10 16.96 10 16.96C10 16.96 19 11.9598 19 5.95981C19 -0.0402222 12 -0.540222 10 4.15421Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="txt">
+                                <div>
+                                    <p>청유식품 현미쌀 과자 160g<br>(1개)</p>
+                                </div>
+                                <div>
+                                    <h2>12,110원</h2>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="list-img">
+                                <div>
+                                    <img src="img/shop-img/okasi2.png" alt="상품 이미지">
+                                </div>
+                                <div class="heart">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18" fill="none">
+                                        <path d="M10 4.15421C8 -0.540222 1 -0.0402222 1 5.95981C1 11.9598 10 16.96 10 16.96C10 16.96 19 11.9598 19 5.95981C19 -0.0402222 12 -0.540222 10 4.15421Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="txt">
+                                <div>
+                                    <p>비쵸비 1세트 5개입</p>
+                                </div>
+                                <div>
+                                    <h2>26%</h2>
+                                    <h2>2,980원</h2>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="list-img">
+                                <div>
+                                    <img src="img/shop-img/ice.png" alt="상품 이미지">
+                                </div>
+                                <div class="heart">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18" fill="none">
+                                        <path d="M10 4.15421C8 -0.540222 1 -0.0402222 1 5.95981C1 11.9598 10 16.96 10 16.96C10 16.96 19 11.9598 19 5.95981C19 -0.0402222 12 -0.540222 10 4.15421Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="txt">
+                                <div>
+                                    <p>[여름 특가] 90종의 아이스크<br>림 골라담기 (40개)</p>
+                                </div>
+                                <div>
+                                    <h2>22%</h2>
+                                    <h2>34,420원</h2>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="list-img">
+                                <div>
+                                    <img src="img/shop-img/notebook.png" alt="상품 이미지">
+                                </div>
+                                <div class="heart">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18" fill="none">
+                                        <path d="M10 4.15421C8 -0.540222 1 -0.0402222 1 5.95981C1 11.9598 10 16.96 10 16.96C10 16.96 19 11.9598 19 5.95981C19 -0.0402222 12 -0.540222 10 4.15421Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="txt">
+                                <div>
+                                    <p>MacBook Neo 쿠팡 특별</p>
+                                </div>
+                                <div>
+                                    <h2>11%</h2>
+                                    <h2>979,000원</h2>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="list-img">
+                                <div>
+                                    <img src="img/shop-img/crepas.png" alt="상품 이미지">
+                                </div>
+                                <div class="heart">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18" fill="none">
+                                        <path d="M10 4.15421C8 -0.540222 1 -0.0402222 1 5.95981C1 11.9598 10 16.96 10 16.96C10 16.96 19 11.9598 19 5.95981C19 -0.0402222 12 -0.540222 10 4.15421Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="txt">
+                                <div>
+                                    <p>유치원 초등학교 입학선물<br>동아연필 크레파스 24색</p>
+                                </div>
+                                <div>
+                                    <h2>12,000원</h2>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="list-img">
+                                <div>
+                                    <img src="img/shop-img/cat.png" alt="상품 이미지">
+                                </div>
+                                <div class="heart">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18" fill="none">
+                                        <path d="M10 4.15421C8 -0.540222 1 -0.0402222 1 5.95981C1 11.9598 10 16.96 10 16.96C10 16.96 19 11.9598 19 5.95981C19 -0.0402222 12 -0.540222 10 4.15421Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="txt">
+                                <div>
+                                    <p>한층뚝딱 베스트 멀티 콘도 고양이 캣타워 브라운</p>
+                                </div>
+                                <div>
+                                    <h2>18%</h2>
+                                    <h2>62,210원</h2>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <!-- 아이템 복제 (캐러셀 효과 확인용) -->
                     <li>
                         <a href="#">
                             <div class="list-img">
@@ -693,11 +950,6 @@
                 <li> <!--감사제 배너 3-->
                     <div class="card">
                         <div class="title">
-                            <!-- <div class="title-tag">
-                                <div class="logo-icon">
-                                    <img src="img/shop-img/EventZone/samsung.png" alt="삼성 로고">
-                                </div>
-                            </div> -->
                             <h3>BEST 가성비 전동공구
                                 <br>제대로 보여드립니다!</h3>
                         </div>
@@ -711,11 +963,6 @@
                 <li> <!--감사제 배너 4-->
                     <div class="card">
                         <div class="title">
-                            <!-- <div class="title-tag">
-                                <div class="logo-icon">
-                                    <img src="img/shop-img/EventZone/samsung.png" alt="삼성 로고">
-                                </div>
-                            </div> -->
                             <h3>6월 신선특보,
                                 <br>준비는 제대로 하자!!</h3>
                         </div>
@@ -988,7 +1235,6 @@
                                 <img src="img/shop-img/dananan/banner2/sub-new1.png" alt="커뮤니티 이미지">
                             </div>
                             <div class="txt">
-                                <!-- <span>대작 게임이 떴다!</span> -->
                                 <h3>안트로픽 상장 전 고꾸라지다?</h3>
                             </div>
                         </li>
@@ -997,7 +1243,6 @@
                                 <img src="img/shop-img/dananan/banner2/sub-new2.png" alt="커뮤니티 이미지">
                             </div>
                             <div class="txt">
-                                <!-- <span>대작 게임이 떴다!</span> -->
                                 <h3>잃어버린 유저들의 민심, 과연?</h3>
                             </div>
                         </li>
@@ -1092,248 +1337,6 @@
                                     <path d="M1.16235 8.64292C0.849103 8.35324 1.01926 7.82955 1.44296 7.77931L7.44653 7.06722C7.61922 7.04674 7.76921 6.93831 7.84204 6.7804L10.3743 1.29061C10.553 0.903178 11.1038 0.903104 11.2825 1.29054L13.8147 6.78029C13.8875 6.93819 14.0365 7.04692 14.2092 7.0674L20.2131 7.77931C20.6368 7.82955 20.8065 8.35339 20.4933 8.64308L16.0552 12.7481C15.9275 12.8661 15.8707 13.0419 15.9045 13.2124L17.0824 19.1421C17.1656 19.5606 16.7202 19.8848 16.3479 19.6764L11.0725 16.7228C10.9208 16.6378 10.7365 16.6382 10.5847 16.7232L5.30883 19.6757C4.93652 19.8841 4.49033 19.5606 4.57349 19.1421L5.75154 13.2128C5.78543 13.0422 5.72873 12.8661 5.60106 12.748L1.16235 8.64292Z" stroke="#D4D4D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
                                 <span>4.7 / 5.0</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li> <!-- 네번째 상품-->
-                        <div class="Thumbnail">
-                            <img src="img/shop-img/dananan/banner2/push2.png" alt="맞춤형 상품 이미지">
-                        </div>
-                        <h2>AMD 라이젠 5 (Ryzen 5) 5600X 멀티팩</h2>
-                        <div class="price">
-                            <h1>185,000원</h1>
-                            <div class="Reviews">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 22 21" fill="none">
-                                    <path d="M1.16235 8.64292C0.849103 8.35324 1.01926 7.82955 1.44296 7.77931L7.44653 7.06722C7.61922 7.04674 7.76921 6.93831 7.84204 6.7804L10.3743 1.29061C10.553 0.903178 11.1038 0.903104 11.2825 1.29054L13.8147 6.78029C13.8875 6.93819 14.0365 7.04692 14.2092 7.0674L20.2131 7.77931C20.6368 7.82955 20.8065 8.35339 20.4933 8.64308L16.0552 12.7481C15.9275 12.8661 15.8707 13.0419 15.9045 13.2124L17.0824 19.1421C17.1656 19.5606 16.7202 19.8848 16.3479 19.6764L11.0725 16.7228C10.9208 16.6378 10.7365 16.6382 10.5847 16.7232L5.30883 19.6757C4.93652 19.8841 4.49033 19.5606 4.57349 19.1421L5.75154 13.2128C5.78543 13.0422 5.72873 12.8661 5.60106 12.748L1.16235 8.64292Z" stroke="#D4D4D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                                <span>4.9 / 5.0</span>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section class="car">
-            <div class="title">
-                <h2>진짜 드라이버가 되고 싶다면</h2>
-                <div class="more-view">
-                    <h4>더보기</h4>
-                    <div class="icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10" fill="none">
-                            <path d="M1 1L5 5L1 9" stroke="#737373" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </div>
-                </div>
-            </div>
-            <ul>
-                <li>
-                    <div class="Tumbnail">
-                        <img src="img/car/Rectangle 39.png" alt="카테고리 이미지">
-                    </div>
-                    <div class="title">
-                        <h3>품격을 만드는 2025 제네시스 TOP3</h3>
-                        <div class="icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="15" viewBox="0 0 21 15" fill="none">
-                                <path d="M20.7071 8.07088C21.0976 7.68035 21.0976 7.04719 20.7071 6.65666L14.3431 0.292702C13.9526 -0.0978227 13.3195 -0.0978227 12.9289 0.292702C12.5384 0.683226 12.5384 1.31639 12.9289 1.70692L18.5858 7.36377L12.9289 13.0206C12.5384 13.4111 12.5384 14.0443 12.9289 14.4348C13.3195 14.8254 13.9526 14.8254 14.3431 14.4348L20.7071 8.07088ZM0 7.36377V8.36377H20V7.36377V6.36377H0V7.36377Z" fill="white"/>
-                            </svg>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="Tumbnail">
-                        <img src="img/car/Rectangle 40.png" alt="카테고리 이미지">
-                    </div>
-                    <div class="title">
-                        <h3>전방향 모자라지 않는 육각형 드라이버</h3>
-                        <div class="icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="15" viewBox="0 0 21 15" fill="none">
-                                <path d="M20.7071 8.07088C21.0976 7.68035 21.0976 7.04719 20.7071 6.65666L14.3431 0.292702C13.9526 -0.0978227 13.3195 -0.0978227 12.9289 0.292702C12.5384 0.683226 12.5384 1.31639 12.9289 1.70692L18.5858 7.36377L12.9289 13.0206C12.5384 13.4111 12.5384 14.0443 12.9289 14.4348C13.3195 14.8254 13.9526 14.8254 14.3431 14.4348L20.7071 8.07088ZM0 7.36377V8.36377H20V7.36377V6.36377H0V7.36377Z" fill="white"/>
-                            </svg>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="Tumbnail">
-                        <img src="img/car/Rectangle 41.png" alt="카테고리 이미지">
-                    </div>
-                    <div class="title">
-                        <h3>2026년에는 다를 것이다, 부산 모터쇼</h3>
-                        <div class="icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="15" viewBox="0 0 21 15" fill="none">
-                                <path d="M20.7071 8.07088C21.0976 7.68035 21.0976 7.04719 20.7071 6.65666L14.3431 0.292702C13.9526 -0.0978227 13.3195 -0.0978227 12.9289 0.292702C12.5384 0.683226 12.5384 1.31639 12.9289 1.70692L18.5858 7.36377L12.9289 13.0206C12.5384 13.4111 12.5384 14.0443 12.9289 14.4348C13.3195 14.8254 13.9526 14.8254 14.3431 14.4348L20.7071 8.07088ZM0 7.36377V8.36377H20V7.36377V6.36377H0V7.36377Z" fill="white"/>
-                            </svg>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </section>
-        <section class="best-category">
-            <div class="title">
-                <h2>지금 가장 인기 있는 다나와 BEST</h2>
-                <h4>더보기</h4>
-                <div class="icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10" fill="none">
-                        <path d="M1 1L5 5L1 9" stroke="#737373" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </div>
-            </div>
-            <div class="tag">
-                <ul>
-                    <li><button class="tab-btn">전체</button></li>
-                    <li><button class="tab-btn">가전TV</button></li>
-                    <li><button class="tab-btn">컴퓨터 · 노트북</button></li>
-                    <li><button class="tab-btn">모바일 · 디카</button></li>
-                    <li><button class="tab-btn">스포츠 · 골프</button></li>
-                    <li><button class="tab-btn">자동차 · 자동차용품</button></li>
-                    <li><button class="tab-btn">가구 · 조명</button></li>
-                    <li><button class="tab-btn">식품 · 유아 · 완구</button></li>
-                    <li><button class="tab-btn">생활 · 주방 · 건강</button></li>
-                    <li><button class="tab-btn">패션 잡화 · 뷰티</button></li>
-                    <li><button class="tab-btn">반려동물 · 취미</button></li>
-                    <li><button class="tab-btn">로켓배송</button></li>
-                </ul>
-            </div>
-            <div class="content">
-                <ul>
-                    <li>
-                        <div class="Thumbnail">
-                            <img src="img/shop-img/under1.png" alt="베스트 상품 이미지">
-                        </div>
-                        <div class="txt">
-                            <h1>삼성전자 갤럭시 탭 S9 FE Wi-Fi 128GB</h1>
-                            <div class="price">
-                                <h2>12%</h2>
-                                <h3>569,000원</h3>
-                            </div>
-                            <div class="shopAndReview">
-                                <div class="shopping">
-                                    <div class="icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                            <path d="M15 15C13.8954 15 13 15.8954 13 17C13 18.1046 13.8954 19 15 19C16.1046 19 17 18.1046 17 17C17 15.8954 16.1046 15 15 15ZM15 15H7.29395C6.83288 15 6.60193 15 6.41211 14.918C6.24466 14.8456 6.09938 14.7291 5.99354 14.5805C5.8749 14.414 5.82719 14.1913 5.73274 13.7505L3.27148 2.26465C3.17484 1.81363 3.12587 1.58838 3.00586 1.41992C2.90002 1.27135 2.75477 1.15441 2.58732 1.08205C2.39746 1 2.16779 1 1.70653 1H1M4 4H16.8732C17.595 4 17.9555 4 18.1978 4.15036C18.41 4.28206 18.5653 4.48862 18.633 4.729C18.7104 5.00343 18.611 5.34996 18.411 6.04346L17.0264 10.8435C16.9068 11.2581 16.8469 11.465 16.7256 11.6189C16.6185 11.7547 16.4772 11.861 16.317 11.9263C16.1361 12 15.9211 12 15.4921 12H5.73047M6 19C4.89543 19 4 18.1046 4 17C4 15.8954 4.89543 15 6 15C7.10457 15 8 15.8954 8 17C8 18.1046 7.10457 19 6 19Z" stroke="#D4D4D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                        <span>163명 구매</span>
-                                    </div>
-                                </div>
-                                <div class="review">
-                                    <div class="icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 22 21" fill="none">
-                                            <path d="M1.16235 8.64292C0.849103 8.35324 1.01926 7.82955 1.44296 7.77931L7.44653 7.06722C7.61922 7.04674 7.76921 6.93831 7.84204 6.7804L10.3743 1.29061C10.553 0.903178 11.1038 0.903104 11.2825 1.29054L13.8147 6.78029C13.8875 6.93819 14.0365 7.04692 14.2092 7.0674L20.2131 7.77931C20.6368 7.82955 20.8065 8.35339 20.4933 8.64308L16.0552 12.7481C15.9275 12.8661 15.8707 13.0419 15.9045 13.2124L17.0824 19.1421C17.1656 19.5606 16.7202 19.8848 16.3479 19.6764L11.0725 16.7228C10.9208 16.6378 10.7365 16.6382 10.5847 16.7232L5.30883 19.6757C4.93652 19.8841 4.49033 19.5606 4.57349 19.1421L5.75154 13.2128C5.78543 13.0422 5.72873 12.8661 5.60106 12.748L1.16235 8.64292Z" stroke="#D4D4D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                        <span>3.6 / 5.0</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="Thumbnail">
-                            <img src="img/shop-img/under2.png" alt="베스트 상품 이미지">
-                        </div>
-                        <div class="txt">
-                            <h1>닌텐도 스위치 슈퍼 스매시브라더스 얼티밋</h1>
-                            <div class="price">
-                                <h2>9%</h2>
-                                <h3>64,800원</h3>
-                            </div>
-                            <div class="shopAndReview">
-                                <div class="shopping">
-                                    <div class="icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                            <path d="M15 15C13.8954 15 13 15.8954 13 17C13 18.1046 13.8954 19 15 19C16.1046 19 17 18.1046 17 17C17 15.8954 16.1046 15 15 15ZM15 15H7.29395C6.83288 15 6.60193 15 6.41211 14.918C6.24466 14.8456 6.09938 14.7291 5.99354 14.5805C5.8749 14.414 5.82719 14.1913 5.73274 13.7505L3.27148 2.26465C3.17484 1.81363 3.12587 1.58838 3.00586 1.41992C2.90002 1.27135 2.75477 1.15441 2.58732 1.08205C2.39746 1 2.16779 1 1.70653 1H1M4 4H16.8732C17.595 4 17.9555 4 18.1978 4.15036C18.41 4.28206 18.5653 4.48862 18.633 4.729C18.7104 5.00343 18.611 5.34996 18.411 6.04346L17.0264 10.8435C16.9068 11.2581 16.8469 11.465 16.7256 11.6189C16.6185 11.7547 16.4772 11.861 16.317 11.9263C16.1361 12 15.9211 12 15.4921 12H5.73047M6 19C4.89543 19 4 18.1046 4 17C4 15.8954 4.89543 15 6 15C7.10457 15 8 15.8954 8 17C8 18.1046 7.10457 19 6 19Z" stroke="#D4D4D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                        <span>63명 구매</span>
-                                    </div>
-                                </div>
-                                <div class="review">
-                                    <div class="icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 22 21" fill="none">
-                                            <path d="M1.16235 8.64292C0.849103 8.35324 1.01926 7.82955 1.44296 7.77931L7.44653 7.06722C7.61922 7.04674 7.76921 6.93831 7.84204 6.7804L10.3743 1.29061C10.553 0.903178 11.1038 0.903104 11.2825 1.29054L13.8147 6.78029C13.8875 6.93819 14.0365 7.04692 14.2092 7.0674L20.2131 7.77931C20.6368 7.82955 20.8065 8.35339 20.4933 8.64308L16.0552 12.7481C15.9275 12.8661 15.8707 13.0419 15.9045 13.2124L17.0824 19.1421C17.1656 19.5606 16.7202 19.8848 16.3479 19.6764L11.0725 16.7228C10.9208 16.6378 10.7365 16.6382 10.5847 16.7232L5.30883 19.6757C4.93652 19.8841 4.49033 19.5606 4.57349 19.1421L5.75154 13.2128C5.78543 13.0422 5.72873 12.8661 5.60106 12.748L1.16235 8.64292Z" stroke="#D4D4D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                        <span>3.6 / 5.0</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="Thumbnail">
-                            <img src="img/shop-img/under3.png" alt="베스트 상품 이미지">
-                        </div>
-                        <div class="txt">
-                            <h1>내추럴 원목 5단 인테리어 사다리 선반</h1>
-                            <div class="price">
-                                <h2>9%</h2>
-                                <h3>44,800원</h3>
-                            </div>
-                            <div class="shopAndReview">
-                                <div class="shopping">
-                                    <div class="icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                            <path d="M15 15C13.8954 15 13 15.8954 13 17C13 18.1046 13.8954 19 15 19C16.1046 19 17 18.1046 17 17C17 15.8954 16.1046 15 15 15ZM15 15H7.29395C6.83288 15 6.60193 15 6.41211 14.918C6.24466 14.8456 6.09938 14.7291 5.99354 14.5805C5.8749 14.414 5.82719 14.1913 5.73274 13.7505L3.27148 2.26465C3.17484 1.81363 3.12587 1.58838 3.00586 1.41992C2.90002 1.27135 2.75477 1.15441 2.58732 1.08205C2.39746 1 2.16779 1 1.70653 1H1M4 4H16.8732C17.595 4 17.9555 4 18.1978 4.15036C18.41 4.28206 18.5653 4.48862 18.633 4.729C18.7104 5.00343 18.611 5.34996 18.411 6.04346L17.0264 10.8435C16.9068 11.2581 16.8469 11.465 16.7256 11.6189C16.6185 11.7547 16.4772 11.861 16.317 11.9263C16.1361 12 15.9211 12 15.4921 12H5.73047M6 19C4.89543 19 4 18.1046 4 17C4 15.8954 4.89543 15 6 15C7.10457 15 8 15.8954 8 17C8 18.1046 7.10457 19 6 19Z" stroke="#D4D4D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                        <span>123명 구매</span>
-                                    </div>
-                                </div>
-                                <div class="review">
-                                    <div class="icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 22 21" fill="none">
-                                            <path d="M1.16235 8.64292C0.849103 8.35324 1.01926 7.82955 1.44296 7.77931L7.44653 7.06722C7.61922 7.04674 7.76921 6.93831 7.84204 6.7804L10.3743 1.29061C10.553 0.903178 11.1038 0.903104 11.2825 1.29054L13.8147 6.78029C13.8875 6.93819 14.0365 7.04692 14.2092 7.0674L20.2131 7.77931C20.6368 7.82955 20.8065 8.35339 20.4933 8.64308L16.0552 12.7481C15.9275 12.8661 15.8707 13.0419 15.9045 13.2124L17.0824 19.1421C17.1656 19.5606 16.7202 19.8848 16.3479 19.6764L11.0725 16.7228C10.9208 16.6378 10.7365 16.6382 10.5847 16.7232L5.30883 19.6757C4.93652 19.8841 4.49033 19.5606 4.57349 19.1421L5.75154 13.2128C5.78543 13.0422 5.72873 12.8661 5.60106 12.748L1.16235 8.64292Z" stroke="#D4D4D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                        <span>3.9 / 5.0</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="Thumbnail">
-                            <img src="img/shop-img/under4.png" alt="베스트 상품 이미지">
-                        </div>
-                        <div class="txt">
-                            <h1>NVIDIA 지포스 RTX 4090 파운더스 에디션</h1>
-                            <div class="price">
-                                <h2>12%</h2>
-                                <h3>159,000원</h3>
-                            </div>
-                            <div class="shopAndReview">
-                                <div class="shopping">
-                                    <div class="icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                            <path d="M15 15C13.8954 15 13 15.8954 13 17C13 18.1046 13.8954 19 15 19C16.1046 19 17 18.1046 17 17C17 15.8954 16.1046 15 15 15ZM15 15H7.29395C6.83288 15 6.60193 15 6.41211 14.918C6.24466 14.8456 6.09938 14.7291 5.99354 14.5805C5.8749 14.414 5.82719 14.1913 5.73274 13.7505L3.27148 2.26465C3.17484 1.81363 3.12587 1.58838 3.00586 1.41992C2.90002 1.27135 2.75477 1.15441 2.58732 1.08205C2.39746 1 2.16779 1 1.70653 1H1M4 4H16.8732C17.595 4 17.9555 4 18.1978 4.15036C18.41 4.28206 18.5653 4.48862 18.633 4.729C18.7104 5.00343 18.611 5.34996 18.411 6.04346L17.0264 10.8435C16.9068 11.2581 16.8469 11.465 16.7256 11.6189C16.6185 11.7547 16.4772 11.861 16.317 11.9263C16.1361 12 15.9211 12 15.4921 12H5.73047M6 19C4.89543 19 4 18.1046 4 17C4 15.8954 4.89543 15 6 15C7.10457 15 8 15.8954 8 17C8 18.1046 7.10457 19 6 19Z" stroke="#D4D4D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                        <span>123명 구매</span>
-                                    </div>
-                                </div>
-                                <div class="review">
-                                    <div class="icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 22 21" fill="none">
-                                            <path d="M1.16235 8.64292C0.849103 8.35324 1.01926 7.82955 1.44296 7.77931L7.44653 7.06722C7.61922 7.04674 7.76921 6.93831 7.84204 6.7804L10.3743 1.29061C10.553 0.903178 11.1038 0.903104 11.2825 1.29054L13.8147 6.78029C13.8875 6.93819 14.0365 7.04692 14.2092 7.0674L20.2131 7.77931C20.6368 7.82955 20.8065 8.35339 20.4933 8.64308L16.0552 12.7481C15.9275 12.8661 15.8707 13.0419 15.9045 13.2124L17.0824 19.1421C17.1656 19.5606 16.7202 19.8848 16.3479 19.6764L11.0725 16.7228C10.9208 16.6378 10.7365 16.6382 10.5847 16.7232L5.30883 19.6757C4.93652 19.8841 4.49033 19.5606 4.57349 19.1421L5.75154 13.2128C5.78543 13.0422 5.72873 12.8661 5.60106 12.748L1.16235 8.64292Z" stroke="#D4D4D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                        <span>4.1 / 5.0</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-                <div class="poster">
-                    <img src="img/shop-img/under-post.png" alt="베스트 상품 이미지">
-                </div>
-            </div>
-        </section>
-        <section class="marquee">
-            <div class="marquee-track">
-                <img src="img/marquee/danawa-logo.svg" alt="다나와">
-                <img src="img/marquee/lg-logo.png" alt="LG">
-                <img src="img/marquee/youtube-logo.png" alt="YouTube">
-                <img src="img/marquee/coupang-logo.png" alt="Coupang">
-                <img src="img/marquee/samsung-logo.png" alt="Samsung">
-                <img src="img/marquee/lotte-logo.png" alt="Lotte">
-                <img src="img/marquee/danawa-logo.svg" alt="다나와">
-                <img src="img/marquee/lg-logo.png" alt="LG">
-                <img src="img/marquee/youtube-logo.png" alt="YouTube">
-                <img src="img/marquee/coupang-logo.png" alt="Coupang">
-                <img src="img/marquee/samsung-logo.png" alt="Samsung">
                 <img src="img/marquee/lotte-logo.png" alt="Lotte">
             </div>
         </section>
