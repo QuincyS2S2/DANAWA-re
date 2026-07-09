@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__b16a408a-1f17-47f5-9217-4938afdc8c3a__get_design_context"
+    ]
+  }
+}

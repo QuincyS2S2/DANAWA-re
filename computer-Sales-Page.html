@@ -1,0 +1,1532 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>컴퓨터 판매 - DANAWA</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="sub-page/sub-page-css.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="javaScript" href="js/script.js">
+</head>
+<body>
+    <header>
+        <div class="top-header">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo/danawa-logo-big.png" alt="DANAWA Logo">
+                </a>
+            </div>
+            <form class="search-box" action="search" method="GET">
+                <input type="search" name="query" placeholder="그래픽 카드 최저가" class="search-input">
+                <svg class="search-arrow" xmlns="http://www.w3.org/2000/svg" width="13" height="11" viewBox="0 0 13 11" fill="none">
+                    <path d="M6.06213 10.5L-4.39048e-05 -1.88258e-07L12.1243 8.71687e-07L6.06213 10.5Z" fill="#61BD14"/>
+                </svg>
+                <button type="submit" class="search-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#5FBC12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M21 21L16.7 16.7" stroke="#5FBC12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </form>
+            <div class="sub-menu-icon">
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+                    <path d="M28.3333 29.75C28.3333 25.838 23.2592 22.6667 17 22.6667C10.7407 22.6667 5.66663 25.838 5.66663 29.75M17 18.4167C13.0879 18.4167 9.91663 15.2454 9.91663 11.3333C9.91663 7.42132 13.0879 4.25 17 4.25C20.912 4.25 24.0833 7.42132 24.0833 11.3333C24.0833 15.2454 20.912 18.4167 17 18.4167Z" stroke="#404040" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+                        <path d="M17 9.91667V17H24.0833M17 29.75C9.95837 29.75 4.25 24.0416 4.25 17C4.25 9.95837 9.95837 4.25 17 4.25C24.0416 4.25 29.75 9.95837 29.75 17C29.75 24.0416 24.0416 29.75 17 29.75Z" stroke="#404040" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+                        <path d="M27.2528 8.83627C29.4439 11.0273 29.5278 14.553 27.4434 16.8459L16.9993 28.3335L6.5565 16.8458C4.47212 14.553 4.55607 11.0273 6.74714 8.8362C9.19361 6.38973 13.2228 6.61328 15.3841 9.31495L17 11.3341L18.6145 9.31472C20.7758 6.61305 24.8064 6.38981 27.2528 8.83627Z" stroke="#404040" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        
+        <section class="shop-wrap">
+
+            <!--영역의 상단-->
+            <div class="product-top">
+
+                <div class="top-main">
+
+                    <div class="name-header"> <!--최상단 이름-->
+
+                        <!--nav 영역-->
+                        <div class="nav-wrap">
+                            <div class="view-all">
+                                <div class="hamburger">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                                    <path d="M5.4165 18.4166H20.5832M5.4165 12.9999H20.5832M5.4165 7.58325H20.5832" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <div class="menu-head">
+                                    <h4>전체</h4>
+                                </div>
+                            </div>
+                            <nav>
+                                <ul>
+                                    <li>
+                                        <p>홈</p>
+                                    </li>
+                                    <li class="select-nav">
+                                        <div class="custom-select">
+                                            <div class="select-trigger">
+                                                <p>컴퓨터</p>
+                                                <div class="icon-button">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                        <path d="M16 10L12 14L8 10" stroke="#737373" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <ul class="dropdown">
+                                                <li><a href="#">노트북</a></li>
+                                                <li><a href="#">태블릿</a></li>
+                                                <li><a href="#">모니터</a></li>
+                                                <li><a href="#">키보드/마우스</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="select-nav">
+                                        <div class="custom-select">
+                                            <div class="select-trigger">
+                                                <p>조립PC</p>
+                                                <div class="icon-button">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                        <path d="M16 10L12 14L8 10" stroke="#737373" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <ul class="dropdown">
+                                                <li><a href="#">게이밍 PC</a></li>
+                                                <li><a href="#">사무용 PC</a></li>
+                                                <li><a href="#">미니 PC</a></li>
+                                                <li><a href="#">워크스테이션</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="select-nav">
+                                        <div class="custom-select">
+                                            <div class="select-trigger">
+                                                <p>데스크탑</p>
+                                                <div class="icon-button">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                        <path d="M16 10L12 14L8 10" stroke="#737373" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <ul class="dropdown">
+                                                <li><a href="#">삼성 데스크탑</a></li>
+                                                <li><a href="#">LG 데스크탑</a></li>
+                                                <li><a href="#">애플 맥</a></li>
+                                                <li><a href="#">기타 브랜드</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                        <!--제품 이름 및 통합 정보-->
+                        <div class="title-wrap">
+                            <div class="title">
+                                <h2><a href="#">포유컴퓨터 퍼포먼스PC 47 R5 7500F RTX5060Ti (32GB, M.2 1TB) </a></h2>
+                            </div>
+                            <div class="Detailed-Information">
+                                <div class="Information-text">
+                                    <h4>스팩</h4>
+                                    <span>AMD 라이젠5 라파엘 7500F · AMD B650 · DDR5 32GB · M.2 1TB · RTX 5060 Ti · 700W 파워서플라이 · 1Gbps 유선 · HDMI · DP포트 · 미들타워 어항형 · LED쿨러 · OS미포함</span>
+                                </div>
+                                <div class="Compare-button">
+                                    <button class="AI-Compare">
+                                        <div class="icon-ai">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                            <path d="M8.42184 0.190102C8.5304 -0.0632118 8.88952 -0.063212 8.99808 0.190101C10.5834 3.88922 13.531 6.83675 17.2301 8.42209C17.4834 8.53065 17.4834 8.88977 17.2301 8.99833C13.531 10.5837 10.5834 13.5312 8.99808 17.2303C8.88952 17.4836 8.5304 17.4836 8.42184 17.2303C6.8365 13.5312 3.88897 10.5837 0.189852 8.99833C-0.0634612 8.88977 -0.0634617 8.53065 0.189852 8.42209C3.88897 6.83675 6.8365 3.88922 8.42184 0.190102Z" fill="white"/>
+                                            </svg>
+                                        </div>
+                                        <p>AI 상품 비교</p>
+                                        <div class="icon-next"> <!-- > 버튼 아이콘-->
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path d="M9 5L16 12L9 19" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                    </button>
+                                    <button class="user-Compare">
+                                        <p>사용자 상품 비교</p>
+                                        <div class="icon-next"> <!-- > 버튼 아이콘-->
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path d="M9 5L16 12L9 19" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!--제품 이미지 및 가격-->
+                    <div class="top-item-wrap">
+                        <div class="img-wrap">
+                            <div class="main-img">
+                                <div class="img-box">
+                                    <img src="img/sub/main-img/main.png" alt="main-img">
+                                </div>
+                            </div>
+                            <div class="sub-img">
+                                <div class="img-box-sub">
+                                    <img src="img/sub/main-img/sub(1).png" alt="sub-img">
+                                </div>
+                                <div class="img-box-sub">
+                                    <img src="img/sub/main-img/sub(2).png" alt="sub-img">
+                                </div>
+                                <div class="img-box-sub">
+                                    <img src="img/sub/main-img/sub(3).png" alt="sub-img">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--최저가 및 가격 구매까지 정보-->
+                        <div class="info-wrap">
+                            <div class="Price-Container">
+                                <div class="Price-ChangeContainer">
+                                    <div class="Price-Info-Container"> <!--가격 정보 및 분석 -->
+                                        <div class="Header-Container">
+                                            <div class="Title-Container">
+                                                <span>최저가</span>
+                                                <div class="Highlight-Container">
+                                                    <span>HERO</span>
+                                                </div>
+                                            </div>
+                                            <div class="Price-Container">
+                                                <h1>1,709,560</h1>
+                                                <span>원</span>
+                                            </div>
+                                        </div>
+                                        <div class="Monthly-Info-Container">
+                                            <div class="Accordion-Item is-open"> <!--가격 상승 분석-->
+                                                <button type="button" class="Monthly-Change-Container">
+                                                    <div class="Monthly-Change-Details">
+                                                        <div class="Monthly-Change-Info">
+                                                            <div class="Monthly-Icon">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                    <path d="M3 17L9 11L13 15L21 7" stroke="#404040" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    <path d="M16 7H21V12" stroke="#404040" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                </svg>
+                                                            </div>
+                                                            <p>지난달 대비</p>
+                                                        </div>
+                                                        <p class="price-change-value">+19,642원</p>
+                                                    </div>
+                                                    <div class="Chevron-Icon">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                            <path d="M19 9L12 16L5 9" stroke="#A3A3A3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>
+                                                    </div>
+                                                </button>
+                                                <div class="Expanded-Content">
+                                                    <p class="Trend-Text">3개월동안 가격이 <span>올라가고 있는</span> 추세입니다.</p>
+                                                    <ul class="Period-Tabs">
+                                                        <li class="active"><button type="button">1개월</button></li>
+                                                        <li><button type="button">3개월</button></li>
+                                                        <li><button type="button">6개월</button></li>
+                                                        <li><button type="button">12개월</button></li>
+                                                        <li><button type="button">24개월</button></li>
+                                                    </ul>
+                                                    <div class="Chart-Wrapper" style="position: relative; width: 100%; height: 150px;">
+                                                        <canvas id="priceTrendChart"></canvas>
+                                                    </div>
+                                                    <div class="Chart-Dates">
+                                                        <span>26.06.09</span>
+                                                        <span>26.06.23</span>
+                                                        <span>현재</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="Accordion-Item"> <!--AI 분석-->
+                                                <button type="button" class="Ai-Trigger">
+                                                    <div class="Ai-Details">
+                                                        <div class="Ai-Analysis-Info">
+                                                            <div class="Ai-Icon">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 18 18" fill="none">
+                                                                    <path d="M8.42184 0.190102C8.5304 -0.0632118 8.88952 -0.063212 8.99808 0.190101C10.5834 3.88922 13.531 6.83675 17.2301 8.42209C17.4834 8.53065 17.4834 8.88977 17.2301 8.99833C13.531 10.5837 10.5834 13.5312 8.99808 17.2303C8.88952 17.4836 8.5304 17.4836 8.42184 17.2303C6.8365 13.5312 3.88897 10.5837 0.189852 8.99833C-0.0634612 8.88977 -0.0634617 8.53065 0.189852 8.42209C3.88897 6.83675 6.8365 3.88922 8.42184 0.190102Z" fill="#61BD14"/>
+                                                                </svg>
+                                                            </div>
+                                                            <p>AI 분석</p>
+                                                        </div>
+                                                        <p class="price-change-value">다음달 가격 상승 예상</p>
+                                                    </div>
+                                                    <div class="Chevron-Icon">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                            <path d="M19 9L12 16L5 9" stroke="#A3A3A3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>
+                                                    </div>
+                                                </button>
+                                                <div class="Expanded-Content">
+                                                    <p class="Trend-Text">AI 분석 결과, <span>다음달 가격이 상승</span>할 것으로 예상됩니다.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="Vendor-Price-Container">
+                                        <!-- <div class="Vendor-Price-Info-Container">
+                                        </div> -->
+                                        <div class="VendorPricesContainer">
+                                            <div class="VendorPriceInfoContainer">
+                                                <h1>쇼핑몰별 최저가 안내</h1>
+                                                <span>모두 보기</span>
+                                            </div>
+                                            <ul>
+                                                <li class="VendorPriceItem"> <!--g마켓 1등-->
+                                                    <a href="#">
+                                                    <div class="logo-img">
+                                                        <img src="img/sub/main-img/logo/gmarket.png" alt="gmarket"> 
+                                                    </div>
+                                                    <div class="Vendor-Price-Detail-Container">
+                                                        <span class="label">최저가</span>
+                                                        <p class="best-item">1,370,590원</p>
+                                                    </div>
+                                                    <div class="FreeDeliveryContainer">
+                                                        <!-- <div class="icon-delivery">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                <path d="M2 7V6C1.44772 6 1 6.44772 1 7H2ZM13 7H14C14 6.44772 13.5523 6 13 6V7ZM13 9V8C12.7348 8 12.4804 8.10536 12.2929 8.29289C12.1054 8.48043 12 8.73478 12 9H13ZM2 7V8H13V7V6H2V7ZM13 7H12V19H13H14V7H13ZM2 17H3V7H2H1V17H2ZM13 9V10H18V9V8H13V9ZM22 13H21V17H22H23V13H22ZM13 19H14L14 9L13 9H12L12 19H13ZM19.4142 20.4142L18.7071 19.7071C18.3166 20.0976 17.6834 20.0976 17.2929 19.7071L16.5858 20.4142L15.8787 21.1213C17.0503 22.2929 18.9497 22.2929 20.1213 21.1213L19.4142 20.4142ZM16.5858 17.5858L17.2929 18.2929C17.6834 17.9024 18.3166 17.9024 18.7071 18.2929L19.4142 17.5858L20.1213 16.8787C18.9497 15.7071 17.0503 15.7071 15.8787 16.8787L16.5858 17.5858ZM7.41421 20.4142L6.70711 19.7071C6.31658 20.0976 5.68342 20.0976 5.29289 19.7071L4.58579 20.4142L3.87868 21.1213C5.05025 22.2929 6.94975 22.2929 8.12132 21.1213L7.41421 20.4142ZM4.58579 17.5858L5.29289 18.2929C5.68342 17.9024 6.31658 17.9024 6.70711 18.2929L7.41421 17.5858L8.12132 16.8787C6.94975 15.7071 5.05025 15.7071 3.87868 16.8787L4.58579 17.5858ZM19.4142 17.5858L18.7071 18.2929C18.9026 18.4884 19 18.7425 19 19H20H21C21 18.2338 20.7069 17.4643 20.1213 16.8787L19.4142 17.5858ZM20 19H19C19 19.2575 18.9026 19.5116 18.7071 19.7071L19.4142 20.4142L20.1213 21.1213C20.7069 20.5357 21 19.7662 21 19H20ZM16 19V18H13V19V20H16V19ZM16.5858 20.4142L17.2929 19.7071C17.0974 19.5116 17 19.2575 17 19H16H15C15 19.7662 15.2931 20.5357 15.8787 21.1213L16.5858 20.4142ZM16 19H17C17 18.7425 17.0974 18.4884 17.2929 18.2929L16.5858 17.5858L15.8787 16.8787C15.2931 17.4643 15 18.2338 15 19H16ZM4.58579 20.4142L5.29289 19.7071C5.09744 19.5116 5 19.2575 5 19H4H3C3 19.7662 3.29309 20.5357 3.87868 21.1213L4.58579 20.4142ZM4 19H5C5 18.7425 5.09744 18.4884 5.29289 18.2929L4.58579 17.5858L3.87868 16.8787C3.29309 17.4643 3 18.2338 3 19H4ZM13 19V18H8V19V20H13V19ZM7.41421 17.5858L6.70711 18.2929C6.90256 18.4884 7 18.7425 7 19H8H9C9 18.2338 8.70691 17.4643 8.12132 16.8787L7.41421 17.5858ZM8 19H7C7 19.2575 6.90256 19.5116 6.70711 19.7071L7.41421 20.4142L8.12132 21.1213C8.70691 20.5357 9 19.7662 9 19H8ZM22 17H21C21 17.5523 20.5523 18 20 18V19V20C21.6569 20 23 18.6569 23 17H22ZM18 9V10C19.6569 10 21 11.3431 21 13H22H23C23 10.2386 20.7614 8 18 8V9ZM2 17H1C1 18.6569 2.34315 20 4 20V19V18C3.44772 18 3 17.5523 3 17H2Z" fill="#737373"/>
+                                                                <path d="M3.5 4C3.5 3.44772 3.94772 3 4.5 3C6.15685 3 7.5 4.34315 7.5 6V7H6.5C4.84315 7 3.5 5.65685 3.5 4Z" stroke="#737373" stroke-width="2" stroke-linejoin="round"/>
+                                                                <path d="M11.5 4C11.5 3.44772 11.0523 3 10.5 3C8.84315 3 7.5 4.34315 7.5 6V7H8.5C10.1569 7 11.5 5.65685 11.5 4Z" stroke="#737373" stroke-width="2" stroke-linejoin="round"/>
+                                                            </svg>
+                                                        </div> -->
+                                                        <span>무료 배송</span>
+                                                    </div>
+                                                    <div class="InstallmentText">
+                                                        <p>최대 16개월</p>
+                                                    </div>
+                                                    </a>
+                                                </li>
+                                                <li class="VendorPriceItem"> <!--11번가 2등-->
+                                                    <a href="#">
+                                                    <div class="logo-img">
+                                                        <img src="img/sub/main-img/logo/11.png" alt="11번가"> 
+                                                    </div>
+                                                    <div class="Vendor-Price-Detail-Container">
+                                                        <p>1,510,590원</p>
+                                                    </div>
+                                                    <div class="FreeDeliveryContainer">
+                                                        <!-- <div class="icon-delivery">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                <path d="M2 7V6C1.44772 6 1 6.44772 1 7H2ZM13 7H14C14 6.44772 13.5523 6 13 6V7ZM13 9V8C12.7348 8 12.4804 8.10536 12.2929 8.29289C12.1054 8.48043 12 8.73478 12 9H13ZM2 7V8H13V7V6H2V7ZM13 7H12V19H13H14V7H13ZM2 17H3V7H2H1V17H2ZM13 9V10H18V9V8H13V9ZM22 13H21V17H22H23V13H22ZM13 19H14L14 9L13 9H12L12 19H13ZM19.4142 20.4142L18.7071 19.7071C18.3166 20.0976 17.6834 20.0976 17.2929 19.7071L16.5858 20.4142L15.8787 21.1213C17.0503 22.2929 18.9497 22.2929 20.1213 21.1213L19.4142 20.4142ZM16.5858 17.5858L17.2929 18.2929C17.6834 17.9024 18.3166 17.9024 18.7071 18.2929L19.4142 17.5858L20.1213 16.8787C18.9497 15.7071 17.0503 15.7071 15.8787 16.8787L16.5858 17.5858ZM7.41421 20.4142L6.70711 19.7071C6.31658 20.0976 5.68342 20.0976 5.29289 19.7071L4.58579 20.4142L3.87868 21.1213C5.05025 22.2929 6.94975 22.2929 8.12132 21.1213L7.41421 20.4142ZM4.58579 17.5858L5.29289 18.2929C5.68342 17.9024 6.31658 17.9024 6.70711 18.2929L7.41421 17.5858L8.12132 16.8787C6.94975 15.7071 5.05025 15.7071 3.87868 16.8787L4.58579 17.5858ZM19.4142 17.5858L18.7071 18.2929C18.9026 18.4884 19 18.7425 19 19H20H21C21 18.2338 20.7069 17.4643 20.1213 16.8787L19.4142 17.5858ZM20 19H19C19 19.2575 18.9026 19.5116 18.7071 19.7071L19.4142 20.4142L20.1213 21.1213C20.7069 20.5357 21 19.7662 21 19H20ZM16 19V18H13V19V20H16V19ZM16.5858 20.4142L17.2929 19.7071C17.0974 19.5116 17 19.2575 17 19H16H15C15 19.7662 15.2931 20.5357 15.8787 21.1213L16.5858 20.4142ZM16 19H17C17 18.7425 17.0974 18.4884 17.2929 18.2929L16.5858 17.5858L15.8787 16.8787C15.2931 17.4643 15 18.2338 15 19H16ZM4.58579 20.4142L5.29289 19.7071C5.09744 19.5116 5 19.2575 5 19H4H3C3 19.7662 3.29309 20.5357 3.87868 21.1213L4.58579 20.4142ZM4 19H5C5 18.7425 5.09744 18.4884 5.29289 18.2929L4.58579 17.5858L3.87868 16.8787C3.29309 17.4643 3 18.2338 3 19H4ZM13 19V18H8V19V20H13V19ZM7.41421 17.5858L6.70711 18.2929C6.90256 18.4884 7 18.7425 7 19H8H9C9 18.2338 8.70691 17.4643 8.12132 16.8787L7.41421 17.5858ZM8 19H7C7 19.2575 6.90256 19.5116 6.70711 19.7071L7.41421 20.4142L8.12132 21.1213C8.70691 20.5357 9 19.7662 9 19H8ZM22 17H21C21 17.5523 20.5523 18 20 18V19V20C21.6569 20 23 18.6569 23 17H22ZM18 9V10C19.6569 10 21 11.3431 21 13H22H23C23 10.2386 20.7614 8 18 8V9ZM2 17H1C1 18.6569 2.34315 20 4 20V19V18C3.44772 18 3 17.5523 3 17H2Z" fill="#737373"/>
+                                                                <path d="M3.5 4C3.5 3.44772 3.94772 3 4.5 3C6.15685 3 7.5 4.34315 7.5 6V7H6.5C4.84315 7 3.5 5.65685 3.5 4Z" stroke="#737373" stroke-width="2" stroke-linejoin="round"/>
+                                                                <path d="M11.5 4C11.5 3.44772 11.0523 3 10.5 3C8.84315 3 7.5 4.34315 7.5 6V7H8.5C10.1569 7 11.5 5.65685 11.5 4Z" stroke="#737373" stroke-width="2" stroke-linejoin="round"/>
+                                                            </svg>
+                                                        </div> -->
+                                                        <span>무료 배송</span>
+                                                    </div>
+                                                    <div class="InstallmentText">
+                                                        <p>최대 16개월</p>
+                                                    </div>
+                                                    </a>
+                                                </li>
+                                                <li class="VendorPriceItem"> <!--lotte 3등-->
+                                                    <a href="#">
+                                                    <div class="logo-img">
+                                                        <img src="img/sub/main-img/logo/lotte.png" alt="롯데"> 
+                                                    </div>
+                                                    <div class="Vendor-Price-Detail-Container">
+                                                        <p>1,179,200원</p>
+                                                    </div>
+                                                    <div class="FreeDeliveryContainer">
+                                                        <!-- <div class="icon-delivery">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                <path d="M2 7V6C1.44772 6 1 6.44772 1 7H2ZM13 7H14C14 6.44772 13.5523 6 13 6V7ZM13 9V8C12.7348 8 12.4804 8.10536 12.2929 8.29289C12.1054 8.48043 12 8.73478 12 9H13ZM2 7V8H13V7V6H2V7ZM13 7H12V19H13H14V7H13ZM2 17H3V7H2H1V17H2ZM13 9V10H18V9V8H13V9ZM22 13H21V17H22H23V13H22ZM13 19H14L14 9L13 9H12L12 19H13ZM19.4142 20.4142L18.7071 19.7071C18.3166 20.0976 17.6834 20.0976 17.2929 19.7071L16.5858 20.4142L15.8787 21.1213C17.0503 22.2929 18.9497 22.2929 20.1213 21.1213L19.4142 20.4142ZM16.5858 17.5858L17.2929 18.2929C17.6834 17.9024 18.3166 17.9024 18.7071 18.2929L19.4142 17.5858L20.1213 16.8787C18.9497 15.7071 17.0503 15.7071 15.8787 16.8787L16.5858 17.5858ZM7.41421 20.4142L6.70711 19.7071C6.31658 20.0976 5.68342 20.0976 5.29289 19.7071L4.58579 20.4142L3.87868 21.1213C5.05025 22.2929 6.94975 22.2929 8.12132 21.1213L7.41421 20.4142ZM4.58579 17.5858L5.29289 18.2929C5.68342 17.9024 6.31658 17.9024 6.70711 18.2929L7.41421 17.5858L8.12132 16.8787C6.94975 15.7071 5.05025 15.7071 3.87868 16.8787L4.58579 17.5858ZM19.4142 17.5858L18.7071 18.2929C18.9026 18.4884 19 18.7425 19 19H20H21C21 18.2338 20.7069 17.4643 20.1213 16.8787L19.4142 17.5858ZM20 19H19C19 19.2575 18.9026 19.5116 18.7071 19.7071L19.4142 20.4142L20.1213 21.1213C20.7069 20.5357 21 19.7662 21 19H20ZM16 19V18H13V19V20H16V19ZM16.5858 20.4142L17.2929 19.7071C17.0974 19.5116 17 19.2575 17 19H16H15C15 19.7662 15.2931 20.5357 15.8787 21.1213L16.5858 20.4142ZM16 19H17C17 18.7425 17.0974 18.4884 17.2929 18.2929L16.5858 17.5858L15.8787 16.8787C15.2931 17.4643 15 18.2338 15 19H16ZM4.58579 20.4142L5.29289 19.7071C5.09744 19.5116 5 19.2575 5 19H4H3C3 19.7662 3.29309 20.5357 3.87868 21.1213L4.58579 20.4142ZM4 19H5C5 18.7425 5.09744 18.4884 5.29289 18.2929L4.58579 17.5858L3.87868 16.8787C3.29309 17.4643 3 18.2338 3 19H4ZM13 19V18H8V19V20H13V19ZM7.41421 17.5858L6.70711 18.2929C6.90256 18.4884 7 18.7425 7 19H8H9C9 18.2338 8.70691 17.4643 8.12132 16.8787L7.41421 17.5858ZM8 19H7C7 19.2575 6.90256 19.5116 6.70711 19.7071L7.41421 20.4142L8.12132 21.1213C8.70691 20.5357 9 19.7662 9 19H8ZM22 17H21C21 17.5523 20.5523 18 20 18V19V20C21.6569 20 23 18.6569 23 17H22ZM18 9V10C19.6569 10 21 11.3431 21 13H22H23C23 10.2386 20.7614 8 18 8V9ZM2 17H1C1 18.6569 2.34315 20 4 20V19V18C3.44772 18 3 17.5523 3 17H2Z" fill="#737373"/>
+                                                                <path d="M3.5 4C3.5 3.44772 3.94772 3 4.5 3C6.15685 3 7.5 4.34315 7.5 6V7H6.5C4.84315 7 3.5 5.65685 3.5 4Z" stroke="#737373" stroke-width="2" stroke-linejoin="round"/>
+                                                                <path d="M11.5 4C11.5 3.44772 11.0523 3 10.5 3C8.84315 3 7.5 4.34315 7.5 6V7H8.5C10.1569 7 11.5 5.65685 11.5 4Z" stroke="#737373" stroke-width="2" stroke-linejoin="round"/>
+                                                            </svg>
+                                                        </div> -->
+                                                        <span>무료 배송</span>
+                                                    </div>
+                                                    <div class="InstallmentText">
+                                                        <p>최대 16개월</p>
+                                                    </div>
+                                                    </a>
+                                                </li>
+                                                <li class="VendorPriceItem"> <!--naver 4등-->
+                                                    <a href="#">
+                                                    <div class="logo-img">
+                                                        <img src="img/sub/main-img/logo/naver.png" alt="네이버"> 
+                                                    </div>
+                                                    <div class="Vendor-Price-Detail-Container">
+                                                        <p>1,181,960원</p>
+                                                    </div>
+                                                    <div class="FreeDeliveryContainer">
+                                                        <!-- <div class="icon-delivery">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                <path d="M2 7V6C1.44772 6 1 6.44772 1 7H2ZM13 7H14C14 6.44772 13.5523 6 13 6V7ZM13 9V8C12.7348 8 12.4804 8.10536 12.2929 8.29289C12.1054 8.48043 12 8.73478 12 9H13ZM2 7V8H13V7V6H2V7ZM13 7H12V19H13H14V7H13ZM2 17H3V7H2H1V17H2ZM13 9V10H18V9V8H13V9ZM22 13H21V17H22H23V13H22ZM13 19H14L14 9L13 9H12L12 19H13ZM19.4142 20.4142L18.7071 19.7071C18.3166 20.0976 17.6834 20.0976 17.2929 19.7071L16.5858 20.4142L15.8787 21.1213C17.0503 22.2929 18.9497 22.2929 20.1213 21.1213L19.4142 20.4142ZM16.5858 17.5858L17.2929 18.2929C17.6834 17.9024 18.3166 17.9024 18.7071 18.2929L19.4142 17.5858L20.1213 16.8787C18.9497 15.7071 17.0503 15.7071 15.8787 16.8787L16.5858 17.5858ZM7.41421 20.4142L6.70711 19.7071C6.31658 20.0976 5.68342 20.0976 5.29289 19.7071L4.58579 20.4142L3.87868 21.1213C5.05025 22.2929 6.94975 22.2929 8.12132 21.1213L7.41421 20.4142ZM4.58579 17.5858L5.29289 18.2929C5.68342 17.9024 6.31658 17.9024 6.70711 18.2929L7.41421 17.5858L8.12132 16.8787C6.94975 15.7071 5.05025 15.7071 3.87868 16.8787L4.58579 17.5858ZM19.4142 17.5858L18.7071 18.2929C18.9026 18.4884 19 18.7425 19 19H20H21C21 18.2338 20.7069 17.4643 20.1213 16.8787L19.4142 17.5858ZM20 19H19C19 19.2575 18.9026 19.5116 18.7071 19.7071L19.4142 20.4142L20.1213 21.1213C20.7069 20.5357 21 19.7662 21 19H20ZM16 19V18H13V19V20H16V19ZM16.5858 20.4142L17.2929 19.7071C17.0974 19.5116 17 19.2575 17 19H16H15C15 19.7662 15.2931 20.5357 15.8787 21.1213L16.5858 20.4142ZM16 19H17C17 18.7425 17.0974 18.4884 17.2929 18.2929L16.5858 17.5858L15.8787 16.8787C15.2931 17.4643 15 18.2338 15 19H16ZM4.58579 20.4142L5.29289 19.7071C5.09744 19.5116 5 19.2575 5 19H4H3C3 19.7662 3.29309 20.5357 3.87868 21.1213L4.58579 20.4142ZM4 19H5C5 18.7425 5.09744 18.4884 5.29289 18.2929L4.58579 17.5858L3.87868 16.8787C3.29309 17.4643 3 18.2338 3 19H4ZM13 19V18H8V19V20H13V19ZM7.41421 17.5858L6.70711 18.2929C6.90256 18.4884 7 18.7425 7 19H8H9C9 18.2338 8.70691 17.4643 8.12132 16.8787L7.41421 17.5858ZM8 19H7C7 19.2575 6.90256 19.5116 6.70711 19.7071L7.41421 20.4142L8.12132 21.1213C8.70691 20.5357 9 19.7662 9 19H8ZM22 17H21C21 17.5523 20.5523 18 20 18V19V20C21.6569 20 23 18.6569 23 17H22ZM18 9V10C19.6569 10 21 11.3431 21 13H22H23C23 10.2386 20.7614 8 18 8V9ZM2 17H1C1 18.6569 2.34315 20 4 20V19V18C3.44772 18 3 17.5523 3 17H2Z" fill="#737373"/>
+                                                                <path d="M3.5 4C3.5 3.44772 3.94772 3 4.5 3C6.15685 3 7.5 4.34315 7.5 6V7H6.5C4.84315 7 3.5 5.65685 3.5 4Z" stroke="#737373" stroke-width="2" stroke-linejoin="round"/>
+                                                                <path d="M11.5 4C11.5 3.44772 11.0523 3 10.5 3C8.84315 3 7.5 4.34315 7.5 6V7H8.5C10.1569 7 11.5 5.65685 11.5 4Z" stroke="#737373" stroke-width="2" stroke-linejoin="round"/>
+                                                            </svg>
+                                                        </div> -->
+                                                        <span>무료 배송</span>
+                                                    </div>
+                                                    <div class="InstallmentText">
+                                                       <p>최대 24개월</p>
+                                                    </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="OtherConfigurationsContainer">
+                                    <div class="OtherConfigurationsHeader">
+                                        <h1>다른 구성</h1>
+                                        <span><a href="#">사용 중인 기기와 성능 비교하기</a></span>
+                                    </div>
+                                    <ul class="ConfigurationListContainer">
+                                            <li class="config-item-best-seller"> <!--판매 1위-->
+                                                <div class="ConfigurationSpecsContainer">
+                                                    <span>16GB</span>
+                                                    <span>M.2</span>
+                                                    <span>500GB</span>
+                                                </div>
+                                                <div class="ConfigurationPriceContainer">
+                                                    <p>1,370,590원</p>
+                                                    <span class="mall-count">5몰</span>
+                                                </div>
+                                                <div class="label">
+                                                    <span>판매 1위</span>
+                                                </div>
+                                            </li>
+                                            <li class="config-item">
+                                                <div class="ConfigurationSpecsContainer">
+                                                    <span>16GB</span>
+                                                    <span>M.2</span>
+                                                    <span>1TB</span>
+                                                </div>
+                                                <div class="ConfigurationPriceContainer">
+                                                    <p>1,543,410원</p>
+                                                    <span class="mall-count">5몰</span>
+                                                </div>
+                                            </li>
+                                            <li class="config-item">
+                                                <div class="ConfigurationSpecsContainer">
+                                                    <span>32GB</span>
+                                                    <span>M.2</span>
+                                                    <span>500GB</span>
+                                                </div>
+                                                <div class="ConfigurationPriceContainer">
+                                                    <p>1,643,410원</p>
+                                                    <span class="mall-count">2몰</span>
+                                                </div>
+                                            </li>
+                                            <li class="config-item sold-out">
+                                                <div class="ConfigurationSpecsContainer">
+                                                    <span>32GB</span>
+                                                    <span>M.2</span>
+                                                    <span>1TB</span>
+                                                </div>
+                                                <div class="ConfigurationPriceContainer">
+                                                    <p>1,727,190원</p>
+                                                    <span class="mall-count">0몰</span>
+                                                </div>
+                                            </li>
+                                            <li class="config-item">
+                                                <div class="ConfigurationSpecsContainer">
+                                                    <span>16GB</span>
+                                                    <span>M.2</span>
+                                                    <span>500GB</span>
+                                                </div>
+                                                <div class="ConfigurationPriceContainer">
+                                                    <p>1,921,360원</p>
+                                                    <span class="mall-count">3몰</span>
+                                                </div>
+                                            </li>
+                                            <li class="config-item">
+                                                <div class="ConfigurationSpecsContainer">
+                                                    <span>32GB</span>
+                                                    <span>M.2</span>
+                                                    <span>2TB</span>
+                                                </div>
+                                                <div class="ConfigurationPriceContainer">
+                                                    <p>2,043,410원</p>
+                                                    <span class="mall-count">3몰</span>
+                                                </div>
+                                            </li>
+                                            <li class="config-item">
+                                                <div class="ConfigurationSpecsContainer">
+                                                    <span>64GB</span>
+                                                    <span>M.2</span>
+                                                    <span>3TB</span>
+                                                </div>
+                                                <div class="ConfigurationPriceContainer">
+                                                    <p>2,194,990원</p>
+                                                    <span class="mall-count">3몰</span>
+                                                </div>
+                                            </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="BottomActionsContainer"> <!--하단 버튼-->
+                                <div class="BottomActionsHeader">
+                                    <button type="button" class="btn-lowest-price">최저가 구매하기</button>
+                                    <button type="button" class="btn-bulk-purchase">대량구매</button>
+                                </div>
+                                <div class="BottomActionsContainer-s">
+                                    <button type="button" class="FavoriteButtonContainer"> <!--찜-->
+                                        <div class="icon-1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                            <path d="M19.2373 6.23731C20.7839 7.78395 20.8432 10.2727 19.3718 11.8911L11.9995 20.0001L4.62812 11.8911C3.15679 10.2727 3.21605 7.7839 4.76269 6.23726C6.48961 4.51034 9.33372 4.66814 10.8594 6.5752L12 8.00045L13.1396 6.57504C14.6653 4.66798 17.5104 4.51039 19.2373 6.23731Z" stroke="#A3A3A3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                        <h3>찜하기</h3>
+                                    </button>
+                                    <button type="button" class="ShareButtonContainer"> <!--공유-->
+                                        <div class="icon-1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 18 20" fill="none" aria-hidden="true">
+                                            <path d="M13.2722 4.00791C13.6191 4.60134 14.263 5 15 5C16.1046 5 17 4.10457 17 3C17 1.89543 16.1046 1 15 1C13.8954 1 13 1.89543 13 3C13 3.36756 13.0991 3.71195 13.2722 4.00791ZM13.2722 4.00791L4.72784 8.99209M4.72784 8.99209C4.38092 8.39866 3.73701 8 3 8C1.89543 8 1 8.89543 1 10C1 11.1046 1.89543 12 3 12C3.73701 12 4.38092 11.6013 4.72784 11.0079M4.72784 8.99209C4.90085 9.28805 5 9.63244 5 10C5 10.3676 4.90085 10.712 4.72784 11.0079M4.72784 11.0079L13.2722 15.9921M13.2722 15.9921C13.6191 15.3987 14.263 15 15 15C16.1046 15 17 15.8954 17 17C17 18.1046 16.1046 19 15 19C13.8954 19 13 18.1046 13 17C13 16.6324 13.0991 16.288 13.2722 15.9921Z" stroke="#A3A3A3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                        <h3>공유하기</h3>
+                                    </button>
+                                    <button type="button" class="PrintButtonContainer"> <!--인쇄-->
+                                        <div class="icon-1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                            <path d="M8 18H6C4.89543 18 4 17.1046 4 16V7H20V16C20 17.1046 19.1046 18 18 18H16" stroke="#A3A3A3" stroke-width="2" stroke-linejoin="round"/>
+                                            <path d="M8 3H16V7H8V3Z" stroke="#A3A3A3" stroke-width="2" stroke-linejoin="round"/>
+                                            <path d="M12 11H8" stroke="#A3A3A3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M8 15H16V21H8V15Z" stroke="#A3A3A3" stroke-width="2" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                        <h3>인쇄</h3>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!--상단 리뷰 및 추천-->
+                <div class="ReviewSummary">
+                    <div class="ReviewContainer">
+                        <div class="RatingContainer">
+                            <h1>4점 이상의 리뷰가 <span>94%</span> 예요.</h1>
+                        </div>
+                        <ul class="ProductWrap">
+                            <li class="ProductReviewContainer"> <!--첫번째 리뷰-->
+                                <div class="img-wrap">
+                                    <img src="sub-page-img/Product Image.png" alt="제품 이미지">
+                                </div>
+                                <div class="ReviewContent">
+                                    <div class="Review-wrap">
+                                        <div class="ProductRatingContainer">
+                                            <div class="StarRatingContainer">
+                                                <div class="icon-1">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                    <path d="M2.33496 10.3368C2.02171 10.0471 2.19187 9.52339 2.61557 9.47316L8.61914 8.76107C8.79182 8.74059 8.94181 8.63215 9.01465 8.47425L11.5469 2.98446C11.7256 2.59703 12.2764 2.59695 12.4551 2.98439L14.9873 8.47413C15.0601 8.63204 15.2092 8.74077 15.3818 8.76124L21.3857 9.47316C21.8094 9.52339 21.9791 10.0472 21.6659 10.3369L17.2278 14.4419C17.1001 14.56 17.0433 14.7357 17.0771 14.9063L18.255 20.8359C18.3382 21.2544 17.8928 21.5787 17.5205 21.3703L12.2451 18.4166C12.0934 18.3317 11.9091 18.3321 11.7573 18.417L6.48144 21.3695C6.10913 21.5779 5.66294 21.2544 5.74609 20.8359L6.92414 14.9066C6.95803 14.7361 6.90134 14.5599 6.77367 14.4419L2.33496 10.3368Z" fill="#FFCC00"/>
+                                                    </svg>
+                                                </div>
+                                                <span>5점</span>
+                                            </div>
+                                            <div class="HighlighedFeatures">
+                                                <span>빨라요</span>
+                                                <div class="line"></div>
+                                                <span>정확해요</span>
+                                            </div>
+                                            <div class="BadgeIcon">
+                                                <img src="sub-page-img/logo/11.png">
+                                            </div>
+                                        </div>
+                                        <h2>16GB M.2 500GB 화이트</h2>
+                                    </div>
+                                    <p>아이가 이번에 성적을 좋게 받아와서 컴퓨터를 바꿔줬어요. 이제는 렉 없이 게임을 할 수 있다고 많이 좋아하네요.</p>
+                                </div>
+                            </li>
+                            <li class="ProductReviewContainer"> <!--두번째 리뷰-->
+                                <div class="img-wrap">
+                                    <img src="sub-page-img/Product Image-1.png" alt="제품 이미지">
+                                </div>
+                                <div class="ReviewContent">
+                                    <div class="Review-wrap">
+                                        <div class="ProductRatingContainer">
+                                            <div class="StarRatingContainer">
+                                                <div class="icon-1">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                    <path d="M2.33496 10.3368C2.02171 10.0471 2.19187 9.52339 2.61557 9.47316L8.61914 8.76107C8.79182 8.74059 8.94181 8.63215 9.01465 8.47425L11.5469 2.98446C11.7256 2.59703 12.2764 2.59695 12.4551 2.98439L14.9873 8.47413C15.0601 8.63204 15.2092 8.74077 15.3818 8.76124L21.3857 9.47316C21.8094 9.52339 21.9791 10.0472 21.6659 10.3369L17.2278 14.4419C17.1001 14.56 17.0433 14.7357 17.0771 14.9063L18.255 20.8359C18.3382 21.2544 17.8928 21.5787 17.5205 21.3703L12.2451 18.4166C12.0934 18.3317 11.9091 18.3321 11.7573 18.417L6.48144 21.3695C6.10913 21.5779 5.66294 21.2544 5.74609 20.8359L6.92414 14.9066C6.95803 14.7361 6.90134 14.5599 6.77367 14.4419L2.33496 10.3368Z" fill="#FFCC00"/>
+                                                    </svg>
+                                                </div>
+                                                <span>4점</span>
+                                            </div>
+                                            <div class="HighlighedFeatures">
+                                                <span>빨라요</span>
+                                                <div class="line"></div>
+                                                <span>정확해요</span>
+                                            </div>
+                                            <div class="BadgeIcon">
+                                                <img src="sub-page-img/logo/gmarket.png">
+                                            </div>
+                                        </div>
+                                        <h2>32GB M.2 500GB 화이트</h2>
+                                    </div>
+                                    <p>요즘 컴퓨터 램 가격이니 뭐니 이것저것 올라서 결국 다 따지면 머리 아파가지고 완제품으로 주문했습니다. 배송 빠르고 조립도 잘 되어 있고, 어디 하자 있는 부품도 없어서 좋았습니다. 번창하세요</p>
+                                </div>
+                            </li>
+                            <li class="ProductReviewContainer"> <!--세번째 리뷰-->
+                                <div class="img-wrap">
+                                    <img src="sub-page-img/Product Image-2.png" alt="제품 이미지">
+                                </div>
+                                <div class="ReviewContent">
+                                    <div class="Review-wrap">
+                                        <div class="ProductRatingContainer">
+                                            <div class="StarRatingContainer">
+                                                <div class="icon-1">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                    <path d="M2.33496 10.3368C2.02171 10.0471 2.19187 9.52339 2.61557 9.47316L8.61914 8.76107C8.79182 8.74059 8.94181 8.63215 9.01465 8.47425L11.5469 2.98446C11.7256 2.59703 12.2764 2.59695 12.4551 2.98439L14.9873 8.47413C15.0601 8.63204 15.2092 8.74077 15.3818 8.76124L21.3857 9.47316C21.8094 9.52339 21.9791 10.0472 21.6659 10.3369L17.2278 14.4419C17.1001 14.56 17.0433 14.7357 17.0771 14.9063L18.255 20.8359C18.3382 21.2544 17.8928 21.5787 17.5205 21.3703L12.2451 18.4166C12.0934 18.3317 11.9091 18.3321 11.7573 18.417L6.48144 21.3695C6.10913 21.5779 5.66294 21.2544 5.74609 20.8359L6.92414 14.9066C6.95803 14.7361 6.90134 14.5599 6.77367 14.4419L2.33496 10.3368Z" fill="#FFCC00"/>
+                                                    </svg>
+                                                </div>
+                                                <span>5점</span>
+                                            </div>
+                                            <div class="HighlighedFeatures">
+                                                <span>빨라요</span>
+                                                <div class="line"></div>
+                                                <span>정확해요</span>
+                                            </div>
+                                            <div class="BadgeIcon">
+                                                <img src="sub-page-img/logo/gmarket.png">
+                                            </div>
+                                        </div>
+                                        <h2>32GB M.2 500GB 화이트</h2>
+                                    </div>
+                                    <p>돈이 없는 내게 온 블랙프라이데이... 감사합니다...</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="ProductRecommendationContainer">
+                        <div class="SubheadingContainer">
+                            <h4>이런 상품 어때요?</h4>
+                            <span class="ad-label">광고</span>
+                        </div>
+                        <ul class="ad-wrap">
+                                <li> <!--첫번째 상품-->
+                                        <div class="ad-img">
+                                            <img src="sub-page-img/computer.png" alt="제품 이미지">
+                                            <div class="ad-ad-ad">
+                                                <span>1천 판매</span>
+                                            </div>
+                                        </div>
+                                        <div class="ad-text-wrap">
+                                            <h4>게이밍컴퓨터 조립PC AMD 라이젠 롤과 발로란트</h4>
+                                            <div class="ProductHighlight">
+                                                <div class="PriceContainer">
+                                                    <div class="cash">
+                                                        <h3>942,600원</h3>
+                                                    </div>
+                                                    <div class="VendorContainer">
+                                                        <span>바른컴퓨터</span>
+                                                        <div class="delivery-wrap">
+                                                            <div class="icon-2">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                                    <path d="M1.60352 4.53741V4.03741C1.32737 4.03741 1.10352 4.26127 1.10352 4.53741H1.60352ZM7.88367 4.53741H8.38367C8.38367 4.26127 8.15981 4.03741 7.88367 4.03741V4.53741ZM7.88367 5.62489V5.12489C7.75106 5.12489 7.62389 5.17757 7.53012 5.27133C7.43635 5.3651 7.38367 5.49228 7.38367 5.62489H7.88367ZM1.60352 4.53741V5.03741H7.88367V4.53741V4.03741H1.60352V4.53741ZM7.88367 4.53741H7.38367V11.0623H7.88367H8.38367V4.53741H7.88367ZM1.60352 9.9204H2.10352V4.53741H1.60352H1.10352V9.9204H1.60352ZM7.88367 5.62489V6.12489H9.39707V5.62489V5.12489H7.88367V5.62489ZM13.022 9.2498H12.522V9.9204H13.022H13.522V9.2498H13.022ZM7.88367 11.0623H8.38367L8.38367 5.62489H7.88367H7.38367L7.38367 11.0623H7.88367ZM11.5457 11.8312L11.2009 11.4691C10.9481 11.7099 10.5285 11.7099 10.2757 11.4691L9.93088 11.8312L9.58605 12.1933C10.2251 12.8019 11.2515 12.8019 11.8905 12.1933L11.5457 11.8312ZM9.93088 10.2933L10.2757 10.6554C10.5285 10.4146 10.9481 10.4146 11.2009 10.6554L11.5457 10.2933L11.8905 9.93122C11.2515 9.32263 10.2251 9.32263 9.58605 9.93122L9.93088 10.2933ZM4.69462 11.8312L4.34979 11.4691C4.09697 11.7099 3.67744 11.7099 3.42463 11.4691L3.0798 11.8312L2.73497 12.1933C3.374 12.8019 4.40042 12.8019 5.03944 12.1933L4.69462 11.8312ZM3.0798 10.2933L3.42463 10.6554C3.67744 10.4146 4.09697 10.4146 4.34979 10.6554L4.69462 10.2933L5.03944 9.93122C4.40042 9.32263 3.374 9.32263 2.73497 9.93122L3.0798 10.2933ZM11.5457 10.2933L11.2009 10.6554C11.3235 10.7722 11.3801 10.9191 11.3801 11.0623H11.8801H12.3801C12.3801 10.6488 12.2138 10.2391 11.8905 9.93122L11.5457 10.2933ZM11.8801 11.0623H11.3801C11.3801 11.2054 11.3235 11.3523 11.2009 11.4691L11.5457 11.8312L11.8905 12.1933C12.2138 11.8854 12.3801 11.4757 12.3801 11.0623H11.8801ZM9.59644 11.0623V10.5623H7.88367V11.0623V11.5623H9.59644V11.0623ZM9.93088 11.8312L10.2757 11.4691C10.1531 11.3523 10.0964 11.2054 10.0964 11.0623H9.59644H9.09644C9.09644 11.4757 9.26277 11.8854 9.58605 12.1933L9.93088 11.8312ZM9.59644 11.0623H10.0964C10.0964 10.9191 10.1531 10.7722 10.2757 10.6554L9.93088 10.2933L9.58605 9.93122C9.26277 10.2391 9.09644 10.6488 9.09644 11.0623H9.59644ZM3.0798 11.8312L3.42463 11.4691C3.30199 11.3523 3.24536 11.2054 3.24536 11.0623H2.74536H2.24536C2.24536 11.4757 2.41169 11.8854 2.73497 12.1933L3.0798 11.8312ZM2.74536 11.0623H3.24536C3.24536 10.9191 3.30199 10.7722 3.42463 10.6554L3.0798 10.2933L2.73497 9.93122C2.41169 10.2391 2.24536 10.6488 2.24536 11.0623H2.74536ZM7.88367 11.0623V10.5623H5.02905V11.0623V11.5623H7.88367V11.0623ZM4.69462 10.2933L4.34979 10.6554C4.47243 10.7722 4.52905 10.9191 4.52905 11.0623H5.02905H5.52905C5.52905 10.6488 5.36272 10.2391 5.03944 9.93122L4.69462 10.2933ZM5.02905 11.0623H4.52905C4.52905 11.2054 4.47243 11.3523 4.34979 11.4691L4.69462 11.8312L5.03944 12.1933C5.36272 11.8854 5.52905 11.4757 5.52905 11.0623H5.02905ZM13.022 9.9204H12.522C12.522 10.2749 12.2346 10.5623 11.8801 10.5623V11.0623V11.5623C12.7869 11.5623 13.522 10.8272 13.522 9.9204H13.022ZM9.39707 5.62489V6.12489C11.1229 6.12489 12.522 7.52396 12.522 9.2498H13.022H13.522C13.522 6.97167 11.6752 5.12489 9.39707 5.12489V5.62489ZM1.60352 9.9204H1.10352C1.10352 10.8272 1.8386 11.5623 2.74536 11.5623V11.0623V10.5623C2.39088 10.5623 2.10352 10.2749 2.10352 9.9204H1.60352Z" fill="#A3A3A3"/>
+                                                                    <path d="M2.87256 2.63436C2.87256 2.28401 3.15657 2 3.50692 2C4.55796 2 5.40999 2.85204 5.40999 3.90308V4.53744H4.77564C3.72459 4.53744 2.87256 3.6854 2.87256 2.63436Z" stroke="#A3A3A3" stroke-linejoin="round"/>
+                                                                    <path d="M7.94727 2.63436C7.94727 2.28401 7.66325 2 7.31291 2C6.26187 2 5.40983 2.85204 5.40983 3.90308V4.53744H6.04419C7.09523 4.53744 7.94727 3.6854 7.94727 2.63436Z" stroke="#A3A3A3" stroke-linejoin="round"/>
+                                                                </svg>
+                                                            </div>
+                                                            <span>무료배송</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="RatingContainer">
+                                                    <div class="icon-star">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                        <path d="M2.33496 10.3368C2.02171 10.0471 2.19187 9.52339 2.61557 9.47316L8.61914 8.76107C8.79182 8.74059 8.94181 8.63215 9.01465 8.47425L11.5469 2.98446C11.7256 2.59703 12.2764 2.59695 12.4551 2.98439L14.9873 8.47413C15.0601 8.63204 15.2092 8.74077 15.3818 8.76124L21.3857 9.47316C21.8094 9.52339 21.9791 10.0472 21.6659 10.3369L17.2278 14.4419C17.1001 14.56 17.0433 14.7357 17.0771 14.9063L18.255 20.8359C18.3382 21.2544 17.8928 21.5787 17.5205 21.3703L12.2451 18.4166C12.0934 18.3317 11.9091 18.3321 11.7573 18.417L6.48144 21.3695C6.10913 21.5779 5.66294 21.2544 5.74609 20.8359L6.92414 14.9066C6.95803 14.7361 6.90134 14.5599 6.77367 14.4419L2.33496 10.3368Z" fill="#FFCC00"/>
+                                                        </svg>
+                                                    </div>
+                                                    <span>4.2/5.0</span>
+                                                    <span>(999+)</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </li>
+                                <li> <!--두번째 상품-->
+                                        <div class="ad-img">
+                                            <img src="sub-page-img/computer-1.png" alt="제품 이미지">
+                                            <!-- <div class="Selling Point Container">
+                                                <span>1천 판매</span>
+                                            </div> -->
+                                        </div>
+                                        <div class="ad-text-wrap">
+                                            <h4>주연테크 긱스타 가성비 데스크탑 게임 조립PC</h4>
+                                            <div class="ProductHighlight">
+                                                <div class="PriceContainer">
+                                                    <div class="cash">
+                                                        <h3>1,299,000원</h3>
+                                                    </div>
+                                                    <div class="VendorContainer">
+                                                        <span>주연테크</span>
+                                                        <div class="delivery-wrap">
+                                                            <div class="icon-2">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                                    <path d="M1.60352 4.53741V4.03741C1.32737 4.03741 1.10352 4.26127 1.10352 4.53741H1.60352ZM7.88367 4.53741H8.38367C8.38367 4.26127 8.15981 4.03741 7.88367 4.03741V4.53741ZM7.88367 5.62489V5.12489C7.75106 5.12489 7.62389 5.17757 7.53012 5.27133C7.43635 5.3651 7.38367 5.49228 7.38367 5.62489H7.88367ZM1.60352 4.53741V5.03741H7.88367V4.53741V4.03741H1.60352V4.53741ZM7.88367 4.53741H7.38367V11.0623H7.88367H8.38367V4.53741H7.88367ZM1.60352 9.9204H2.10352V4.53741H1.60352H1.10352V9.9204H1.60352ZM7.88367 5.62489V6.12489H9.39707V5.62489V5.12489H7.88367V5.62489ZM13.022 9.2498H12.522V9.9204H13.022H13.522V9.2498H13.022ZM7.88367 11.0623H8.38367L8.38367 5.62489H7.88367H7.38367L7.38367 11.0623H7.88367ZM11.5457 11.8312L11.2009 11.4691C10.9481 11.7099 10.5285 11.7099 10.2757 11.4691L9.93088 11.8312L9.58605 12.1933C10.2251 12.8019 11.2515 12.8019 11.8905 12.1933L11.5457 11.8312ZM9.93088 10.2933L10.2757 10.6554C10.5285 10.4146 10.9481 10.4146 11.2009 10.6554L11.5457 10.2933L11.8905 9.93122C11.2515 9.32263 10.2251 9.32263 9.58605 9.93122L9.93088 10.2933ZM4.69462 11.8312L4.34979 11.4691C4.09697 11.7099 3.67744 11.7099 3.42463 11.4691L3.0798 11.8312L2.73497 12.1933C3.374 12.8019 4.40042 12.8019 5.03944 12.1933L4.69462 11.8312ZM3.0798 10.2933L3.42463 10.6554C3.67744 10.4146 4.09697 10.4146 4.34979 10.6554L4.69462 10.2933L5.03944 9.93122C4.40042 9.32263 3.374 9.32263 2.73497 9.93122L3.0798 10.2933ZM11.5457 10.2933L11.2009 10.6554C11.3235 10.7722 11.3801 10.9191 11.3801 11.0623H11.8801H12.3801C12.3801 10.6488 12.2138 10.2391 11.8905 9.93122L11.5457 10.2933ZM11.8801 11.0623H11.3801C11.3801 11.2054 11.3235 11.3523 11.2009 11.4691L11.5457 11.8312L11.8905 12.1933C12.2138 11.8854 12.3801 11.4757 12.3801 11.0623H11.8801ZM9.59644 11.0623V10.5623H7.88367V11.0623V11.5623H9.59644V11.0623ZM9.93088 11.8312L10.2757 11.4691C10.1531 11.3523 10.0964 11.2054 10.0964 11.0623H9.59644H9.09644C9.09644 11.4757 9.26277 11.8854 9.58605 12.1933L9.93088 11.8312ZM9.59644 11.0623H10.0964C10.0964 10.9191 10.1531 10.7722 10.2757 10.6554L9.93088 10.2933L9.58605 9.93122C9.26277 10.2391 9.09644 10.6488 9.09644 11.0623H9.59644ZM3.0798 11.8312L3.42463 11.4691C3.30199 11.3523 3.24536 11.2054 3.24536 11.0623H2.74536H2.24536C2.24536 11.4757 2.41169 11.8854 2.73497 12.1933L3.0798 11.8312ZM2.74536 11.0623H3.24536C3.24536 10.9191 3.30199 10.7722 3.42463 10.6554L3.0798 10.2933L2.73497 9.93122C2.41169 10.2391 2.24536 10.6488 2.24536 11.0623H2.74536ZM7.88367 11.0623V10.5623H5.02905V11.0623V11.5623H7.88367V11.0623ZM4.69462 10.2933L4.34979 10.6554C4.47243 10.7722 4.52905 10.9191 4.52905 11.0623H5.02905H5.52905C5.52905 10.6488 5.36272 10.2391 5.03944 9.93122L4.69462 10.2933ZM5.02905 11.0623H4.52905C4.52905 11.2054 4.47243 11.3523 4.34979 11.4691L4.69462 11.8312L5.03944 12.1933C5.36272 11.8854 5.52905 11.4757 5.52905 11.0623H5.02905ZM13.022 9.9204H12.522C12.522 10.2749 12.2346 10.5623 11.8801 10.5623V11.0623V11.5623C12.7869 11.5623 13.522 10.8272 13.522 9.9204H13.022ZM9.39707 5.62489V6.12489C11.1229 6.12489 12.522 7.52396 12.522 9.2498H13.022H13.522C13.522 6.97167 11.6752 5.12489 9.39707 5.12489V5.62489ZM1.60352 9.9204H1.10352C1.10352 10.8272 1.8386 11.5623 2.74536 11.5623V11.0623V10.5623C2.39088 10.5623 2.10352 10.2749 2.10352 9.9204H1.60352Z" fill="#A3A3A3"/>
+                                                                    <path d="M2.87256 2.63436C2.87256 2.28401 3.15657 2 3.50692 2C4.55796 2 5.40999 2.85204 5.40999 3.90308V4.53744H4.77564C3.72459 4.53744 2.87256 3.6854 2.87256 2.63436Z" stroke="#A3A3A3" stroke-linejoin="round"/>
+                                                                    <path d="M7.94727 2.63436C7.94727 2.28401 7.66325 2 7.31291 2C6.26187 2 5.40983 2.85204 5.40983 3.90308V4.53744H6.04419C7.09523 4.53744 7.94727 3.6854 7.94727 2.63436Z" stroke="#A3A3A3" stroke-linejoin="round"/>
+                                                                </svg>
+                                                            </div>
+                                                            <span>무료배송</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="RatingContainer">
+                                                    <div class="icon-star">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                        <path d="M2.33496 10.3368C2.02171 10.0471 2.19187 9.52339 2.61557 9.47316L8.61914 8.76107C8.79182 8.74059 8.94181 8.63215 9.01465 8.47425L11.5469 2.98446C11.7256 2.59703 12.2764 2.59695 12.4551 2.98439L14.9873 8.47413C15.0601 8.63204 15.2092 8.74077 15.3818 8.76124L21.3857 9.47316C21.8094 9.52339 21.9791 10.0472 21.6659 10.3369L17.2278 14.4419C17.1001 14.56 17.0433 14.7357 17.0771 14.9063L18.255 20.8359C18.3382 21.2544 17.8928 21.5787 17.5205 21.3703L12.2451 18.4166C12.0934 18.3317 11.9091 18.3321 11.7573 18.417L6.48144 21.3695C6.10913 21.5779 5.66294 21.2544 5.74609 20.8359L6.92414 14.9066C6.95803 14.7361 6.90134 14.5599 6.77367 14.4419L2.33496 10.3368Z" fill="#FFCC00"/>
+                                                        </svg>
+                                                    </div>
+                                                    <span>4.2/5.0</span>
+                                                    <span>(462)</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </li>
+                                <li> <!--세번째 상품-->
+                                        <div class="ad-img">
+                                            <img src="sub-page-img/computer-2.png" alt="제품 이미지">
+                                            <!-- <div class="Selling Point Container">
+                                                <span>1천 판매</span>
+                                            </div> -->
+                                        </div>
+                                        <div class="ad-text-wrap">
+                                            <h4>인텔 14세대 i5 14400F RTX5060Ti DDR5 게이밍</h4>
+                                            <div class="ProductHighlight">
+                                                <div class="PriceContainer">
+                                                    <div class="cash">
+                                                        <h3>1,855,000원</h3>
+                                                    </div>
+                                                    <div class="VendorContainer">
+                                                        <span>포유 컴퓨터</span>
+                                                        <div class="delivery-wrap">
+                                                            <div class="icon-2">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                                    <path d="M1.60352 4.53741V4.03741C1.32737 4.03741 1.10352 4.26127 1.10352 4.53741H1.60352ZM7.88367 4.53741H8.38367C8.38367 4.26127 8.15981 4.03741 7.88367 4.03741V4.53741ZM7.88367 5.62489V5.12489C7.75106 5.12489 7.62389 5.17757 7.53012 5.27133C7.43635 5.3651 7.38367 5.49228 7.38367 5.62489H7.88367ZM1.60352 4.53741V5.03741H7.88367V4.53741V4.03741H1.60352V4.53741ZM7.88367 4.53741H7.38367V11.0623H7.88367H8.38367V4.53741H7.88367ZM1.60352 9.9204H2.10352V4.53741H1.60352H1.10352V9.9204H1.60352ZM7.88367 5.62489V6.12489H9.39707V5.62489V5.12489H7.88367V5.62489ZM13.022 9.2498H12.522V9.9204H13.022H13.522V9.2498H13.022ZM7.88367 11.0623H8.38367L8.38367 5.62489H7.88367H7.38367L7.38367 11.0623H7.88367ZM11.5457 11.8312L11.2009 11.4691C10.9481 11.7099 10.5285 11.7099 10.2757 11.4691L9.93088 11.8312L9.58605 12.1933C10.2251 12.8019 11.2515 12.8019 11.8905 12.1933L11.5457 11.8312ZM9.93088 10.2933L10.2757 10.6554C10.5285 10.4146 10.9481 10.4146 11.2009 10.6554L11.5457 10.2933L11.8905 9.93122C11.2515 9.32263 10.2251 9.32263 9.58605 9.93122L9.93088 10.2933ZM4.69462 11.8312L4.34979 11.4691C4.09697 11.7099 3.67744 11.7099 3.42463 11.4691L3.0798 11.8312L2.73497 12.1933C3.374 12.8019 4.40042 12.8019 5.03944 12.1933L4.69462 11.8312ZM3.0798 10.2933L3.42463 10.6554C3.67744 10.4146 4.09697 10.4146 4.34979 10.6554L4.69462 10.2933L5.03944 9.93122C4.40042 9.32263 3.374 9.32263 2.73497 9.93122L3.0798 10.2933ZM11.5457 10.2933L11.2009 10.6554C11.3235 10.7722 11.3801 10.9191 11.3801 11.0623H11.8801H12.3801C12.3801 10.6488 12.2138 10.2391 11.8905 9.93122L11.5457 10.2933ZM11.8801 11.0623H11.3801C11.3801 11.2054 11.3235 11.3523 11.2009 11.4691L11.5457 11.8312L11.8905 12.1933C12.2138 11.8854 12.3801 11.4757 12.3801 11.0623H11.8801ZM9.59644 11.0623V10.5623H7.88367V11.0623V11.5623H9.59644V11.0623ZM9.93088 11.8312L10.2757 11.4691C10.1531 11.3523 10.0964 11.2054 10.0964 11.0623H9.59644H9.09644C9.09644 11.4757 9.26277 11.8854 9.58605 12.1933L9.93088 11.8312ZM9.59644 11.0623H10.0964C10.0964 10.9191 10.1531 10.7722 10.2757 10.6554L9.93088 10.2933L9.58605 9.93122C9.26277 10.2391 9.09644 10.6488 9.09644 11.0623H9.59644ZM3.0798 11.8312L3.42463 11.4691C3.30199 11.3523 3.24536 11.2054 3.24536 11.0623H2.74536H2.24536C2.24536 11.4757 2.41169 11.8854 2.73497 12.1933L3.0798 11.8312ZM2.74536 11.0623H3.24536C3.24536 10.9191 3.30199 10.7722 3.42463 10.6554L3.0798 10.2933L2.73497 9.93122C2.41169 10.2391 2.24536 10.6488 2.24536 11.0623H2.74536ZM7.88367 11.0623V10.5623H5.02905V11.0623V11.5623H7.88367V11.0623ZM4.69462 10.2933L4.34979 10.6554C4.47243 10.7722 4.52905 10.9191 4.52905 11.0623H5.02905H5.52905C5.52905 10.6488 5.36272 10.2391 5.03944 9.93122L4.69462 10.2933ZM5.02905 11.0623H4.52905C4.52905 11.2054 4.47243 11.3523 4.34979 11.4691L4.69462 11.8312L5.03944 12.1933C5.36272 11.8854 5.52905 11.4757 5.52905 11.0623H5.02905ZM13.022 9.9204H12.522C12.522 10.2749 12.2346 10.5623 11.8801 10.5623V11.0623V11.5623C12.7869 11.5623 13.522 10.8272 13.522 9.9204H13.022ZM9.39707 5.62489V6.12489C11.1229 6.12489 12.522 7.52396 12.522 9.2498H13.022H13.522C13.522 6.97167 11.6752 5.12489 9.39707 5.12489V5.62489ZM1.60352 9.9204H1.10352C1.10352 10.8272 1.8386 11.5623 2.74536 11.5623V11.0623V10.5623C2.39088 10.5623 2.10352 10.2749 2.10352 9.9204H1.60352Z" fill="#A3A3A3"/>
+                                                                    <path d="M2.87256 2.63436C2.87256 2.28401 3.15657 2 3.50692 2C4.55796 2 5.40999 2.85204 5.40999 3.90308V4.53744H4.77564C3.72459 4.53744 2.87256 3.6854 2.87256 2.63436Z" stroke="#A3A3A3" stroke-linejoin="round"/>
+                                                                    <path d="M7.94727 2.63436C7.94727 2.28401 7.66325 2 7.31291 2C6.26187 2 5.40983 2.85204 5.40983 3.90308V4.53744H6.04419C7.09523 4.53744 7.94727 3.6854 7.94727 2.63436Z" stroke="#A3A3A3" stroke-linejoin="round"/>
+                                                                </svg>
+                                                            </div>
+                                                            <span>무료배송</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="RatingContainer">
+                                                    <div class="icon-star">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                        <path d="M2.33496 10.3368C2.02171 10.0471 2.19187 9.52339 2.61557 9.47316L8.61914 8.76107C8.79182 8.74059 8.94181 8.63215 9.01465 8.47425L11.5469 2.98446C11.7256 2.59703 12.2764 2.59695 12.4551 2.98439L14.9873 8.47413C15.0601 8.63204 15.2092 8.74077 15.3818 8.76124L21.3857 9.47316C21.8094 9.52339 21.9791 10.0472 21.6659 10.3369L17.2278 14.4419C17.1001 14.56 17.0433 14.7357 17.0771 14.9063L18.255 20.8359C18.3382 21.2544 17.8928 21.5787 17.5205 21.3703L12.2451 18.4166C12.0934 18.3317 11.9091 18.3321 11.7573 18.417L6.48144 21.3695C6.10913 21.5779 5.66294 21.2544 5.74609 20.8359L6.92414 14.9066C6.95803 14.7361 6.90134 14.5599 6.77367 14.4419L2.33496 10.3368Z" fill="#FFCC00"/>
+                                                        </svg>
+                                                    </div>
+                                                    <span>4.5/5.0</span>
+                                                    <span>(62)</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </li>
+                                <li> <!--네번째 상품-->
+                                        <div class="ad-img">
+                                            <img src="sub-page-img/computer-3.png" alt="제품 이미지">
+                                            <!-- <div class="Selling Point Container">
+                                                <span>1천 판매</span>
+                                            </div> -->
+                                        </div>
+                                        <div class="ad-text-wrap">
+                                            <h4>게이밍컴퓨터 조립PC 견적 게임용 데스크탑 롤 배그 발로란트</h4>
+                                            <div class="ProductHighlight">
+                                                <div class="PriceContainer">
+                                                    <div class="cash">
+                                                        <h3>856,000원</h3>
+                                                    </div>
+                                                    <div class="VendorContainer">
+                                                        <span>포유 컴퓨터</span>
+                                                        <div class="delivery-wrap">
+                                                            <div class="icon-2">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                                    <path d="M1.60352 4.53741V4.03741C1.32737 4.03741 1.10352 4.26127 1.10352 4.53741H1.60352ZM7.88367 4.53741H8.38367C8.38367 4.26127 8.15981 4.03741 7.88367 4.03741V4.53741ZM7.88367 5.62489V5.12489C7.75106 5.12489 7.62389 5.17757 7.53012 5.27133C7.43635 5.3651 7.38367 5.49228 7.38367 5.62489H7.88367ZM1.60352 4.53741V5.03741H7.88367V4.53741V4.03741H1.60352V4.53741ZM7.88367 4.53741H7.38367V11.0623H7.88367H8.38367V4.53741H7.88367ZM1.60352 9.9204H2.10352V4.53741H1.60352H1.10352V9.9204H1.60352ZM7.88367 5.62489V6.12489H9.39707V5.62489V5.12489H7.88367V5.62489ZM13.022 9.2498H12.522V9.9204H13.022H13.522V9.2498H13.022ZM7.88367 11.0623H8.38367L8.38367 5.62489H7.88367H7.38367L7.38367 11.0623H7.88367ZM11.5457 11.8312L11.2009 11.4691C10.9481 11.7099 10.5285 11.7099 10.2757 11.4691L9.93088 11.8312L9.58605 12.1933C10.2251 12.8019 11.2515 12.8019 11.8905 12.1933L11.5457 11.8312ZM9.93088 10.2933L10.2757 10.6554C10.5285 10.4146 10.9481 10.4146 11.2009 10.6554L11.5457 10.2933L11.8905 9.93122C11.2515 9.32263 10.2251 9.32263 9.58605 9.93122L9.93088 10.2933ZM4.69462 11.8312L4.34979 11.4691C4.09697 11.7099 3.67744 11.7099 3.42463 11.4691L3.0798 11.8312L2.73497 12.1933C3.374 12.8019 4.40042 12.8019 5.03944 12.1933L4.69462 11.8312ZM3.0798 10.2933L3.42463 10.6554C3.67744 10.4146 4.09697 10.4146 4.34979 10.6554L4.69462 10.2933L5.03944 9.93122C4.40042 9.32263 3.374 9.32263 2.73497 9.93122L3.0798 10.2933ZM11.5457 10.2933L11.2009 10.6554C11.3235 10.7722 11.3801 10.9191 11.3801 11.0623H11.8801H12.3801C12.3801 10.6488 12.2138 10.2391 11.8905 9.93122L11.5457 10.2933ZM11.8801 11.0623H11.3801C11.3801 11.2054 11.3235 11.3523 11.2009 11.4691L11.5457 11.8312L11.8905 12.1933C12.2138 11.8854 12.3801 11.4757 12.3801 11.0623H11.8801ZM9.59644 11.0623V10.5623H7.88367V11.0623V11.5623H9.59644V11.0623ZM9.93088 11.8312L10.2757 11.4691C10.1531 11.3523 10.0964 11.2054 10.0964 11.0623H9.59644H9.09644C9.09644 11.4757 9.26277 11.8854 9.58605 12.1933L9.93088 11.8312ZM9.59644 11.0623H10.0964C10.0964 10.9191 10.1531 10.7722 10.2757 10.6554L9.93088 10.2933L9.58605 9.93122C9.26277 10.2391 9.09644 10.6488 9.09644 11.0623H9.59644ZM3.0798 11.8312L3.42463 11.4691C3.30199 11.3523 3.24536 11.2054 3.24536 11.0623H2.74536H2.24536C2.24536 11.4757 2.41169 11.8854 2.73497 12.1933L3.0798 11.8312ZM2.74536 11.0623H3.24536C3.24536 10.9191 3.30199 10.7722 3.42463 10.6554L3.0798 10.2933L2.73497 9.93122C2.41169 10.2391 2.24536 10.6488 2.24536 11.0623H2.74536ZM7.88367 11.0623V10.5623H5.02905V11.0623V11.5623H7.88367V11.0623ZM4.69462 10.2933L4.34979 10.6554C4.47243 10.7722 4.52905 10.9191 4.52905 11.0623H5.02905H5.52905C5.52905 10.6488 5.36272 10.2391 5.03944 9.93122L4.69462 10.2933ZM5.02905 11.0623H4.52905C4.52905 11.2054 4.47243 11.3523 4.34979 11.4691L4.69462 11.8312L5.03944 12.1933C5.36272 11.8854 5.52905 11.4757 5.52905 11.0623H5.02905ZM13.022 9.9204H12.522C12.522 10.2749 12.2346 10.5623 11.8801 10.5623V11.0623V11.5623C12.7869 11.5623 13.522 10.8272 13.522 9.9204H13.022ZM9.39707 5.62489V6.12489C11.1229 6.12489 12.522 7.52396 12.522 9.2498H13.022H13.522C13.522 6.97167 11.6752 5.12489 9.39707 5.12489V5.62489ZM1.60352 9.9204H1.10352C1.10352 10.8272 1.8386 11.5623 2.74536 11.5623V11.0623V10.5623C2.39088 10.5623 2.10352 10.2749 2.10352 9.9204H1.60352Z" fill="#A3A3A3"/>
+                                                                    <path d="M2.87256 2.63436C2.87256 2.28401 3.15657 2 3.50692 2C4.55796 2 5.40999 2.85204 5.40999 3.90308V4.53744H4.77564C3.72459 4.53744 2.87256 3.6854 2.87256 2.63436Z" stroke="#A3A3A3" stroke-linejoin="round"/>
+                                                                    <path d="M7.94727 2.63436C7.94727 2.28401 7.66325 2 7.31291 2C6.26187 2 5.40983 2.85204 5.40983 3.90308V4.53744H6.04419C7.09523 4.53744 7.94727 3.6854 7.94727 2.63436Z" stroke="#A3A3A3" stroke-linejoin="round"/>
+                                                                </svg>
+                                                            </div>
+                                                            <span>무료배송</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="RatingContainer">
+                                                    <div class="icon-star">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                        <path d="M2.33496 10.3368C2.02171 10.0471 2.19187 9.52339 2.61557 9.47316L8.61914 8.76107C8.79182 8.74059 8.94181 8.63215 9.01465 8.47425L11.5469 2.98446C11.7256 2.59703 12.2764 2.59695 12.4551 2.98439L14.9873 8.47413C15.0601 8.63204 15.2092 8.74077 15.3818 8.76124L21.3857 9.47316C21.8094 9.52339 21.9791 10.0472 21.6659 10.3369L17.2278 14.4419C17.1001 14.56 17.0433 14.7357 17.0771 14.9063L18.255 20.8359C18.3382 21.2544 17.8928 21.5787 17.5205 21.3703L12.2451 18.4166C12.0934 18.3317 11.9091 18.3321 11.7573 18.417L6.48144 21.3695C6.10913 21.5779 5.66294 21.2544 5.74609 20.8359L6.92414 14.9066C6.95803 14.7361 6.90134 14.5599 6.77367 14.4419L2.33496 10.3368Z" fill="#FFCC00"/>
+                                                        </svg>
+                                                    </div>
+                                                    <span>4.9/5.0</span>
+                                                    <span>(999+)</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </li>
+                                <li> <!--다섯번째 상품-->
+                                        <div class="ad-img">
+                                            <img src="sub-page-img/computer-4.png" alt="제품 이미지">
+                                            <!-- <div class="Selling Point Container">
+                                                <span>1천 판매</span>
+                                            </div> -->
+                                        </div>
+                                        <div class="ad-text-wrap">
+                                            <h4>라이젠5 7500F RTX5060Ti 2TB 게이밍 컴퓨터 조립식 컴퓨터</h4>
+                                            <div class="ProductHighlight">
+                                                <div class="PriceContainer">
+                                                    <div class="cash">
+                                                        <h3>1,735,000원</h3>
+                                                    </div>
+                                                    <div class="VendorContainer">
+                                                        <span>컴퓨터몰</span>
+                                                        <div class="delivery-wrap">
+                                                            <div class="icon-2">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                                    <path d="M1.60352 4.53741V4.03741C1.32737 4.03741 1.10352 4.26127 1.10352 4.53741H1.60352ZM7.88367 4.53741H8.38367C8.38367 4.26127 8.15981 4.03741 7.88367 4.03741V4.53741ZM7.88367 5.62489V5.12489C7.75106 5.12489 7.62389 5.17757 7.53012 5.27133C7.43635 5.3651 7.38367 5.49228 7.38367 5.62489H7.88367ZM1.60352 4.53741V5.03741H7.88367V4.53741V4.03741H1.60352V4.53741ZM7.88367 4.53741H7.38367V11.0623H7.88367H8.38367V4.53741H7.88367ZM1.60352 9.9204H2.10352V4.53741H1.60352H1.10352V9.9204H1.60352ZM7.88367 5.62489V6.12489H9.39707V5.62489V5.12489H7.88367V5.62489ZM13.022 9.2498H12.522V9.9204H13.022H13.522V9.2498H13.022ZM7.88367 11.0623H8.38367L8.38367 5.62489H7.88367H7.38367L7.38367 11.0623H7.88367ZM11.5457 11.8312L11.2009 11.4691C10.9481 11.7099 10.5285 11.7099 10.2757 11.4691L9.93088 11.8312L9.58605 12.1933C10.2251 12.8019 11.2515 12.8019 11.8905 12.1933L11.5457 11.8312ZM9.93088 10.2933L10.2757 10.6554C10.5285 10.4146 10.9481 10.4146 11.2009 10.6554L11.5457 10.2933L11.8905 9.93122C11.2515 9.32263 10.2251 9.32263 9.58605 9.93122L9.93088 10.2933ZM4.69462 11.8312L4.34979 11.4691C4.09697 11.7099 3.67744 11.7099 3.42463 11.4691L3.0798 11.8312L2.73497 12.1933C3.374 12.8019 4.40042 12.8019 5.03944 12.1933L4.69462 11.8312ZM3.0798 10.2933L3.42463 10.6554C3.67744 10.4146 4.09697 10.4146 4.34979 10.6554L4.69462 10.2933L5.03944 9.93122C4.40042 9.32263 3.374 9.32263 2.73497 9.93122L3.0798 10.2933ZM11.5457 10.2933L11.2009 10.6554C11.3235 10.7722 11.3801 10.9191 11.3801 11.0623H11.8801H12.3801C12.3801 10.6488 12.2138 10.2391 11.8905 9.93122L11.5457 10.2933ZM11.8801 11.0623H11.3801C11.3801 11.2054 11.3235 11.3523 11.2009 11.4691L11.5457 11.8312L11.8905 12.1933C12.2138 11.8854 12.3801 11.4757 12.3801 11.0623H11.8801ZM9.59644 11.0623V10.5623H7.88367V11.0623V11.5623H9.59644V11.0623ZM9.93088 11.8312L10.2757 11.4691C10.1531 11.3523 10.0964 11.2054 10.0964 11.0623H9.59644H9.09644C9.09644 11.4757 9.26277 11.8854 9.58605 12.1933L9.93088 11.8312ZM9.59644 11.0623H10.0964C10.0964 10.9191 10.1531 10.7722 10.2757 10.6554L9.93088 10.2933L9.58605 9.93122C9.26277 10.2391 9.09644 10.6488 9.09644 11.0623H9.59644ZM3.0798 11.8312L3.42463 11.4691C3.30199 11.3523 3.24536 11.2054 3.24536 11.0623H2.74536H2.24536C2.24536 11.4757 2.41169 11.8854 2.73497 12.1933L3.0798 11.8312ZM2.74536 11.0623H3.24536C3.24536 10.9191 3.30199 10.7722 3.42463 10.6554L3.0798 10.2933L2.73497 9.93122C2.41169 10.2391 2.24536 10.6488 2.24536 11.0623H2.74536ZM7.88367 11.0623V10.5623H5.02905V11.0623V11.5623H7.88367V11.0623ZM4.69462 10.2933L4.34979 10.6554C4.47243 10.7722 4.52905 10.9191 4.52905 11.0623H5.02905H5.52905C5.52905 10.6488 5.36272 10.2391 5.03944 9.93122L4.69462 10.2933ZM5.02905 11.0623H4.52905C4.52905 11.2054 4.47243 11.3523 4.34979 11.4691L4.69462 11.8312L5.03944 12.1933C5.36272 11.8854 5.52905 11.4757 5.52905 11.0623H5.02905ZM13.022 9.9204H12.522C12.522 10.2749 12.2346 10.5623 11.8801 10.5623V11.0623V11.5623C12.7869 11.5623 13.522 10.8272 13.522 9.9204H13.022ZM9.39707 5.62489V6.12489C11.1229 6.12489 12.522 7.52396 12.522 9.2498H13.022H13.522C13.522 6.97167 11.6752 5.12489 9.39707 5.12489V5.62489ZM1.60352 9.9204H1.10352C1.10352 10.8272 1.8386 11.5623 2.74536 11.5623V11.0623V10.5623C2.39088 10.5623 2.10352 10.2749 2.10352 9.9204H1.60352Z" fill="#A3A3A3"/>
+                                                                    <path d="M2.87256 2.63436C2.87256 2.28401 3.15657 2 3.50692 2C4.55796 2 5.40999 2.85204 5.40999 3.90308V4.53744H4.77564C3.72459 4.53744 2.87256 3.6854 2.87256 2.63436Z" stroke="#A3A3A3" stroke-linejoin="round"/>
+                                                                    <path d="M7.94727 2.63436C7.94727 2.28401 7.66325 2 7.31291 2C6.26187 2 5.40983 2.85204 5.40983 3.90308V4.53744H6.04419C7.09523 4.53744 7.94727 3.6854 7.94727 2.63436Z" stroke="#A3A3A3" stroke-linejoin="round"/>
+                                                                </svg>
+                                                            </div>
+                                                            <span>무료배송</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="RatingContainer">
+                                                    <div class="icon-star">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                        <path d="M2.33496 10.3368C2.02171 10.0471 2.19187 9.52339 2.61557 9.47316L8.61914 8.76107C8.79182 8.74059 8.94181 8.63215 9.01465 8.47425L11.5469 2.98446C11.7256 2.59703 12.2764 2.59695 12.4551 2.98439L14.9873 8.47413C15.0601 8.63204 15.2092 8.74077 15.3818 8.76124L21.3857 9.47316C21.8094 9.52339 21.9791 10.0472 21.6659 10.3369L17.2278 14.4419C17.1001 14.56 17.0433 14.7357 17.0771 14.9063L18.255 20.8359C18.3382 21.2544 17.8928 21.5787 17.5205 21.3703L12.2451 18.4166C12.0934 18.3317 11.9091 18.3321 11.7573 18.417L6.48144 21.3695C6.10913 21.5779 5.66294 21.2544 5.74609 20.8359L6.92414 14.9066C6.95803 14.7361 6.90134 14.5599 6.77367 14.4419L2.33496 10.3368Z" fill="#FFCC00"/>
+                                                        </svg>
+                                                    </div>
+                                                    <span>4.7/5.0</span>
+                                                    <span>(42)</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </li>
+                                <li> <!--여섯번째 상품-->
+                                        <div class="ad-img">
+                                            <img src="sub-page-img/computer-5.png" alt="제품 이미지">
+                                            <!-- <div class="Selling Point Container">
+                                                <span>1천 판매</span>
+                                            </div> -->
+                                        </div>
+                                        <div class="ad-text-wrap">
+                                            <h4>게이밍컴퓨터 조립PC AMD 라이젠 롤과 발로란트</h4>
+                                            <div class="ProductHighlight">
+                                                <div class="PriceContainer">
+                                                    <div class="cash">
+                                                        <h3>2,298,000원</h3>
+                                                    </div>
+                                                    <div class="VendorContainer">
+                                                        <span>좋은컴</span>
+                                                        <div class="delivery-wrap">
+                                                            <div class="icon-2">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                                    <path d="M1.60352 4.53741V4.03741C1.32737 4.03741 1.10352 4.26127 1.10352 4.53741H1.60352ZM7.88367 4.53741H8.38367C8.38367 4.26127 8.15981 4.03741 7.88367 4.03741V4.53741ZM7.88367 5.62489V5.12489C7.75106 5.12489 7.62389 5.17757 7.53012 5.27133C7.43635 5.3651 7.38367 5.49228 7.38367 5.62489H7.88367ZM1.60352 4.53741V5.03741H7.88367V4.53741V4.03741H1.60352V4.53741ZM7.88367 4.53741H7.38367V11.0623H7.88367H8.38367V4.53741H7.88367ZM1.60352 9.9204H2.10352V4.53741H1.60352H1.10352V9.9204H1.60352ZM7.88367 5.62489V6.12489H9.39707V5.62489V5.12489H7.88367V5.62489ZM13.022 9.2498H12.522V9.9204H13.022H13.522V9.2498H13.022ZM7.88367 11.0623H8.38367L8.38367 5.62489H7.88367H7.38367L7.38367 11.0623H7.88367ZM11.5457 11.8312L11.2009 11.4691C10.9481 11.7099 10.5285 11.7099 10.2757 11.4691L9.93088 11.8312L9.58605 12.1933C10.2251 12.8019 11.2515 12.8019 11.8905 12.1933L11.5457 11.8312ZM9.93088 10.2933L10.2757 10.6554C10.5285 10.4146 10.9481 10.4146 11.2009 10.6554L11.5457 10.2933L11.8905 9.93122C11.2515 9.32263 10.2251 9.32263 9.58605 9.93122L9.93088 10.2933ZM4.69462 11.8312L4.34979 11.4691C4.09697 11.7099 3.67744 11.7099 3.42463 11.4691L3.0798 11.8312L2.73497 12.1933C3.374 12.8019 4.40042 12.8019 5.03944 12.1933L4.69462 11.8312ZM3.0798 10.2933L3.42463 10.6554C3.67744 10.4146 4.09697 10.4146 4.34979 10.6554L4.69462 10.2933L5.03944 9.93122C4.40042 9.32263 3.374 9.32263 2.73497 9.93122L3.0798 10.2933ZM11.5457 10.2933L11.2009 10.6554C11.3235 10.7722 11.3801 10.9191 11.3801 11.0623H11.8801H12.3801C12.3801 10.6488 12.2138 10.2391 11.8905 9.93122L11.5457 10.2933ZM11.8801 11.0623H11.3801C11.3801 11.2054 11.3235 11.3523 11.2009 11.4691L11.5457 11.8312L11.8905 12.1933C12.2138 11.8854 12.3801 11.4757 12.3801 11.0623H11.8801ZM9.59644 11.0623V10.5623H7.88367V11.0623V11.5623H9.59644V11.0623ZM9.93088 11.8312L10.2757 11.4691C10.1531 11.3523 10.0964 11.2054 10.0964 11.0623H9.59644H9.09644C9.09644 11.4757 9.26277 11.8854 9.58605 12.1933L9.93088 11.8312ZM9.59644 11.0623H10.0964C10.0964 10.9191 10.1531 10.7722 10.2757 10.6554L9.93088 10.2933L9.58605 9.93122C9.26277 10.2391 9.09644 10.6488 9.09644 11.0623H9.59644ZM3.0798 11.8312L3.42463 11.4691C3.30199 11.3523 3.24536 11.2054 3.24536 11.0623H2.74536H2.24536C2.24536 11.4757 2.41169 11.8854 2.73497 12.1933L3.0798 11.8312ZM2.74536 11.0623H3.24536C3.24536 10.9191 3.30199 10.7722 3.42463 10.6554L3.0798 10.2933L2.73497 9.93122C2.41169 10.2391 2.24536 10.6488 2.24536 11.0623H2.74536ZM7.88367 11.0623V10.5623H5.02905V11.0623V11.5623H7.88367V11.0623ZM4.69462 10.2933L4.34979 10.6554C4.47243 10.7722 4.52905 10.9191 4.52905 11.0623H5.02905H5.52905C5.52905 10.6488 5.36272 10.2391 5.03944 9.93122L4.69462 10.2933ZM5.02905 11.0623H4.52905C4.52905 11.2054 4.47243 11.3523 4.34979 11.4691L4.69462 11.8312L5.03944 12.1933C5.36272 11.8854 5.52905 11.4757 5.52905 11.0623H5.02905ZM13.022 9.9204H12.522C12.522 10.2749 12.2346 10.5623 11.8801 10.5623V11.0623V11.5623C12.7869 11.5623 13.522 10.8272 13.522 9.9204H13.022ZM9.39707 5.62489V6.12489C11.1229 6.12489 12.522 7.52396 12.522 9.2498H13.022H13.522C13.522 6.97167 11.6752 5.12489 9.39707 5.12489V5.62489ZM1.60352 9.9204H1.10352C1.10352 10.8272 1.8386 11.5623 2.74536 11.5623V11.0623V10.5623C2.39088 10.5623 2.10352 10.2749 2.10352 9.9204H1.60352Z" fill="#A3A3A3"/>
+                                                                    <path d="M2.87256 2.63436C2.87256 2.28401 3.15657 2 3.50692 2C4.55796 2 5.40999 2.85204 5.40999 3.90308V4.53744H4.77564C3.72459 4.53744 2.87256 3.6854 2.87256 2.63436Z" stroke="#A3A3A3" stroke-linejoin="round"/>
+                                                                    <path d="M7.94727 2.63436C7.94727 2.28401 7.66325 2 7.31291 2C6.26187 2 5.40983 2.85204 5.40983 3.90308V4.53744H6.04419C7.09523 4.53744 7.94727 3.6854 7.94727 2.63436Z" stroke="#A3A3A3" stroke-linejoin="round"/>
+                                                                </svg>
+                                                            </div>
+                                                            <span>무료배송</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="RatingContainer">
+                                                    <div class="icon-star">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                        <path d="M2.33496 10.3368C2.02171 10.0471 2.19187 9.52339 2.61557 9.47316L8.61914 8.76107C8.79182 8.74059 8.94181 8.63215 9.01465 8.47425L11.5469 2.98446C11.7256 2.59703 12.2764 2.59695 12.4551 2.98439L14.9873 8.47413C15.0601 8.63204 15.2092 8.74077 15.3818 8.76124L21.3857 9.47316C21.8094 9.52339 21.9791 10.0472 21.6659 10.3369L17.2278 14.4419C17.1001 14.56 17.0433 14.7357 17.0771 14.9063L18.255 20.8359C18.3382 21.2544 17.8928 21.5787 17.5205 21.3703L12.2451 18.4166C12.0934 18.3317 11.9091 18.3321 11.7573 18.417L6.48144 21.3695C6.10913 21.5779 5.66294 21.2544 5.74609 20.8359L6.92414 14.9066C6.95803 14.7361 6.90134 14.5599 6.77367 14.4419L2.33496 10.3368Z" fill="#FFCC00"/>
+                                                        </svg>
+                                                    </div>
+                                                    <span>4.6/5.0</span>
+                                                    <span>(10)</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-bottom">
+                <div class="bottom-layout">
+                <div class="bottom-content">
+
+                <nav class="section-nav" id="sectionNav">
+                    <ul>
+                        <li><a href="#section-price" class="active">가격 비교</a></li>
+                        <li><a href="#section-detail">상세 정보</a></li>
+                        <li><a href="#section-community">뉴스/커뮤니티</a></li>
+                        <li><a href="#section-related">연관 상품</a></li>
+                    </ul>
+                </nav>
+
+                <div class="post-wrap" id="section-price"> <!--가격 비교-->
+                    <div class="InformationBanner">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                            <path d="M10.0835 13.75H11.9168V15.5833H10.0835V13.75ZM10.0835 6.41668H11.9168V11.9167H10.0835V6.41668ZM10.991 1.83334C5.931 1.83334 1.8335 5.94001 1.8335 11C1.8335 16.06 5.931 20.1667 10.991 20.1667C16.0602 20.1667 20.1668 16.06 20.1668 11C20.1668 5.94001 16.0602 1.83334 10.991 1.83334ZM11.0002 18.3333C6.9485 18.3333 3.66683 15.0517 3.66683 11C3.66683 6.94834 6.9485 3.66668 11.0002 3.66668C15.0518 3.66668 18.3335 6.94834 18.3335 11C18.3335 15.0517 15.0518 18.3333 11.0002 18.3333Z" fill="#D32F2F"/>
+                            </svg>
+                        </div>
+                        <h4>기입 정보와 <span>다른 판매 가격</span>으로 발견될 경우 고객센터로 신고해주시길 바랍니다</h4>
+                    </div>
+                    <div class="ProductDetails">
+                        <div class="ProductDetailsRow">
+                            <div class="LowestPriceContainer">
+                                <div class="LowestPriceBadgeRow">
+                                    <span class="LowestPriceBadge">최저가</span>
+                                    <img class="LowestPriceLogo" src="sub-page-img/logo/gmarket.png" alt="Gmarket">
+                                    <span class="LowestPriceVendor">포유컴퓨터</span>
+                                </div>
+                                <h2>포유컴퓨터 퍼포먼스PC 47 R5 7500F RTX5060Ti (32GB, M.2 1TB)</h2>
+                                <div class="PriceandShippingContainer">
+                                    <div class="Price-Shipping">
+                                        <h1>1710,390원</h1>
+                                    </div>
+                                    <div class="ShippingInfoContainer">
+                                        <div class="FreeShippingContainer">
+                                            <div class="icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M2 7V6.25C1.58579 6.25 1.25 6.58579 1.25 7H2ZM13 7H13.75C13.75 6.58579 13.4142 6.25 13 6.25V7ZM13 9V8.25C12.8011 8.25 12.6103 8.32902 12.4697 8.46967C12.329 8.61032 12.25 8.80109 12.25 9H13ZM2 7V7.75H13V7V6.25H2V7ZM13 7H12.25V19H13H13.75V7H13ZM2 17H2.75V7H2H1.25V17H2ZM13 9V9.75H18V9V8.25H13V9ZM22 13H21.25V17H22H22.75V13H22ZM13 19H13.75L13.75 9L13 9H12.25L12.25 19H13ZM19.4142 20.4142L18.8839 19.8839C18.3957 20.372 17.6043 20.372 17.1161 19.8839L16.5858 20.4142L16.0555 20.9445C17.1294 22.0185 18.8706 22.0185 19.9445 20.9445L19.4142 20.4142ZM16.5858 17.5858L17.1161 18.1161C17.6043 17.628 18.3957 17.628 18.8839 18.1161L19.4142 17.5858L19.9445 17.0555C18.8706 15.9815 17.1294 15.9815 16.0555 17.0555L16.5858 17.5858ZM7.41421 20.4142L6.88388 19.8839C6.39573 20.372 5.60427 20.372 5.11612 19.8839L4.58579 20.4142L4.05546 20.9445C5.1294 22.0185 6.8706 22.0185 7.94454 20.9445L7.41421 20.4142ZM4.58579 17.5858L5.11612 18.1161C5.60427 17.628 6.39573 17.628 6.88388 18.1161L7.41421 17.5858L7.94454 17.0555C6.8706 15.9815 5.1294 15.9815 4.05546 17.0555L4.58579 17.5858ZM19.4142 17.5858L18.8839 18.1161C19.1281 18.3603 19.25 18.6789 19.25 19H20H20.75C20.75 18.2974 20.4814 17.5923 19.9445 17.0555L19.4142 17.5858ZM20 19H19.25C19.25 19.3211 19.1281 19.6397 18.8839 19.8839L19.4142 20.4142L19.9445 20.9445C20.4814 20.4077 20.75 19.7026 20.75 19H20ZM16 19V18.25H13V19V19.75H16V19ZM16.5858 20.4142L17.1161 19.8839C16.8719 19.6397 16.75 19.3211 16.75 19H16H15.25C15.25 19.7026 15.5186 20.4077 16.0555 20.9445L16.5858 20.4142ZM16 19H16.75C16.75 18.6789 16.8719 18.3603 17.1161 18.1161L16.5858 17.5858L16.0555 17.0555C15.5186 17.5923 15.25 18.2974 15.25 19H16ZM4.58579 20.4142L5.11612 19.8839C4.87189 19.6397 4.75 19.3211 4.75 19H4H3.25C3.25 19.7026 3.51863 20.4077 4.05546 20.9445L4.58579 20.4142ZM4 19H4.75C4.75 18.6789 4.87189 18.3603 5.11612 18.1161L4.58579 17.5858L4.05546 17.0555C3.51863 17.5923 3.25 18.2974 3.25 19H4ZM13 19V18.25H8V19V19.75H13V19ZM7.41421 17.5858L6.88388 18.1161C7.12811 18.3603 7.25 18.6789 7.25 19H8H8.75C8.75 18.2974 8.48137 17.5923 7.94454 17.0555L7.41421 17.5858ZM8 19H7.25C7.25 19.3211 7.12811 19.6397 6.88388 19.8839L7.41421 20.4142L7.94454 20.9445C8.48137 20.4077 8.75 19.7026 8.75 19H8ZM22 17H21.25C21.25 17.6904 20.6904 18.25 20 18.25V19V19.75C21.5188 19.75 22.75 18.5188 22.75 17H22ZM18 9V9.75C19.7949 9.75 21.25 11.2051 21.25 13H22H22.75C22.75 10.3766 20.6234 8.25 18 8.25V9ZM2 17H1.25C1.25 18.5188 2.48122 19.75 4 19.75V19V18.25C3.30964 18.25 2.75 17.6904 2.75 17H2Z" fill="#737373"/>
+                                                <path d="M3.5 4C3.5 3.44772 3.94772 3 4.5 3C6.15685 3 7.5 4.34315 7.5 6V7H6.5C4.84315 7 3.5 5.65685 3.5 4Z" stroke="#737373" stroke-width="1.5" stroke-linejoin="round"/>
+                                                <path d="M11.5 4C11.5 3.44772 11.0523 3 10.5 3C8.84315 3 7.5 4.34315 7.5 6V7H8.5C10.1569 7 11.5 5.65685 11.5 4Z" stroke="#737373" stroke-width="1.5" stroke-linejoin="round"/>
+                                                </svg>
+                                            </div>
+                                            <span>무료 배송</span>
+                                        </div>
+                                        <span>무이자 최대 16개월</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <table class="vendor-list-table">
+                                <thead>
+                                    <tr>
+                                        <th>판매처</th>
+                                        <th>가격</th>
+                                        <th>배송</th>
+                                        <th>할부</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><img src="/sub-page-img/logo/11.png" alt="11번가"></td>
+                                        <td class="price">1,710,590원</td>
+                                        <td>무료 배송</td>
+                                        <td>최대 16개월</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="/sub-page-img/logo/lotte.png" alt="LOTTE"></td>
+                                        <td class="price">1,710,590원</td>
+                                        <td>무료 배송</td>
+                                        <td>최대 16개월</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="/sub-page-img/logo/naver.png" alt="NAVER"></td>
+                                        <td class="price">1,712,412원</td>
+                                        <td>무료 배송</td>
+                                        <td>최대 16개월</td>
+                                    </tr>
+                                </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="post-wrap" id="section-detail"> <!--상세 정보-->
+                    <h1>상세 정보</h1>
+                    <div class="DetailedInformation">
+                        <div class="img-wrap">
+                            <div class="gradientBox"></div>
+                            <img src="sub-page-img/DetaliedInformation/Detailed-Information-Image.png" alt="img">
+                        </div>
+                        <div class="ShowMoreButtonContainer">
+                            <span>상세정보 펼쳐보기</span>
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M19 9L12 16L5 9" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post-wrap" id="section-community">
+                    <div class="NewsandCommunityContent"> <!--뉴스 쪽 타이틀 최상단-->
+                        <div class="NewsandCommunityHeader"> <!--뉴스 및 커뮤니티 타이틀-->
+                            <h1>뉴스 및 커뮤니티</h1>
+                            <div class="AskQuestionContainer">
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M5 16L4 20L8 19L19.5858 7.41421C20.3668 6.63316 20.3668 5.36683 19.5858 4.58579L19.4142 4.41421C18.6332 3.63316 17.3668 3.63317 16.5858 4.41421L5 16Z" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M15 6L18 9" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M13 20H21" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <span>질문하기</span>
+                            </div>
+                        </div>
+                        <div class="NewsTabsContainer"> <!--타이틀의 tag 목록-->
+                            <div class="NewsTabs">
+                                <ul>
+                                    <li class="active">
+                                        <button type="button">
+                                            <span class="tab-title">전체</span>
+                                            <span class="tab-count">2</span>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button">
+                                            <span class="tab-title">PC</span>
+                                            <span class="tab-count">2</span>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="FAQContainer"> <!--질문 및 답변-->
+                        <div class="FAQContent"><!--질문-->
+                            <div class="FAQPost">
+                                <div class="FAQPostHeader">
+                                    <h4>Q</h4>
+                                    <h4>[PC]</h4>
+                                    <h4>VR</h4>
+                                </div>
+                                <p>VR, Unity 등 가능할까요? 과제용도라서요</p>
+                            </div>
+                            <div class="QuestionStatsContainer">
+                                <span>조회수 1,423</span>
+                                <div class="AnswerCountContainer">
+                                    <span>답변</span>
+                                    <span>2</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="FAQAnswerContainer"> <!--답변-->
+                            <div class="FAQAnswer">
+                                <span>A</span>
+                                <span>잘 돌아갑니다 스펙 상으로는 어떤 문제가 없거든요~</span>
+                            </div>
+                            <div class="FAQAnswer">
+                                <span>A</span>
+                                <span>괜찮긴한데 스펙을 좀 더 업그레이드해서 사는 거 추천합니다 예를 들어 CPU 같은 거 보면 요즘은 인텔 쪽이 작업에 있어서 강세라서요</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="FAQContainer"> <!--질문 및 답변-->
+                        <div class="FAQContent"><!--질문-->
+                            <div class="FAQPost">
+                                <div class="FAQPostHeader">
+                                    <h4>Q</h4>
+                                    <h4>[PC]</h4>
+                                    <h4>컴터 성능 좋아보이네요</h4>
+                                </div>
+                                <p>해당 제품에서 HDD만 1TB 추가할 수 있나요? 혹시 파워는 600w 충분한가요?</p>
+                            </div>
+                            <div class="QuestionStatsContainer">
+                                <span>조회수 9,123</span>
+                                <div class="AnswerCountContainer">
+                                    <span>답변</span>
+                                    <span>6</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="FAQAnswerContainer"> <!--답변-->
+                            <div class="FAQAnswer">
+                                <span>A</span>
+                                <span>애초에 하드추가 옵션이 있는데 하드 추가를 못한다는 게 더 이상하죠 안 돌아가면 그건 이제 다른 문제가 있는거</span>
+                            </div>
+                            <div class="FAQAnswer">
+                                <span>A</span>
+                                <span>케이스에 HDD 베이가 그대로 있을 경우, 그리고 SATA 케이블을 제대로 끼셔야함 </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post-wrap" id="section-related">
+                    <h1>비슷한 상품 보기</h1>
+                    <div class="SimilarProductsGrid">
+                        <div class="ProductRecommendationContainer"> <!--다른 고객이 함께 본 상품-->
+                            <div class="ProductRecommendationHeader">
+                                <h2>다른 고객이 함께 본 상품</h2>
+                                <div class="RecommendationNav">
+                                    <button> <!--캐러셀 버튼 왼쪽으로 디자인-->
+                                        <div class="icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <rect x="-0.5" y="0.5" width="23" height="23" rx="3.5" transform="matrix(-1 0 0 1 23 0)" fill="white"/>
+                                            <rect x="-0.5" y="0.5" width="23" height="23" rx="3.5" transform="matrix(-1 0 0 1 23 0)" stroke="#D4D4D4"/>
+                                            <path d="M15 5L8 12L15 19" stroke="#D4D4D4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                    </button>
+                                    <button> <!--캐러셀 버튼 오른쪽으로 디자인-->
+                                        <div class="icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <rect x="0.5" y="0.5" width="23" height="23" rx="3.5" fill="white"/>
+                                            <rect x="0.5" y="0.5" width="23" height="23" rx="3.5" stroke="#D4D4D4"/>
+                                            <path d="M9 5L16 12L9 19" stroke="#D4D4D4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                            <ul class="ad-wrap">
+                                <li> <!--첫번째 상품-->
+                                    <div class="ad-img">
+                                        <img src="sub-page-img/computer.png" alt="제품 이미지">
+                                        <div class="ad-ad-ad">
+                                            <span>1천 판매</span>
+                                        </div>
+                                    </div>
+                                    <div class="ad-text-wrap">
+                                        <h4>게이밍컴퓨터 조립PC AMD 라이젠 롤과 발로란트</h4>
+                                        <div class="ProductHighlight">
+                                            <div class="PriceContainer">
+                                                <div class="cash">
+                                                    <h3>942,600원</h3>
+                                                </div>
+                                                <div class="VendorContainer">
+                                                    <span>바른컴퓨터</span>
+                                                    <div class="delivery-wrap">
+                                                        <div class="icon">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                                <path d="M1.60352 4.53741V4.03741C1.32737 4.03741 1.10352 4.26127 1.10352 4.53741H1.60352ZM7.88367 4.53741H8.38367C8.38367 4.26127 8.15981 4.03741 7.88367 4.03741V4.53741ZM7.88367 5.62489V5.12489C7.75106 5.12489 7.62389 5.17757 7.53012 5.27133C7.43635 5.3651 7.38367 5.49228 7.38367 5.62489H7.88367ZM1.60352 4.53741V5.03741H7.88367V4.53741V4.03741H1.60352V4.53741ZM7.88367 4.53741H7.38367V11.0623H7.88367H8.38367V4.53741H7.88367ZM1.60352 9.9204H2.10352V4.53741H1.60352H1.10352V9.9204H1.60352ZM7.88367 5.62489V6.12489H9.39707V5.62489V5.12489H7.88367V5.62489ZM13.022 9.2498H12.522V9.9204H13.022H13.522V9.2498H13.022ZM7.88367 11.0623H8.38367L8.38367 5.62489H7.88367H7.38367L7.38367 11.0623H7.88367ZM11.5457 11.8312L11.2009 11.4691C10.9481 11.7099 10.5285 11.7099 10.2757 11.4691L9.93088 11.8312L9.58605 12.1933C10.2251 12.8019 11.2515 12.8019 11.8905 12.1933L11.5457 11.8312ZM9.93088 10.2933L10.2757 10.6554C10.5285 10.4146 10.9481 10.4146 11.2009 10.6554L11.5457 10.2933L11.8905 9.93122C11.2515 9.32263 10.2251 9.32263 9.58605 9.93122L9.93088 10.2933ZM4.69462 11.8312L4.34979 11.4691C4.09697 11.7099 3.67744 11.7099 3.42463 11.4691L3.0798 11.8312L2.73497 12.1933C3.374 12.8019 4.40042 12.8019 5.03944 12.1933L4.69462 11.8312ZM3.0798 10.2933L3.42463 10.6554C3.67744 10.4146 4.09697 10.4146 4.34979 10.6554L4.69462 10.2933L5.03944 9.93122C4.40042 9.32263 3.374 9.32263 2.73497 9.93122L3.0798 10.2933ZM11.5457 10.2933L11.2009 10.6554C11.3235 10.7722 11.3801 10.9191 11.3801 11.0623H11.8801H12.3801C12.3801 10.6488 12.2138 10.2391 11.8905 9.93122L11.5457 10.2933ZM11.8801 11.0623H11.3801C11.3801 11.2054 11.3235 11.3523 11.2009 11.4691L11.5457 11.8312L11.8905 12.1933C12.2138 11.8854 12.3801 11.4757 12.3801 11.0623H11.8801ZM9.59644 11.0623V10.5623H7.88367V11.0623V11.5623H9.59644V11.0623ZM9.93088 11.8312L10.2757 11.4691C10.1531 11.3523 10.0964 11.2054 10.0964 11.0623H9.59644H9.09644C9.09644 11.4757 9.26277 11.8854 9.58605 12.1933L9.93088 11.8312ZM9.59644 11.0623H10.0964C10.0964 10.9191 10.1531 10.7722 10.2757 10.6554L9.93088 10.2933L9.58605 9.93122C9.26277 10.2391 9.09644 10.6488 9.09644 11.0623H9.59644ZM3.0798 11.8312L3.42463 11.4691C3.30199 11.3523 3.24536 11.2054 3.24536 11.0623H2.74536H2.24536C2.24536 11.4757 2.41169 11.8854 2.73497 12.1933L3.0798 11.8312ZM2.74536 11.0623H3.24536C3.24536 10.9191 3.30199 10.7722 3.42463 10.6554L3.0798 10.2933L2.73497 9.93122C2.41169 10.2391 2.24536 10.6488 2.24536 11.0623H2.74536ZM7.88367 11.0623V10.5623H5.02905V11.0623V11.5623H7.88367V11.0623ZM4.69462 10.2933L4.34979 10.6554C4.47243 10.7722 4.52905 10.9191 4.52905 11.0623H5.02905H5.52905C5.52905 10.6488 5.36272 10.2391 5.03944 9.93122L4.69462 10.2933ZM5.02905 11.0623H4.52905C4.52905 11.2054 4.47243 11.3523 4.34979 11.4691L4.69462 11.8312L5.03944 12.1933C5.36272 11.8854 5.52905 11.4757 5.52905 11.0623H5.02905ZM13.022 9.9204H12.522C12.522 10.2749 12.2346 10.5623 11.8801 10.5623V11.0623V11.5623C12.7869 11.5623 13.522 10.8272 13.522 9.9204H13.022ZM9.39707 5.62489V6.12489C11.1229 6.12489 12.522 7.52396 12.522 9.2498H13.022H13.522C13.522 6.97167 11.6752 5.12489 9.39707 5.12489V5.62489ZM1.60352 9.9204H1.10352C1.10352 10.8272 1.8386 11.5623 2.74536 11.5623V11.0623V10.5623C2.39088 10.5623 2.10352 10.2749 2.10352 9.9204H1.60352Z" fill="#A3A3A3"/>
+                                                                <path d="M2.87256 2.63436C2.87256 2.28401 3.15657 2 3.50692 2C4.55796 2 5.40999 2.85204 5.40999 3.90308V4.53744H4.77564C3.72459 4.53744 2.87256 3.6854 2.87256 2.63436Z" stroke="#A3A3A3" stroke-linejoin="round"/>
+                                                                <path d="M7.94727 2.63436C7.94727 2.28401 7.66325 2 7.31291 2C6.26187 2 5.40983 2.85204 5.40983 3.90308V4.53744H6.04419C7.09523 4.53744 7.94727 3.6854 7.94727 2.63436Z" stroke="#A3A3A3" stroke-linejoin="round"/>
+                                                            </svg>
+                                                        </div>
+                                                        <span>무료배송</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="RatingContainer">
+                                                <div class="icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                    <path d="M2.33496 10.3368C2.02171 10.0471 2.19187 9.52339 2.61557 9.47316L8.61914 8.76107C8.79182 8.74059 8.94181 8.63215 9.01465 8.47425L11.5469 2.98446C11.7256 2.59703 12.2764 2.59695 12.4551 2.98439L14.9873 8.47413C15.0601 8.63204 15.2092 8.74077 15.3818 8.76124L21.3857 9.47316C21.8094 9.52339 21.9791 10.0472 21.6659 10.3369L17.2278 14.4419C17.1001 14.56 17.0433 14.7357 17.0771 14.9063L18.255 20.8359C18.3382 21.2544 17.8928 21.5787 17.5205 21.3703L12.2451 18.4166C12.0934 18.3317 11.9091 18.3321 11.7573 18.417L6.48144 21.3695C6.10913 21.5779 5.66294 21.2544 5.74609 20.8359L6.92414 14.9066C6.95803 14.7361 6.90134 14.5599 6.77367 14.4419L2.33496 10.3368Z" fill="#FFCC00"/>
+                                                    </svg>
+                                                </div>
+                                                <span>4.2/5.0</span>
+                                                <span>(999+)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li> <!--두번째 상품-->
+                                    <div class="ad-img">
+                                        <img src="sub-page-img/computer-1.png" alt="제품 이미지">
+                                    </div>
+                                    <div class="ad-text-wrap">
+                                        <h4>게이밍컴퓨터 조립PC AMD 라이젠 롤과 발로란트</h4>
+                                        <div class="ProductHighlight">
+                                            <div class="PriceContainer">
+                                                <div class="cash">
+                                                    <h3>942,600원</h3>
+                                                </div>
+                                                <div class="VendorContainer">
+                                                    <span>바른컴퓨터</span>
+                                                    <div class="delivery-wrap">
+                                                        <div class="icon">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                                <path d="M1.60352 4.53741V4.03741C1.32737 4.03741 1.10352 4.26127 1.10352 4.53741H1.60352ZM7.88367 4.53741H8.38367C8.38367 4.26127 8.15981 4.03741 7.88367 4.03741V4.53741ZM7.88367 5.62489V5.12489C7.75106 5.12489 7.62389 5.17757 7.53012 5.27133C7.43635 5.3651 7.38367 5.49228 7.38367 5.62489H7.88367ZM1.60352 4.53741V5.03741H7.88367V4.53741V4.03741H1.60352V4.53741ZM7.88367 4.53741H7.38367V11.0623H7.88367H8.38367V4.53741H7.88367ZM1.60352 9.9204H2.10352V4.53741H1.60352H1.10352V9.9204H1.60352ZM7.88367 5.62489V6.12489H9.39707V5.62489V5.12489H7.88367V5.62489ZM13.022 9.2498H12.522V9.9204H13.022H13.522V9.2498H13.022ZM7.88367 11.0623H8.38367L8.38367 5.62489H7.88367H7.38367L7.38367 11.0623H7.88367ZM11.5457 11.8312L11.2009 11.4691C10.9481 11.7099 10.5285 11.7099 10.2757 11.4691L9.93088 11.8312L9.58605 12.1933C10.2251 12.8019 11.2515 12.8019 11.8905 12.1933L11.5457 11.8312ZM9.93088 10.2933L10.2757 10.6554C10.5285 10.4146 10.9481 10.4146 11.2009 10.6554L11.5457 10.2933L11.8905 9.93122C11.2515 9.32263 10.2251 9.32263 9.58605 9.93122L9.93088 10.2933ZM4.69462 11.8312L4.34979 11.4691C4.09697 11.7099 3.67744 11.7099 3.42463 11.4691L3.0798 11.8312L2.73497 12.1933C3.374 12.8019 4.40042 12.8019 5.03944 12.1933L4.69462 11.8312ZM3.0798 10.2933L3.42463 10.6554C3.67744 10.4146 4.09697 10.4146 4.34979 10.6554L4.69462 10.2933L5.03944 9.93122C4.40042 9.32263 3.374 9.32263 2.73497 9.93122L3.0798 10.2933ZM11.5457 10.2933L11.2009 10.6554C11.3235 10.7722 11.3801 10.9191 11.3801 11.0623H11.8801H12.3801C12.3801 10.6488 12.2138 10.2391 11.8905 9.93122L11.5457 10.2933ZM11.8801 11.0623H11.3801C11.3801 11.2054 11.3235 11.3523 11.2009 11.4691L11.5457 11.8312L11.8905 12.1933C12.2138 11.8854 12.3801 11.4757 12.3801 11.0623H11.8801ZM9.59644 11.0623V10.5623H7.88367V11.0623V11.5623H9.59644V11.0623ZM9.93088 11.8312L10.2757 11.4691C10.1531 11.3523 10.0964 11.2054 10.0964 11.0623H9.59644H9.09644C9.09644 11.4757 9.26277 11.8854 9.58605 12.1933L9.93088 11.8312ZM9.59644 11.0623H10.0964C10.0964 10.9191 10.1531 10.7722 10.2757 10.6554L9.93088 10.2933L9.58605 9.93122C9.26277 10.2391 9.09644 10.6488 9.09644 11.0623H9.59644ZM3.0798 11.8312L3.42463 11.4691C3.30199 11.3523 3.24536 11.2054 3.24536 11.0623H2.74536H2.24536C2.24536 11.4757 2.41169 11.8854 2.73497 12.1933L3.0798 11.8312ZM2.74536 11.0623H3.24536C3.24536 10.9191 3.30199 10.7722 3.42463 10.6554L3.0798 10.2933L2.73497 9.93122C2.41169 10.2391 2.24536 10.6488 2.24536 11.0623H2.74536ZM7.88367 11.0623V10.5623H5.02905V11.0623V11.5623H7.88367V11.0623ZM4.69462 10.2933L4.34979 10.6554C4.47243 10.7722 4.52905 10.9191 4.52905 11.0623H5.02905H5.52905C5.52905 10.6488 5.36272 10.2391 5.03944 9.93122L4.69462 10.2933ZM5.02905 11.0623H4.52905C4.52905 11.2054 4.47243 11.3523 4.34979 11.4691L4.69462 11.8312L5.03944 12.1933C5.36272 11.8854 5.52905 11.4757 5.52905 11.0623H5.02905ZM13.022 9.9204H12.522C12.522 10.2749 12.2346 10.5623 11.8801 10.5623V11.0623V11.5623C12.7869 11.5623 13.522 10.8272 13.522 9.9204H13.022ZM9.39707 5.62489V6.12489C11.1229 6.12489 12.522 7.52396 12.522 9.2498H13.022H13.522C13.522 6.97167 11.6752 5.12489 9.39707 5.12489V5.62489ZM1.60352 9.9204H1.10352C1.10352 10.8272 1.8386 11.5623 2.74536 11.5623V11.0623V10.5623C2.39088 10.5623 2.10352 10.2749 2.10352 9.9204H1.60352Z" fill="#A3A3A3"/>
+                                                                <path d="M2.87256 2.63436C2.87256 2.28401 3.15657 2 3.50692 2C4.55796 2 5.40999 2.85204 5.40999 3.90308V4.53744H4.77564C3.72459 4.53744 2.87256 3.6854 2.87256 2.63436Z" stroke="#A3A3A3" stroke-linejoin="round"/>
+                                                                <path d="M7.94727 2.63436C7.94727 2.28401 7.66325 2 7.31291 2C6.26187 2 5.40983 2.85204 5.40983 3.90308V4.53744H6.04419C7.09523 4.53744 7.94727 3.6854 7.94727 2.63436Z" stroke="#A3A3A3" stroke-linejoin="round"/>
+                                                            </svg>
+                                                        </div>
+                                                        <span>무료배송</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="RatingContainer">
+                                                <div class="icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                    <path d="M2.33496 10.3368C2.02171 10.0471 2.19187 9.52339 2.61557 9.47316L8.61914 8.76107C8.79182 8.74059 8.94181 8.63215 9.01465 8.47425L11.5469 2.98446C11.7256 2.59703 12.2764 2.59695 12.4551 2.98439L14.9873 8.47413C15.0601 8.63204 15.2092 8.74077 15.3818 8.76124L21.3857 9.47316C21.8094 9.52339 21.9791 10.0472 21.6659 10.3369L17.2278 14.4419C17.1001 14.56 17.0433 14.7357 17.0771 14.9063L18.255 20.8359C18.3382 21.2544 17.8928 21.5787 17.5205 21.3703L12.2451 18.4166C12.0934 18.3317 11.9091 18.3321 11.7573 18.417L6.48144 21.3695C6.10913 21.5779 5.66294 21.2544 5.74609 20.8359L6.92414 14.9066C6.95803 14.7361 6.90134 14.5599 6.77367 14.4419L2.33496 10.3368Z" fill="#FFCC00"/>
+                                                    </svg>
+                                                </div>
+                                                <span>4.2/5.0</span>
+                                                <span>(999+)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li> <!--세번째 상품-->
+                                    <div class="ad-img">
+                                        <img src="sub-page-img/computer-2.png" alt="제품 이미지">
+                                    </div>
+                                    <div class="ad-text-wrap">
+                                        <h4>게이밍컴퓨터 조립PC AMD 라이젠 롤과 발로란트</h4>
+                                        <div class="ProductHighlight">
+                                            <div class="PriceContainer">
+                                                <div class="cash">
+                                                    <h3>942,600원</h3>
+                                                </div>
+                                                <div class="VendorContainer">
+                                                    <span>바른컴퓨터</span>
+                                                    <div class="delivery-wrap">
+                                                        <div class="icon">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                                <path d="M1.60352 4.53741V4.03741C1.32737 4.03741 1.10352 4.26127 1.10352 4.53741H1.60352ZM7.88367 4.53741H8.38367C8.38367 4.26127 8.15981 4.03741 7.88367 4.03741V4.53741ZM7.88367 5.62489V5.12489C7.75106 5.12489 7.62389 5.17757 7.53012 5.27133C7.43635 5.3651 7.38367 5.49228 7.38367 5.62489H7.88367ZM1.60352 4.53741V5.03741H7.88367V4.53741V4.03741H1.60352V4.53741ZM7.88367 4.53741H7.38367V11.0623H7.88367H8.38367V4.53741H7.88367ZM1.60352 9.9204H2.10352V4.53741H1.60352H1.10352V9.9204H1.60352ZM7.88367 5.62489V6.12489H9.39707V5.62489V5.12489H7.88367V5.62489ZM13.022 9.2498H12.522V9.9204H13.022H13.522V9.2498H13.022ZM7.88367 11.0623H8.38367L8.38367 5.62489H7.88367H7.38367L7.38367 11.0623H7.88367ZM11.5457 11.8312L11.2009 11.4691C10.9481 11.7099 10.5285 11.7099 10.2757 11.4691L9.93088 11.8312L9.58605 12.1933C10.2251 12.8019 11.2515 12.8019 11.8905 12.1933L11.5457 11.8312ZM9.93088 10.2933L10.2757 10.6554C10.5285 10.4146 10.9481 10.4146 11.2009 10.6554L11.5457 10.2933L11.8905 9.93122C11.2515 9.32263 10.2251 9.32263 9.58605 9.93122L9.93088 10.2933ZM4.69462 11.8312L4.34979 11.4691C4.09697 11.7099 3.67744 11.7099 3.42463 11.4691L3.0798 11.8312L2.73497 12.1933C3.374 12.8019 4.40042 12.8019 5.03944 12.1933L4.69462 11.8312ZM3.0798 10.2933L3.42463 10.6554C3.67744 10.4146 4.09697 10.4146 4.34979 10.6554L4.69462 10.2933L5.03944 9.93122C4.40042 9.32263 3.374 9.32263 2.73497 9.93122L3.0798 10.2933ZM11.5457 10.2933L11.2009 10.6554C11.3235 10.7722 11.3801 10.9191 11.3801 11.0623H11.8801H12.3801C12.3801 10.6488 12.2138 10.2391 11.8905 9.93122L11.5457 10.2933ZM11.8801 11.0623H11.3801C11.3801 11.2054 11.3235 11.3523 11.2009 11.4691L11.5457 11.8312L11.8905 12.1933C12.2138 11.8854 12.3801 11.4757 12.3801 11.0623H11.8801ZM9.59644 11.0623V10.5623H7.88367V11.0623V11.5623H9.59644V11.0623ZM9.93088 11.8312L10.2757 11.4691C10.1531 11.3523 10.0964 11.2054 10.0964 11.0623H9.59644H9.09644C9.09644 11.4757 9.26277 11.8854 9.58605 12.1933L9.93088 11.8312ZM9.59644 11.0623H10.0964C10.0964 10.9191 10.1531 10.7722 10.2757 10.6554L9.93088 10.2933L9.58605 9.93122C9.26277 10.2391 9.09644 10.6488 9.09644 11.0623H9.59644ZM3.0798 11.8312L3.42463 11.4691C3.30199 11.3523 3.24536 11.2054 3.24536 11.0623H2.74536H2.24536C2.24536 11.4757 2.41169 11.8854 2.73497 12.1933L3.0798 11.8312ZM2.74536 11.0623H3.24536C3.24536 10.9191 3.30199 10.7722 3.42463 10.6554L3.0798 10.2933L2.73497 9.93122C2.41169 10.2391 2.24536 10.6488 2.24536 11.0623H2.74536ZM7.88367 11.0623V10.5623H5.02905V11.0623V11.5623H7.88367V11.0623ZM4.69462 10.2933L4.34979 10.6554C4.47243 10.7722 4.52905 10.9191 4.52905 11.0623H5.02905H5.52905C5.52905 10.6488 5.36272 10.2391 5.03944 9.93122L4.69462 10.2933ZM5.02905 11.0623H4.52905C4.52905 11.2054 4.47243 11.3523 4.34979 11.4691L4.69462 11.8312L5.03944 12.1933C5.36272 11.8854 5.52905 11.4757 5.52905 11.0623H5.02905ZM13.022 9.9204H12.522C12.522 10.2749 12.2346 10.5623 11.8801 10.5623V11.0623V11.5623C12.7869 11.5623 13.522 10.8272 13.522 9.9204H13.022ZM9.39707 5.62489V6.12489C11.1229 6.12489 12.522 7.52396 12.522 9.2498H13.022H13.522C13.522 6.97167 11.6752 5.12489 9.39707 5.12489V5.62489ZM1.60352 9.9204H1.10352C1.10352 10.8272 1.8386 11.5623 2.74536 11.5623V11.0623V10.5623C2.39088 10.5623 2.10352 10.2749 2.10352 9.9204H1.60352Z" fill="#A3A3A3"/>
+                                                                <path d="M2.87256 2.63436C2.87256 2.28401 3.15657 2 3.50692 2C4.55796 2 5.40999 2.85204 5.40999 3.90308V4.53744H4.77564C3.72459 4.53744 2.87256 3.6854 2.87256 2.63436Z" stroke="#A3A3A3" stroke-linejoin="round"/>
+                                                                <path d="M7.94727 2.63436C7.94727 2.28401 7.66325 2 7.31291 2C6.26187 2 5.40983 2.85204 5.40983 3.90308V4.53744H6.04419C7.09523 4.53744 7.94727 3.6854 7.94727 2.63436Z" stroke="#A3A3A3" stroke-linejoin="round"/>
+                                                            </svg>
+                                                        </div>
+                                                        <span>무료배송</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="RatingContainer">
+                                                <div class="icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                    <path d="M2.33496 10.3368C2.02171 10.0471 2.19187 9.52339 2.61557 9.47316L8.61914 8.76107C8.79182 8.74059 8.94181 8.63215 9.01465 8.47425L11.5469 2.98446C11.7256 2.59703 12.2764 2.59695 12.4551 2.98439L14.9873 8.47413C15.0601 8.63204 15.2092 8.74077 15.3818 8.76124L21.3857 9.47316C21.8094 9.52339 21.9791 10.0472 21.6659 10.3369L17.2278 14.4419C17.1001 14.56 17.0433 14.7357 17.0771 14.9063L18.255 20.8359C18.3382 21.2544 17.8928 21.5787 17.5205 21.3703L12.2451 18.4166C12.0934 18.3317 11.9091 18.3321 11.7573 18.417L6.48144 21.3695C6.10913 21.5779 5.66294 21.2544 5.74609 20.8359L6.92414 14.9066C6.95803 14.7361 6.90134 14.5599 6.77367 14.4419L2.33496 10.3368Z" fill="#FFCC00"/>
+                                                    </svg>
+                                                </div>
+                                                <span>4.2/5.0</span>
+                                                <span>(999+)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="PopularProductsContainer"> <!--카테고리 인기 상품-->
+                            <div class="ProductRecommendationHeader">
+                                <h2>카테고리 인기 상품</h2>
+                                <div class="RecommendationNav">
+                                    <button> <!--캐러셀 버튼 왼쪽으로 디자인-->
+                                        <div class="icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <rect x="-0.5" y="0.5" width="23" height="23" rx="3.5" transform="matrix(-1 0 0 1 23 0)" fill="white"/>
+                                            <rect x="-0.5" y="0.5" width="23" height="23" rx="3.5" transform="matrix(-1 0 0 1 23 0)" stroke="#D4D4D4"/>
+                                            <path d="M15 5L8 12L15 19" stroke="#D4D4D4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                    </button>
+                                    <button> <!--캐러셀 버튼 오른쪽으로 디자인-->
+                                        <div class="icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <rect x="0.5" y="0.5" width="23" height="23" rx="3.5" fill="white"/>
+                                            <rect x="0.5" y="0.5" width="23" height="23" rx="3.5" stroke="#D4D4D4"/>
+                                            <path d="M9 5L16 12L9 19" stroke="#D4D4D4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                            <ul>
+                                <li> <!--첫번째 상품-->
+                                    <div class="ad-img">
+                                        <img src="sub-page-img/computer-3.png" alt="제품 이미지">
+                                        <div class="ad-ad-ad">
+                                            <span>1천 판매</span>
+                                        </div>
+                                    </div>
+                                    <div class="ad-text-wrap">
+                                        <h4>게이밍컴퓨터 조립PC AMD 라이젠 롤과 발로란트</h4>
+                                        <div class="ProductHighlight">
+                                            <div class="PriceContainer">
+                                                <div class="cash">
+                                                    <h3>942,600원</h3>
+                                                </div>
+                                                <div class="VendorContainer">
+                                                    <span>바른컴퓨터</span>
+                                                    <div class="delivery-wrap">
+                                                        <div class="icon">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                                <path d="M1.60352 4.53741V4.03741C1.32737 4.03741 1.10352 4.26127 1.10352 4.53741H1.60352ZM7.88367 4.53741H8.38367C8.38367 4.26127 8.15981 4.03741 7.88367 4.03741V4.53741ZM7.88367 5.62489V5.12489C7.75106 5.12489 7.62389 5.17757 7.53012 5.27133C7.43635 5.3651 7.38367 5.49228 7.38367 5.62489H7.88367ZM1.60352 4.53741V5.03741H7.88367V4.53741V4.03741H1.60352V4.53741ZM7.88367 4.53741H7.38367V11.0623H7.88367H8.38367V4.53741H7.88367ZM1.60352 9.9204H2.10352V4.53741H1.60352H1.10352V9.9204H1.60352ZM7.88367 5.62489V6.12489H9.39707V5.62489V5.12489H7.88367V5.62489ZM13.022 9.2498H12.522V9.9204H13.022H13.522V9.2498H13.022ZM7.88367 11.0623H8.38367L8.38367 5.62489H7.88367H7.38367L7.38367 11.0623H7.88367ZM11.5457 11.8312L11.2009 11.4691C10.9481 11.7099 10.5285 11.7099 10.2757 11.4691L9.93088 11.8312L9.58605 12.1933C10.2251 12.8019 11.2515 12.8019 11.8905 12.1933L11.5457 11.8312ZM9.93088 10.2933L10.2757 10.6554C10.5285 10.4146 10.9481 10.4146 11.2009 10.6554L11.5457 10.2933L11.8905 9.93122C11.2515 9.32263 10.2251 9.32263 9.58605 9.93122L9.93088 10.2933ZM4.69462 11.8312L4.34979 11.4691C4.09697 11.7099 3.67744 11.7099 3.42463 11.4691L3.0798 11.8312L2.73497 12.1933C3.374 12.8019 4.40042 12.8019 5.03944 12.1933L4.69462 11.8312ZM3.0798 10.2933L3.42463 10.6554C3.67744 10.4146 4.09697 10.4146 4.34979 10.6554L4.69462 10.2933L5.03944 9.93122C4.40042 9.32263 3.374 9.32263 2.73497 9.93122L3.0798 10.2933ZM11.5457 10.2933L11.2009 10.6554C11.3235 10.7722 11.3801 10.9191 11.3801 11.0623H11.8801H12.3801C12.3801 10.6488 12.2138 10.2391 11.8905 9.93122L11.5457 10.2933ZM11.8801 11.0623H11.3801C11.3801 11.2054 11.3235 11.3523 11.2009 11.4691L11.5457 11.8312L11.8905 12.1933C12.2138 11.8854 12.3801 11.4757 12.3801 11.0623H11.8801ZM9.59644 11.0623V10.5623H7.88367V11.0623V11.5623H9.59644V11.0623ZM9.93088 11.8312L10.2757 11.4691C10.1531 11.3523 10.0964 11.2054 10.0964 11.0623H9.59644H9.09644C9.09644 11.4757 9.26277 11.8854 9.58605 12.1933L9.93088 11.8312ZM9.59644 11.0623H10.0964C10.0964 10.9191 10.1531 10.7722 10.2757 10.6554L9.93088 10.2933L9.58605 9.93122C9.26277 10.2391 9.09644 10.6488 9.09644 11.0623H9.59644ZM3.0798 11.8312L3.42463 11.4691C3.30199 11.3523 3.24536 11.2054 3.24536 11.0623H2.74536H2.24536C2.24536 11.4757 2.41169 11.8854 2.73497 12.1933L3.0798 11.8312ZM2.74536 11.0623H3.24536C3.24536 10.9191 3.30199 10.7722 3.42463 10.6554L3.0798 10.2933L2.73497 9.93122C2.41169 10.2391 2.24536 10.6488 2.24536 11.0623H2.74536ZM7.88367 11.0623V10.5623H5.02905V11.0623V11.5623H7.88367V11.0623ZM4.69462 10.2933L4.34979 10.6554C4.47243 10.7722 4.52905 10.9191 4.52905 11.0623H5.02905H5.52905C5.52905 10.6488 5.36272 10.2391 5.03944 9.93122L4.69462 10.2933ZM5.02905 11.0623H4.52905C4.52905 11.2054 4.47243 11.3523 4.34979 11.4691L4.69462 11.8312L5.03944 12.1933C5.36272 11.8854 5.52905 11.4757 5.52905 11.0623H5.02905ZM13.022 9.9204H12.522C12.522 10.2749 12.2346 10.5623 11.8801 10.5623V11.0623V11.5623C12.7869 11.5623 13.522 10.8272 13.522 9.9204H13.022ZM9.39707 5.62489V6.12489C11.1229 6.12489 12.522 7.52396 12.522 9.2498H13.022H13.522C13.522 6.97167 11.6752 5.12489 9.39707 5.12489V5.62489ZM1.60352 9.9204H1.10352C1.10352 10.8272 1.8386 11.5623 2.74536 11.5623V11.0623V10.5623C2.39088 10.5623 2.10352 10.2749 2.10352 9.9204H1.60352Z" fill="#A3A3A3"/>
+                                                                <path d="M2.87256 2.63436C2.87256 2.28401 3.15657 2 3.50692 2C4.55796 2 5.40999 2.85204 5.40999 3.90308V4.53744H4.77564C3.72459 4.53744 2.87256 3.6854 2.87256 2.63436Z" stroke="#A3A3A3" stroke-linejoin="round"/>
+                                                                <path d="M7.94727 2.63436C7.94727 2.28401 7.66325 2 7.31291 2C6.26187 2 5.40983 2.85204 5.40983 3.90308V4.53744H6.04419C7.09523 4.53744 7.94727 3.6854 7.94727 2.63436Z" stroke="#A3A3A3" stroke-linejoin="round"/>
+                                                            </svg>
+                                                        </div>
+                                                        <span>무료배송</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="RatingContainer">
+                                                <div class="icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                    <path d="M2.33496 10.3368C2.02171 10.0471 2.19187 9.52339 2.61557 9.47316L8.61914 8.76107C8.79182 8.74059 8.94181 8.63215 9.01465 8.47425L11.5469 2.98446C11.7256 2.59703 12.2764 2.59695 12.4551 2.98439L14.9873 8.47413C15.0601 8.63204 15.2092 8.74077 15.3818 8.76124L21.3857 9.47316C21.8094 9.52339 21.9791 10.0472 21.6659 10.3369L17.2278 14.4419C17.1001 14.56 17.0433 14.7357 17.0771 14.9063L18.255 20.8359C18.3382 21.2544 17.8928 21.5787 17.5205 21.3703L12.2451 18.4166C12.0934 18.3317 11.9091 18.3321 11.7573 18.417L6.48144 21.3695C6.10913 21.5779 5.66294 21.2544 5.74609 20.8359L6.92414 14.9066C6.95803 14.7361 6.90134 14.5599 6.77367 14.4419L2.33496 10.3368Z" fill="#FFCC00"/>
+                                                    </svg>
+                                                </div>
+                                                <span>4.2/5.0</span>
+                                                <span>(999+)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li> <!--두번째 상품-->
+                                    <div class="ad-img">
+                                        <img src="sub-page-img/computer-4.png" alt="제품 이미지">
+                                    </div>
+                                    <div class="ad-text-wrap">
+                                        <h4>게이밍컴퓨터 조립PC AMD 라이젠 롤과 발로란트</h4>
+                                        <div class="ProductHighlight">
+                                            <div class="PriceContainer">
+                                                <div class="cash">
+                                                    <h3>942,600원</h3>
+                                                </div>
+                                                <div class="VendorContainer">
+                                                    <span>바른컴퓨터</span>
+                                                    <div class="delivery-wrap">
+                                                        <div class="icon">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                                <path d="M1.60352 4.53741V4.03741C1.32737 4.03741 1.10352 4.26127 1.10352 4.53741H1.60352ZM7.88367 4.53741H8.38367C8.38367 4.26127 8.15981 4.03741 7.88367 4.03741V4.53741ZM7.88367 5.62489V5.12489C7.75106 5.12489 7.62389 5.17757 7.53012 5.27133C7.43635 5.3651 7.38367 5.49228 7.38367 5.62489H7.88367ZM1.60352 4.53741V5.03741H7.88367V4.53741V4.03741H1.60352V4.53741ZM7.88367 4.53741H7.38367V11.0623H7.88367H8.38367V4.53741H7.88367ZM1.60352 9.9204H2.10352V4.53741H1.60352H1.10352V9.9204H1.60352ZM7.88367 5.62489V6.12489H9.39707V5.62489V5.12489H7.88367V5.62489ZM13.022 9.2498H12.522V9.9204H13.022H13.522V9.2498H13.022ZM7.88367 11.0623H8.38367L8.38367 5.62489H7.88367H7.38367L7.38367 11.0623H7.88367ZM11.5457 11.8312L11.2009 11.4691C10.9481 11.7099 10.5285 11.7099 10.2757 11.4691L9.93088 11.8312L9.58605 12.1933C10.2251 12.8019 11.2515 12.8019 11.8905 12.1933L11.5457 11.8312ZM9.93088 10.2933L10.2757 10.6554C10.5285 10.4146 10.9481 10.4146 11.2009 10.6554L11.5457 10.2933L11.8905 9.93122C11.2515 9.32263 10.2251 9.32263 9.58605 9.93122L9.93088 10.2933ZM4.69462 11.8312L4.34979 11.4691C4.09697 11.7099 3.67744 11.7099 3.42463 11.4691L3.0798 11.8312L2.73497 12.1933C3.374 12.8019 4.40042 12.8019 5.03944 12.1933L4.69462 11.8312ZM3.0798 10.2933L3.42463 10.6554C3.67744 10.4146 4.09697 10.4146 4.34979 10.6554L4.69462 10.2933L5.03944 9.93122C4.40042 9.32263 3.374 9.32263 2.73497 9.93122L3.0798 10.2933ZM11.5457 10.2933L11.2009 10.6554C11.3235 10.7722 11.3801 10.9191 11.3801 11.0623H11.8801H12.3801C12.3801 10.6488 12.2138 10.2391 11.8905 9.93122L11.5457 10.2933ZM11.8801 11.0623H11.3801C11.3801 11.2054 11.3235 11.3523 11.2009 11.4691L11.5457 11.8312L11.8905 12.1933C12.2138 11.8854 12.3801 11.4757 12.3801 11.0623H11.8801ZM9.59644 11.0623V10.5623H7.88367V11.0623V11.5623H9.59644V11.0623ZM9.93088 11.8312L10.2757 11.4691C10.1531 11.3523 10.0964 11.2054 10.0964 11.0623H9.59644H9.09644C9.09644 11.4757 9.26277 11.8854 9.58605 12.1933L9.93088 11.8312ZM9.59644 11.0623H10.0964C10.0964 10.9191 10.1531 10.7722 10.2757 10.6554L9.93088 10.2933L9.58605 9.93122C9.26277 10.2391 9.09644 10.6488 9.09644 11.0623H9.59644ZM3.0798 11.8312L3.42463 11.4691C3.30199 11.3523 3.24536 11.2054 3.24536 11.0623H2.74536H2.24536C2.24536 11.4757 2.41169 11.8854 2.73497 12.1933L3.0798 11.8312ZM2.74536 11.0623H3.24536C3.24536 10.9191 3.30199 10.7722 3.42463 10.6554L3.0798 10.2933L2.73497 9.93122C2.41169 10.2391 2.24536 10.6488 2.24536 11.0623H2.74536ZM7.88367 11.0623V10.5623H5.02905V11.0623V11.5623H7.88367V11.0623ZM4.69462 10.2933L4.34979 10.6554C4.47243 10.7722 4.52905 10.9191 4.52905 11.0623H5.02905H5.52905C5.52905 10.6488 5.36272 10.2391 5.03944 9.93122L4.69462 10.2933ZM5.02905 11.0623H4.52905C4.52905 11.2054 4.47243 11.3523 4.34979 11.4691L4.69462 11.8312L5.03944 12.1933C5.36272 11.8854 5.52905 11.4757 5.52905 11.0623H5.02905ZM13.022 9.9204H12.522C12.522 10.2749 12.2346 10.5623 11.8801 10.5623V11.0623V11.5623C12.7869 11.5623 13.522 10.8272 13.522 9.9204H13.022ZM9.39707 5.62489V6.12489C11.1229 6.12489 12.522 7.52396 12.522 9.2498H13.022H13.522C13.522 6.97167 11.6752 5.12489 9.39707 5.12489V5.62489ZM1.60352 9.9204H1.10352C1.10352 10.8272 1.8386 11.5623 2.74536 11.5623V11.0623V10.5623C2.39088 10.5623 2.10352 10.2749 2.10352 9.9204H1.60352Z" fill="#A3A3A3"/>
+                                                                <path d="M2.87256 2.63436C2.87256 2.28401 3.15657 2 3.50692 2C4.55796 2 5.40999 2.85204 5.40999 3.90308V4.53744H4.77564C3.72459 4.53744 2.87256 3.6854 2.87256 2.63436Z" stroke="#A3A3A3" stroke-linejoin="round"/>
+                                                                <path d="M7.94727 2.63436C7.94727 2.28401 7.66325 2 7.31291 2C6.26187 2 5.40983 2.85204 5.40983 3.90308V4.53744H6.04419C7.09523 4.53744 7.94727 3.6854 7.94727 2.63436Z" stroke="#A3A3A3" stroke-linejoin="round"/>
+                                                            </svg>
+                                                        </div>
+                                                        <span>무료배송</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="RatingContainer">
+                                                <div class="icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                    <path d="M2.33496 10.3368C2.02171 10.0471 2.19187 9.52339 2.61557 9.47316L8.61914 8.76107C8.79182 8.74059 8.94181 8.63215 9.01465 8.47425L11.5469 2.98446C11.7256 2.59703 12.2764 2.59695 12.4551 2.98439L14.9873 8.47413C15.0601 8.63204 15.2092 8.74077 15.3818 8.76124L21.3857 9.47316C21.8094 9.52339 21.9791 10.0472 21.6659 10.3369L17.2278 14.4419C17.1001 14.56 17.0433 14.7357 17.0771 14.9063L18.255 20.8359C18.3382 21.2544 17.8928 21.5787 17.5205 21.3703L12.2451 18.4166C12.0934 18.3317 11.9091 18.3321 11.7573 18.417L6.48144 21.3695C6.10913 21.5779 5.66294 21.2544 5.74609 20.8359L6.92414 14.9066C6.95803 14.7361 6.90134 14.5599 6.77367 14.4419L2.33496 10.3368Z" fill="#FFCC00"/>
+                                                    </svg>
+                                                </div>
+                                                <span>4.2/5.0</span>
+                                                <span>(999+)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li> <!--세번째 상품-->
+                                    <div class="ad-img">
+                                        <img src="sub-page-img/computer-5.png" alt="제품 이미지">
+                                    </div>
+                                    <div class="ad-text-wrap">
+                                        <h4>게이밍컴퓨터 조립PC AMD 라이젠 롤과 발로란트</h4>
+                                        <div class="ProductHighlight">
+                                            <div class="PriceContainer">
+                                                <div class="cash">
+                                                    <h3>942,600원</h3>
+                                                </div>
+                                                <div class="VendorContainer">
+                                                    <span>바른컴퓨터</span>
+                                                    <div class="delivery-wrap">
+                                                        <div class="icon">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                                <path d="M1.60352 4.53741V4.03741C1.32737 4.03741 1.10352 4.26127 1.10352 4.53741H1.60352ZM7.88367 4.53741H8.38367C8.38367 4.26127 8.15981 4.03741 7.88367 4.03741V4.53741ZM7.88367 5.62489V5.12489C7.75106 5.12489 7.62389 5.17757 7.53012 5.27133C7.43635 5.3651 7.38367 5.49228 7.38367 5.62489H7.88367ZM1.60352 4.53741V5.03741H7.88367V4.53741V4.03741H1.60352V4.53741ZM7.88367 4.53741H7.38367V11.0623H7.88367H8.38367V4.53741H7.88367ZM1.60352 9.9204H2.10352V4.53741H1.60352H1.10352V9.9204H1.60352ZM7.88367 5.62489V6.12489H9.39707V5.62489V5.12489H7.88367V5.62489ZM13.022 9.2498H12.522V9.9204H13.022H13.522V9.2498H13.022ZM7.88367 11.0623H8.38367L8.38367 5.62489H7.88367H7.38367L7.38367 11.0623H7.88367ZM11.5457 11.8312L11.2009 11.4691C10.9481 11.7099 10.5285 11.7099 10.2757 11.4691L9.93088 11.8312L9.58605 12.1933C10.2251 12.8019 11.2515 12.8019 11.8905 12.1933L11.5457 11.8312ZM9.93088 10.2933L10.2757 10.6554C10.5285 10.4146 10.9481 10.4146 11.2009 10.6554L11.5457 10.2933L11.8905 9.93122C11.2515 9.32263 10.2251 9.32263 9.58605 9.93122L9.93088 10.2933ZM4.69462 11.8312L4.34979 11.4691C4.09697 11.7099 3.67744 11.7099 3.42463 11.4691L3.0798 11.8312L2.73497 12.1933C3.374 12.8019 4.40042 12.8019 5.03944 12.1933L4.69462 11.8312ZM3.0798 10.2933L3.42463 10.6554C3.67744 10.4146 4.09697 10.4146 4.34979 10.6554L4.69462 10.2933L5.03944 9.93122C4.40042 9.32263 3.374 9.32263 2.73497 9.93122L3.0798 10.2933ZM11.5457 10.2933L11.2009 10.6554C11.3235 10.7722 11.3801 10.9191 11.3801 11.0623H11.8801H12.3801C12.3801 10.6488 12.2138 10.2391 11.8905 9.93122L11.5457 10.2933ZM11.8801 11.0623H11.3801C11.3801 11.2054 11.3235 11.3523 11.2009 11.4691L11.5457 11.8312L11.8905 12.1933C12.2138 11.8854 12.3801 11.4757 12.3801 11.0623H11.8801ZM9.59644 11.0623V10.5623H7.88367V11.0623V11.5623H9.59644V11.0623ZM9.93088 11.8312L10.2757 11.4691C10.1531 11.3523 10.0964 11.2054 10.0964 11.0623H9.59644H9.09644C9.09644 11.4757 9.26277 11.8854 9.58605 12.1933L9.93088 11.8312ZM9.59644 11.0623H10.0964C10.0964 10.9191 10.1531 10.7722 10.2757 10.6554L9.93088 10.2933L9.58605 9.93122C9.26277 10.2391 9.09644 10.6488 9.09644 11.0623H9.59644ZM3.0798 11.8312L3.42463 11.4691C3.30199 11.3523 3.24536 11.2054 3.24536 11.0623H2.74536H2.24536C2.24536 11.4757 2.41169 11.8854 2.73497 12.1933L3.0798 11.8312ZM2.74536 11.0623H3.24536C3.24536 10.9191 3.30199 10.7722 3.42463 10.6554L3.0798 10.2933L2.73497 9.93122C2.41169 10.2391 2.24536 10.6488 2.24536 11.0623H2.74536ZM7.88367 11.0623V10.5623H5.02905V11.0623V11.5623H7.88367V11.0623ZM4.69462 10.2933L4.34979 10.6554C4.47243 10.7722 4.52905 10.9191 4.52905 11.0623H5.02905H5.52905C5.52905 10.6488 5.36272 10.2391 5.03944 9.93122L4.69462 10.2933ZM5.02905 11.0623H4.52905C4.52905 11.2054 4.47243 11.3523 4.34979 11.4691L4.69462 11.8312L5.03944 12.1933C5.36272 11.8854 5.52905 11.4757 5.52905 11.0623H5.02905ZM13.022 9.9204H12.522C12.522 10.2749 12.2346 10.5623 11.8801 10.5623V11.0623V11.5623C12.7869 11.5623 13.522 10.8272 13.522 9.9204H13.022ZM9.39707 5.62489V6.12489C11.1229 6.12489 12.522 7.52396 12.522 9.2498H13.022H13.522C13.522 6.97167 11.6752 5.12489 9.39707 5.12489V5.62489ZM1.60352 9.9204H1.10352C1.10352 10.8272 1.8386 11.5623 2.74536 11.5623V11.0623V10.5623C2.39088 10.5623 2.10352 10.2749 2.10352 9.9204H1.60352Z" fill="#A3A3A3"/>
+                                                                <path d="M2.87256 2.63436C2.87256 2.28401 3.15657 2 3.50692 2C4.55796 2 5.40999 2.85204 5.40999 3.90308V4.53744H4.77564C3.72459 4.53744 2.87256 3.6854 2.87256 2.63436Z" stroke="#A3A3A3" stroke-linejoin="round"/>
+                                                                <path d="M7.94727 2.63436C7.94727 2.28401 7.66325 2 7.31291 2C6.26187 2 5.40983 2.85204 5.40983 3.90308V4.53744H6.04419C7.09523 4.53744 7.94727 3.6854 7.94727 2.63436Z" stroke="#A3A3A3" stroke-linejoin="round"/>
+                                                            </svg>
+                                                        </div>
+                                                        <span>무료배송</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="RatingContainer">
+                                                <div class="icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                    <path d="M2.33496 10.3368C2.02171 10.0471 2.19187 9.52339 2.61557 9.47316L8.61914 8.76107C8.79182 8.74059 8.94181 8.63215 9.01465 8.47425L11.5469 2.98446C11.7256 2.59703 12.2764 2.59695 12.4551 2.98439L14.9873 8.47413C15.0601 8.63204 15.2092 8.74077 15.3818 8.76124L21.3857 9.47316C21.8094 9.52339 21.9791 10.0472 21.6659 10.3369L17.2278 14.4419C17.1001 14.56 17.0433 14.7357 17.0771 14.9063L18.255 20.8359C18.3382 21.2544 17.8928 21.5787 17.5205 21.3703L12.2451 18.4166C12.0934 18.3317 11.9091 18.3321 11.7573 18.417L6.48144 21.3695C6.10913 21.5779 5.66294 21.2544 5.74609 20.8359L6.92414 14.9066C6.95803 14.7361 6.90134 14.5599 6.77367 14.4419L2.33496 10.3368Z" fill="#FFCC00"/>
+                                                    </svg>
+                                                </div>
+                                                <span>4.2/5.0</span>
+                                                <span>(999+)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                </div><!-- /.bottom-content -->
+
+                <aside class="sticky-sidebar">
+                    <div class="sidebar-inner">
+                        <div class="sidebar-price-section">
+                            <div class="sidebar-badge">
+                                <span class="sidebar-lowest">최저가</span>
+                                <span class="sidebar-hero">HERO</span>
+                            </div>
+                            <div class="sidebar-price">
+                                <h2>1,709,560<span>원</span></h2>
+                            </div>
+                            <div class="sidebar-shipping">
+                                <div class="sidebar-shipping-item">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                        <path d="M2 7V6C1.44772 6 1 6.44772 1 7H2ZM13 7H14C14 6.44772 13.5523 6 13 6V7ZM13 9V8C12.7348 8 12.4804 8.10536 12.2929 8.29289C12.1054 8.48043 12 8.73478 12 9H13ZM2 7V8H13V7V6H2V7ZM13 7H12V19H13H14V7H13ZM2 17H3V7H2H1V17H2ZM13 9V10H18V9V8H13V9ZM22 13H21V17H22H23V13H22Z" fill="#737373"/>
+                                    </svg>
+                                    <span>무료 배송</span>
+                                </div>
+                                <span class="sidebar-installment">무이자 최대 16개월</span>
+                            </div>
+                        </div>
+                        <div class="sidebar-vendor-list">
+                            <div class="sidebar-vendor">
+                                <img src="sub-page-img/logo/gmarket.png" alt="gmarket">
+                                <span class="sidebar-vendor-price best">1,370,590원</span>
+                            </div>
+                            <div class="sidebar-vendor">
+                                <img src="sub-page-img/logo/11.png" alt="11번가">
+                                <span class="sidebar-vendor-price">1,510,590원</span>
+                            </div>
+                            <div class="sidebar-vendor">
+                                <img src="sub-page-img/logo/lotte.png" alt="롯데">
+                                <span class="sidebar-vendor-price">1,179,200원</span>
+                            </div>
+                        </div>
+                        <div class="sidebar-actions">
+                            <button type="button" class="sidebar-btn-buy">최저가 구매하기</button>
+                            <div class="sidebar-sub-actions">
+                                <button type="button" class="sidebar-btn-secondary">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                    <path d="M19.2373 6.23731C20.7839 7.78395 20.8432 10.2727 19.3718 11.8911L11.9995 20.0001L4.62812 11.8911C3.15679 10.2727 3.21605 7.7839 4.76269 6.23726C6.48961 4.51034 9.33372 4.66814 10.8594 6.5752L12 8.00045L13.1396 6.57504C14.6653 4.66798 17.5104 4.51039 19.2373 6.23731Z" stroke="#A3A3A3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <span>찜</span>
+                                </button>
+                                <button type="button" class="sidebar-btn-secondary">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 20" fill="none">
+                                    <path d="M13.2722 4.00791C13.6191 4.60134 14.263 5 15 5C16.1046 5 17 4.10457 17 3C17 1.89543 16.1046 1 15 1C13.8954 1 13 1.89543 13 3C13 3.36756 13.0991 3.71195 13.2722 4.00791ZM13.2722 4.00791L4.72784 8.99209M4.72784 8.99209C4.38092 8.39866 3.73701 8 3 8C1.89543 8 1 8.89543 1 10C1 11.1046 1.89543 12 3 12C3.73701 12 4.38092 11.6013 4.72784 11.0079M4.72784 8.99209C4.90085 9.28805 5 9.63244 5 10C5 10.3676 4.90085 10.712 4.72784 11.0079M4.72784 11.0079L13.2722 15.9921M13.2722 15.9921C13.6191 15.3987 14.263 15 15 15C16.1046 15 17 15.8954 17 17C17 18.1046 16.1046 19 15 19C13.8954 19 13 18.1046 13 17C13 16.6324 13.0991 16.288 13.2722 15.9921Z" stroke="#A3A3A3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <span>공유</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+
+                </div><!-- /.bottom-layout -->
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+    <footer class="footer">
+        <!-- ===== 상단 밝은 바 ===== -->
+        <div class="footer-top">
+            <div class="footer-top-inner">
+                <div class="footer-logo">
+                    <img src="img/logo/danawa-logo 1.png" alt="다나와">
+                </div>
+                <nav class="footer-family-links">
+                    <a href="#">에누리</a>
+                    <a href="#">뉴스존</a>
+                    <a href="#">몰테일</a>
+                    <a href="#">플레이오토</a>
+                    <a href="#">메이크샵</a>
+                </nav>
+            </div>
+        </div>
+
+        <!-- ===== 하단 회색 푸터 ===== -->
+        <div class="footer-bottom">
+            <div class="footer-bottom-inner">
+                <!-- 공지 + 정책 nav -->
+                <div class="footer-notice-row">
+                    <div class="footer-notice-left">
+                        <span class="footer-notice-label">공지</span>
+                        <span class="footer-notice-text">프리뷰어 서비스 종료 안내</span>
+                    </div>
+                    <nav class="footer-policy-links">
+                        <a href="#">다나와 소개</a>
+                        <a href="#">이용약관</a>
+                        <a href="#" class="is-bold">개인정보처리방침</a>
+                        <a href="#">청소년 보호정책</a>
+                        <a href="#">사이트맵</a>
+                        <a href="#">광고센터</a>
+                        <a href="#">협력사문의</a>
+                    </nav>
+                </div>
+
+                <!-- 메인 정보 행: 좌(고객센터) / 우(SNS) -->
+                <div class="footer-info-row">
+                    <div class="footer-cs">
+                        <div class="footer-cs-title">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <g clip-path="url(#clip0_67_1200)">
+                                    <path d="M15.1876 19.4688C14.3438 19.4688 13.3751 19.25 12.3126 18.8438C10.1876 18 7.84383 16.375 5.75008 14.2813C3.65633 12.1875 2.03133 9.84377 1.18758 7.68752C0.25008 5.37502 0.34383 3.46877 1.43758 2.40627C1.46883 2.37502 1.53133 2.34377 1.56258 2.31252L4.18758 0.750025C4.84383 0.375025 5.68758 0.562525 6.12508 1.18752L7.96883 3.93753C8.40633 4.59378 8.21883 5.46877 7.59383 5.90627L6.46883 6.68752C7.28133 8.00002 9.59383 11.2188 13.2813 13.5313L13.9688 12.5313C14.5001 11.7813 15.3438 11.5625 16.0313 12.0313L18.7813 13.875C19.4063 14.3125 19.5938 15.1563 19.2188 15.8125L17.6563 18.4375C17.6251 18.5 17.5938 18.5313 17.5626 18.5625C17.0001 19.1563 16.1876 19.4688 15.1876 19.4688ZM2.37508 3.46878C1.78133 4.12503 1.81258 5.46877 2.50008 7.18752C3.28133 9.15627 4.78133 11.3125 6.75008 13.2813C8.68758 15.2188 10.8751 16.7188 12.8126 17.5C14.5001 18.1875 15.8438 18.2188 16.5313 17.625L18.0313 15.0625C18.0313 15.0313 18.0313 15.0313 18.0313 15L15.2813 13.1563C15.2813 13.1563 15.2188 13.1875 15.1563 13.2813L14.4688 14.2813C14.0313 14.9063 13.1876 15.0938 12.5626 14.6875C8.62508 12.25 6.18758 8.84377 5.31258 7.46877C4.90633 6.81252 5.06258 5.96878 5.68758 5.53128L6.81258 4.75002V4.71878L4.96883 1.96877C4.96883 1.93752 4.93758 1.93752 4.90633 1.96877L2.37508 3.46878Z" fill="#3758F9"/>
+                                    <path d="M18.3127 8.90645C17.9377 8.90645 17.6565 8.6252 17.6252 8.2502C17.3752 5.09395 14.7815 2.5627 11.594 2.34395C11.219 2.3127 10.9065 2.0002 10.9377 1.59395C10.969 1.21895 11.2815 0.906455 11.6877 0.937705C15.5627 1.1877 18.719 4.2502 19.0315 8.1252C19.0627 8.5002 18.7815 8.84395 18.3752 8.8752C18.3752 8.90645 18.344 8.90645 18.3127 8.90645Z" fill="#3758F9"/>
+                                    <path d="M15.2189 9.18792C14.8752 9.18792 14.5627 8.93792 14.5314 8.56292C14.3439 6.87542 13.0314 5.56292 11.3439 5.34417C10.9689 5.31292 10.6877 4.93792 10.7189 4.56292C10.7502 4.18792 11.1252 3.90667 11.5002 3.93792C13.8439 4.21917 15.6564 6.03167 15.9377 8.37542C15.9689 8.75042 15.7189 9.09417 15.3127 9.15667C15.2502 9.18792 15.2189 9.18792 15.2189 9.18792Z" fill="#3758F9"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_67_1200"><rect width="20" height="20" fill="white"/></clipPath>
+                                </defs>
+                            </svg>
+                            <span>고객센터</span>
+                        </div>
+
+                        <div class="footer-cs-rows">
+                            <div class="footer-cs-row">
+                                <span>다나와 고객센터</span>
+                                <span>1688-2470</span>
+                            </div>
+                            <div class="footer-cs-row">
+                                <span>24시간 인터넷 상담</span>
+                                <span>다나와 카카오톡</span>
+                            </div>
+                            <div class="footer-cs-row">
+                                <span>공지사항</span>
+                                <span>1대1문의</span>
+                                <span>제휴문의</span>
+                            </div>
+                        </div>
+
+                        <div class="footer-address">
+                            <p><strong>주소</strong> (우) 08510 서울특별시 금천구 벚꽃로 297, 17층 (가산동, 대륭포스트타워6차)</p>
+                            <p>사업자 번호 : 117-81-40065</p>
+                        </div>
+
+                        <span class="footer-copyright">© 2026 TailGrids.</span>
+                    </div>
+
+                    <div class="footer-social">
+                        <span class="footer-social-title">Follow Us On</span>
+                        <div class="footer-social-icons">
+                            <a href="#" class="social-icon" aria-label="Facebook">
+                                <div class="icon icon--circle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 10 16" fill="none">
+                                        <path d="M8.4 6.2H7H6.5V5.7V4.15V3.65H7H8.05C8.325 3.65 8.55 3.45 8.55 3.15V0.5C8.55 0.225 8.35 0 8.05 0H6.225C4.25 0 2.875 1.4 2.875 3.475V5.65V6.15H2.375H0.675C0.325 6.15 0 6.425 0 6.825V8.625C0 8.975 0.275 9.3 0.675 9.3H2.325H2.825V9.8V14.825C2.825 15.175 3.1 15.5 3.5 15.5H5.85C6 15.5 6.125 15.425 6.225 15.325C6.325 15.225 6.4 15.05 6.4 14.9V9.825V9.325H6.925H8.05C8.375 9.325 8.625 9.125 8.675 8.825V8.8V8.775L9.025 7.05C9.05 6.875 9.025 6.675 8.875 6.475C8.825 6.35 8.6 6.225 8.4 6.2Z"/>
+                                    </svg>
+                                </div>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="Twitter">
+                                <div class="icon icon--circle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="11" viewBox="0 0 14 11" fill="none">
+                                        <path d="M13.302 1.63335C13.3911 1.52947 13.2749 1.39371 13.1431 1.44234C12.8488 1.55088 12.5799 1.62247 12.1821 1.66667C12.6713 1.39427 12.8989 1.00493 13.0839 0.52806C13.1285 0.41304 12.9939 0.308667 12.878 0.363613C12.4071 0.586873 11.8991 0.752513 11.3648 0.85038C10.8367 0.327027 10.084 0 9.25133 0C7.6524 0 6.3558 1.20585 6.3558 2.69278C6.3558 2.90387 6.38167 3.10949 6.43047 3.30637C4.13203 3.19928 2.08254 2.21606 0.658653 0.708407C0.561059 0.605073 0.383973 0.618793 0.323206 0.74482C0.161099 1.08106 0.070726 1.45406 0.070726 1.84677C0.070726 2.78083 0.581739 3.60495 1.35855 4.08787C1.01025 4.0774 0.677159 4.00953 0.370199 3.89436C0.220746 3.83829 0.0494259 3.93683 0.0695059 4.08753C0.223659 5.2448 1.16061 6.19953 2.36999 6.42513C2.12713 6.48693 1.87133 6.51973 1.60671 6.51973C1.54255 6.51973 1.47894 6.51773 1.41591 6.51387C1.25553 6.50393 1.12519 6.6474 1.19395 6.78467C1.64762 7.69013 2.62723 8.32227 3.76719 8.34193C2.77633 9.06433 1.52791 9.49473 0.171279 9.49473C0.00400603 9.49473 -0.067754 9.7098 0.080646 9.78273C1.2268 10.3461 2.53204 10.6667 3.91891 10.6667C9.24487 10.6667 12.1569 6.56353 12.1569 3.00504C12.1569 2.88856 12.1539 2.77207 12.1487 2.65669C12.5809 2.36627 12.9695 2.02093 13.302 1.63335Z"/>
+                                    </svg>
+                                </div>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="YouTube">
+                                <div class="icon icon--circle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="11" viewBox="0 0 16 11" fill="none">
+                                        <path d="M15.175 1.7C15 1.025 14.475 0.5 13.8 0.325C12.6 5.96046e-08 7.75 0 7.75 0C7.75 0 2.9 5.96046e-08 1.7 0.325C1.025 0.5 0.5 1.025 0.325 1.7C0 2.925 0 5.425 0 5.425C0 5.425 0 7.95 0.325 9.15C0.5 9.825 1.025 10.35 1.7 10.525C2.9 10.85 7.75 10.85 7.75 10.85C7.75 10.85 12.6 10.85 13.8 10.525C14.475 10.35 15 9.825 15.175 9.15C15.5 7.95 15.5 5.425 15.5 5.425C15.5 5.425 15.5 2.925 15.175 1.7ZM6.2 7.75V3.1L10.225 5.425L6.2 7.75Z"/>
+                                    </svg>
+                                </div>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="LinkedIn">
+                                <div class="icon icon--circle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none">
+                                        <path d="M2.66667 1.334C2.66649 1.68762 2.52584 2.02669 2.27567 2.27661C2.0255 2.52654 1.68629 2.66684 1.33267 2.66667C0.979045 2.66649 0.639976 2.52584 0.390053 2.27567C0.140129 2.0255 -0.000176644 1.68629 1.66908e-07 1.33267C0.000176978 0.979045 0.140822 0.639976 0.390996 0.390053C0.641169 0.140129 0.980378 -0.000176644 1.334 1.66908e-07C1.68762 0.000176978 2.02669 0.140822 2.27661 0.390996C2.52654 0.641169 2.66684 0.980378 2.66667 1.334V1.334ZM2.70667 3.654H0.0400001V12.0007H2.70667V3.654ZM6.92 3.654H4.26667V12.0007H6.89333V7.62067C6.89333 5.18067 10.0733 4.954 10.0733 7.62067V12.0007H12.7067V6.714C12.7067 2.60067 8 2.754 6.89333 4.774L6.92 3.654V3.654Z"/>
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery-4.0.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
